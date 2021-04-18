@@ -1,0 +1,2 @@
+Promise.all和Promise.allSettled的区别
+all若果有一个出错后面就不会执行，allSettled全部执行完才会触发then和catch
