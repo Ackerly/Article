@@ -12,3 +12,5 @@ MVC由Model、View、Controller三部分组成
 Controller是包含的对象，与Model和View保持相对独立，比如数据库从MySQL移植到Oracle，把RDBMS数据源变成LDAP数据源，只需要改变Controller。MVC模式的三个模块相互独立，改变其中一个不会影响其他两个。
 
 MVC的职责分离带来了可测试性，各个部分可独立行使单元测试，有利于企业内的自动化测试、持续集成与持续交付流程继承，减少程序改版部署所需的时间
+
+参考: 维基百科

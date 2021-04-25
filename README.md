@@ -1,7 +1,12 @@
 # blog
+## HTML
+1. [html语义化](./article/HTML/html语义化.md)
+
 ## JavaScript
 ### ES2015
 1. [call、apply、bind的区别和使用](./article/js/ES2015/bind、apply和call.md)
+## 存储
+1. [了解cookie](./article/storage/了解cookie.md)
 ### 框架
 #### Vue
 1. [vue组件将传值的几种方式](
