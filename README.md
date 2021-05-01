@@ -15,6 +15,8 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 2. [vue-router实现原理](/article/frame/vue/vue-router实现原理.md)
 3. [理解vue循环中的key](/article/frame/vue/vue的循环为什么要绑定key.md)
 4. [vue路由总结](article/frame/vue/vue路由总结.md)
+5. [自定义指令](article/frame/vue/自定义指令.md)
+6. [混入知识点](article/frame/vue/混入知识点.md)
 
 ### 泛型
 1. [理解泛型](./article/frame/typescript/理解泛型.md)
