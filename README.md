@@ -6,6 +6,7 @@
 ### ES2015
 1. [call、apply、bind的区别和使用](./article/js/ES2015/bind、apply和call.md)
 2. [掌握事件循环](./article/js/ES2015/掌握eventLoop.md)
+3. [深拷贝实现](./article/js/ES2015/深拷贝实现.md)
 ## 存储
 1. [了解cookie](./article/storage/了解cookie.md)
 ## 框架
