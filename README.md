@@ -22,9 +22,10 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 6. [混入知识点](article/frame/vue/混入知识点.md)
 7. [plugin开发](article/frame/vue/plugin开发.md)
 
-### 泛型
+### TypeScript
 1. [理解泛型](./article/frame/typescript/理解泛型.md)
-
+## 性能
+1. [vue长列表性能分析](./article/performance/vue长列表性能分析.md)
 ## HTTP
 1. [get和post的区别](./article/http/get和post的区别.md)
 2. [HTTP的不同版本特性](./article/http/HTTP协议的不同版本及区别.md)
