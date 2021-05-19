@@ -21,6 +21,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 5. [自定义指令](article/frame/vue/自定义指令.md)
 6. [混入知识点](article/frame/vue/混入知识点.md)
 7. [plugin开发](article/frame/vue/plugin开发.md)
+8. [vue的9种高级用法](article/frame/vue/vue的9种高级用法.md)
 
 ### TypeScript
 1. [理解泛型](./article/frame/typescript/理解泛型.md)
