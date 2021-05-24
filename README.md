@@ -1,6 +1,7 @@
 # blog
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
+2. [重绘和回流及其优化](./article/HTML/重绘和回流及其优化.md)
 
 ## JavaScript
 ### ES2015
@@ -8,6 +9,7 @@
 2. [掌握事件循环](./article/js/ES2015/掌握eventLoop.md)
 3. [深拷贝实现](./article/js/ES2015/深拷贝实现.md)
 4. [Javascript高阶函数](./article/js/ES2015/Javascript高阶函数.md)
+5. [为什么for循环的性能远远高于forEach](./article/js/ES2015/为什么for循环的性能远远高于forEach.md)
 ## 存储
 1. [了解cookie](./article/storage/了解cookie.md)
 ## 框架
