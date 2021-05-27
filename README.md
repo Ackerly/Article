@@ -2,7 +2,8 @@
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
 2. [重绘和回流及其优化](./article/HTML/重绘和回流及其优化.md)
-
+## 浏览器
+1. [浏览器存储](article/browser/浏览器存储.md)
 ## JavaScript
 ### ES2015
 1. [call、apply、bind的区别和使用](./article/js/ES2015/bind、apply和call.md)
