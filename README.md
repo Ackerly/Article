@@ -11,6 +11,7 @@
 3. [深拷贝实现](./article/js/ES2015/深拷贝实现.md)
 4. [Javascript高阶函数](./article/js/ES2015/Javascript高阶函数.md)
 5. [为什么for循环的性能远远高于forEach](./article/js/ES2015/为什么for循环的性能远远高于forEach.md)
+6. [前端调试方法](./article/js/ES2015/前端调试.md)
 ## 存储
 1. [了解cookie](./article/storage/了解cookie.md)
 ## 框架
