@@ -12,6 +12,7 @@
 4. [Javascript高阶函数](./article/js/ES2015/Javascript高阶函数.md)
 5. [为什么for循环的性能远远高于forEach](./article/js/ES2015/为什么for循环的性能远远高于forEach.md)
 6. [前端调试方法](./article/js/ES2015/前端调试.md)
+7. [模块化发展](./article/js/ES2015/模块化发展.md)
 ## 存储
 1. [了解cookie](./article/storage/了解cookie.md)
 ## 框架
