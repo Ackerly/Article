@@ -17,6 +17,9 @@
 ## 存储
 1. [了解cookie](./article/storage/了解cookie.md)
 ## 框架
+### React
+1.[编写弹性组件](./article/frame/react/编写弹性组件.md)
+
 ### Vue
 1. [vue组件将传值的几种方式](
 article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
