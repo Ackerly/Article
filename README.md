@@ -33,6 +33,8 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 8. [vue的9种高级用法](article/frame/vue/vue的9种高级用法.md)
 9. [v-for每项元素绑定事件需要事件代理吗](article/frame/vue/v-for每项元素绑定事件需要用事件代理.md)
 
+**Vue源码学习**
+- [手写与事件相关的实例方法](./article/frame/vue/source%20code%20study/手写与事件相关的实例方法.md)
 ### TypeScript
 1. [理解泛型](./article/frame/typescript/理解泛型.md)
 ## 性能
