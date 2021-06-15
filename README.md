@@ -17,9 +17,9 @@
 ## 存储
 1. [了解cookie](./article/storage/了解cookie.md)
 ## 框架
+1. [寻找框架设计的平衡点](article/frame/寻找框架设计的平衡点.md)
 ### React
 1.[编写弹性组件](./article/frame/react/编写弹性组件.md)
-
 ### Vue
 1. [vue组件将传值的几种方式](
 article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
@@ -35,6 +35,8 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 
 **Vue源码学习**
 - [手写与事件相关的实例方法](./article/frame/vue/source%20code%20study/手写与事件相关的实例方法.md)
+- [手写Vue.extend方法](./article/frame/vue/source%20code%20study/手写Vue.extend方法.md)
+- [Vue.directive、Vue.filter、Vue.component实现](./article/frame/vue/source%20code%20study/Vue.directive、Vue.filter、Vue.component实现.md)
 ### TypeScript
 1. [理解泛型](./article/frame/typescript/理解泛型.md)
 ## 性能
