@@ -46,11 +46,14 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 ## HTTP
 1. [get和post的区别](./article/http/get和post的区别.md)
 2. [HTTP的不同版本特性](./article/http/HTTP协议的不同版本及区别.md)
+3. [永久重定向(301)和临时重定向(302)](./article/http/永久重定向(301)和临时重定向(302).md)
 
 ## 设计模式
 1. [理解MVC](./article/design%20patterns/理解MVC.md)
 
 ## 工具
+### webpack
+1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 ### Git
 1. [Git常用指令](./article/tool/git/git常用知识点.md)
 2. [Git工作流](./article/tool/git/git工作流.md)
