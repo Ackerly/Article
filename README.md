@@ -17,6 +17,9 @@
 6. [前端调试方法](./article/js/ES2015/前端调试.md)
 7. [模块化发展](./article/js/ES2015/模块化发展.md)
 8. [函数缓存](./article/js/ES2015/函数缓存.md)
+## WebAssembly
+1. [WebAssembly入门](./article/webAssembly/webAssembly入门.md)
+
 ## 存储
 1. [了解cookie](./article/storage/了解cookie.md)
 ## 框架
