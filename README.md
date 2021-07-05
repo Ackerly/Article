@@ -39,6 +39,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 8. [vue的9种高级用法](article/frame/vue/vue的9种高级用法.md)
 9. [v-for每项元素绑定事件需要事件代理吗](article/frame/vue/v-for每项元素绑定事件需要用事件代理.md)
 10. [使用nextTick](./aritcle/frame/vue/使用nextTick.md)
+11. [vue3 2020个响应式API](./article/frame/vue/vue3%2020个响应式API.md)
 
 **Vue源码学习**
 - [手写与事件相关的实例方法](./article/frame/vue/source%20code%20study/手写与事件相关的实例方法.md)
