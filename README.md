@@ -5,6 +5,7 @@
 3. [层叠顺序和堆栈上下文](./article/css/层叠顺序和堆栈上下文.md)
 4. [CSS斜线实现](./article/css/实现CSS斜线.md)
 5. [CSS关键字initial、inherit、unset](./article/css/CSS关键字initial、inherit、unset.md)
+6. [单行居中，多行居左，超过省略](./article/css/单行居中，多行居左，超过省略.md)
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
 2. [重绘和回流及其优化](./article/HTML/重绘和回流及其优化.md)
