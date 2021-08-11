@@ -58,6 +58,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 - [高阶组件HOC](./article/frame/vue/优雅实践/高阶组件HOC.md)
 #### 测试
 - [测试](./article/frame/vue/test/测试.md)
+- [jest测试环境踩坑](./article/frame/vue/test/jest测试环境踩坑.md)
 
 ### TypeScript
 1. [理解泛型](./article/frame/typescript/理解泛型.md)
