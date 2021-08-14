@@ -48,6 +48,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 10. [使用nextTick](./aritcle/frame/vue/使用nextTick.md)
 11. [vue3 2020个响应式API](./article/frame/vue/vue3%2020个响应式API.md)
 12. [Vite2.x+Vue3.x有哪些基操](./article/frame/vue/Vite2.x+Vue3.x有哪些基操.md)
+13. [vue3.0七大亮点](./article/frame/vue/vue3.0七大亮点.md)
 
 ##### Vue源码学习
 - [手写与事件相关的实例方法](./article/frame/vue/source%20code%20study/手写与事件相关的实例方法.md)
