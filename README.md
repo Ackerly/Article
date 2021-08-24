@@ -7,6 +7,7 @@
 5. [CSS关键字initial、inherit、unset](./article/css/CSS关键字initial、inherit、unset.md)
 6. [单行居中，多行居左，超过省略](./article/css/单行居中，多行居左，超过省略.md)
 7. [css实现中文简繁转换](./article/css/css实现中文简繁转换.md)
+8. [HTML的picture使用](./article/css/HTML的picture使用.md)
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
 2. [重绘和回流及其优化](./article/HTML/重绘和回流及其优化.md)
