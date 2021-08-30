@@ -58,6 +58,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 - [手写Vue.extend方法](./article/frame/vue/source%20code%20study/手写Vue.extend方法.md)
 - [Vue.directive、Vue.filter、Vue.component实现](./article/frame/vue/source%20code%20study/Vue.directive、Vue.filter、Vue.component实现.md)
 - [Patch算法](./article/frame/vue/source%20code%20study/Patch算法.md)
+- [vue-router源码解析](./article/frame/vue/source%20code%20study/vue-router源码解析.md)
 ##### 优雅实践
 - [模态框封装方案](./article/frame/vue/优雅实践/模态框封装方案.md)
 - [高阶组件HOC](./article/frame/vue/优雅实践/高阶组件HOC.md)
