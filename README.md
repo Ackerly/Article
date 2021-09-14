@@ -64,6 +64,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 22. [Vue3组件之封装一个更好用的url组件](./article/frame/vue/Vue3组件之封装一个更好用的url组件.md)
 23. [vue/树形组件ElTree的内部原理](./article/frame/vue/树形组件ElTree的内部原理.md)
 24. [vue3源码中再谈nextTick](./article/frame/vue/vue3源码中再谈nextTick.md)
+25. [使用JSX/TSX开发Vue3组件](./article/frame/vue/使用JSX/TSX开发Vue3组件.md)
 
 ##### Vue源码学习
 - [手写与事件相关的实例方法](./article/frame/vue/source%20code%20study/手写与事件相关的实例方法.md)
