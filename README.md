@@ -81,6 +81,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 
 ### TypeScript
 1. [理解泛型](./article/frame/typescript/理解泛型.md)
+2. [深入TypeScript中的子类型、逆变、协变](./article/frame/typescript/深入TypeScript中的子类型、逆变、协变.md)
 ## 性能
 1. [vue长列表性能分析](./article/performance/vue长列表性能分析.md)
 ## HTTP
