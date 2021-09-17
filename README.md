@@ -10,10 +10,12 @@
 8. [HTML的picture使用](./article/css/HTML的picture使用.md)
 9. [CSS禁止用户拖拽](./article/css/CSS禁止用户拖拽.md)
 10. [让滚动嵌套时父滚动不触发](./article/css/让滚动嵌套时父滚动不触发.md)
+11. [revert关键字还原display显示元素](./article/css/revert关键字还原display显示元素.md)
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
 2. [重绘和回流及其优化](./article/HTML/重绘和回流及其优化.md)
 3. [HTML5Video视频与WebVTT字幕](./article/HTML/HTML5Video视频与WebVTT字幕.md)
+4. [前端动画之React和Vue都在用的FLIP思想实战](./article/other/前端动画之React%20和%20Vue%20都在用的%20FLIP%20思想实战.md)
 ## 浏览器
 1. [浏览器存储](article/browser/浏览器存储.md)
 ## JavaScript
