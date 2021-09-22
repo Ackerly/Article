@@ -1,4 +1,4 @@
-# Vue keep-alive深入理解及实践总结
+# Vue keep-alive深入理解及实践总结  
 ## 什么是keep-alive
 keepalive 是 Vue 内置的一个组件，可以使被包含的组件保留状态，或避免重新渲染 。也就是所谓的组件缓存。  
 <keep-alive>是Vue的内置组件，能在组件切换过程中将状态保留在内存中，防止重复渲染DOM。  
