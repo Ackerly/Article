@@ -101,6 +101,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 1. [理解MVC](./article/design%20patterns/理解MVC.md)
 
 ## 工具
+1. [项目中如何封装axios](./article/tool/npm/项目中如何封装axios.md)
 ### webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
