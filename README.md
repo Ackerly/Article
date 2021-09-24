@@ -13,7 +13,8 @@
 11. [revert关键字还原display显示元素](./article/css/revert关键字还原display显示元素.md)
 12. [抛弃Sass/Less,迎接原子化CSS时代](./article/css/抛弃Sass Less,迎接原子化CSS时代.md)
 13. [借助HTML ping属性实现数据是上报](./article/css/借助HTML%20ping属性实现数据是上报.md)
-14. [Vue keep-alive深入理解及实践总结](./article/frame/vue/Vue%20keep-alive深入理解及实践总结.md)
+14. [CSS text-combine-upright实现字符的横向合并](./article/css/CSS%20text-combine-upright实现字符的横向合并.md)
+
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
 2. [重绘和回流及其优化](./article/HTML/重绘和回流及其优化.md)
@@ -71,6 +72,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 24. [vue3源码中再谈nextTick](./article/frame/vue/vue3源码中再谈nextTick.md)
 25. [使用JSX/TSX开发Vue3组件](article/frame/vue/使用JSX,TSX开发Vue3组件.md)
 26. [如何从0到1开发一个开源组件库](./article/frame/vue/如何从0到1开发一个开源组件库.md)
+27. [Vue keep-alive深入理解及实践总结](./article/frame/vue/Vue%20keep-alive深入理解及实践总结.md)
 
 ##### Vue源码学习
 - [手写与事件相关的实例方法](./article/frame/vue/source%20code%20study/手写与事件相关的实例方法.md)
