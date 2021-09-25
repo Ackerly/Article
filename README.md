@@ -102,6 +102,8 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 
 ## 设计模式
 1. [理解MVC](./article/design%20patterns/理解MVC.md)
+## 算法
+1. [回溯](./article/algorithm/回溯.md)
 
 ## 工具
 1. [项目中如何封装axios](./article/tool/npm/项目中如何封装axios.md)
