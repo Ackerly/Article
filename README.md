@@ -37,6 +37,7 @@
 8. [函数缓存](./article/js/ES2015/函数缓存.md)
 9. [json.stringify的妙用](./article/js/ES2015/json.stringify的妙用.md)
 10. [编写高质量JavaScript代码](./article/js/ES2015/编写高质量JavaScript代码.md)
+11. [如何把Table组件性能提升十倍](./article/other/如何把Table组件性能提升十倍.md)
 ## WebAssembly
 1. [WebAssembly入门](./article/webAssembly/webAssembly入门.md)
 
