@@ -103,8 +103,9 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 2. [HTTP的不同版本特性](./article/http/HTTP协议的不同版本及区别.md)
 3. [永久重定向(301)和临时重定向(302)](./article/http/永久重定向(301)和临时重定向(302).md)
 ## 安全
-1.[6大Web安全攻防解析](./article/security/6大Web安全攻防解析.md)
-2.[如何防止他人恶意调试你的web程序](./article/security/如何防止他人恶意调试你的web程序.md)
+1. [6大Web安全攻防解析](./article/security/6大Web安全攻防解析.md)
+2. [如何防止他人恶意调试你的web程序](./article/security/如何防止他人恶意调试你的web程序.md)
+3. [关于鉴权](./article/security/关于鉴权.md)
 
 ## 设计模式
 1. [理解MVC](./article/design%20patterns/理解MVC.md)
