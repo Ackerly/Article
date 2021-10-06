@@ -122,3 +122,6 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 ### Git
 1. [Git常用指令](./article/tool/git/git常用知识点.md)
 2. [Git工作流](./article/tool/git/git工作流.md)
+
+## 其他
+1. [前端技术调研应该怎么做](./article/other/前端技术调研应该怎么做.md)
