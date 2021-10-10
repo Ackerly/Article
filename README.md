@@ -121,6 +121,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
 3. [webpack基础篇](./article/tool/webpack/webpack基础篇.md)
+4. [webpack优化篇](./article/tool/webpack/webpack优化篇.md)
 ### Git
 1. [Git常用指令](./article/tool/git/git常用知识点.md)
 2. [Git工作流](./article/tool/git/git工作流.md)
