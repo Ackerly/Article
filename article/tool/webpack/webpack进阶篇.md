@@ -320,17 +320,256 @@ module.exports = {
 }
 ```
 npm run build，可以看到 index.html 中仅引入了 index 的 JS 文件，而 login.html 中也仅引入了 login 的 JS 文件
+## resolve 配置
+resolve 配置 webpack 如何寻找模块所对应的文件
+1. modules  
+resolve.modules 配置 webpack 去哪些目录下寻找第三方模块，默认情况下，只会去 node_modules 下寻找，如果你我们项目中某个文件夹下的模块经常被导入，不希望写很长的路径，那么就可以通过配置 resolve.modules 来简化。
+``` 
+//webpack.config.js
+module.exports = {
+    //....
+    resolve: {
+        modules: ['./src/components', 'node_modules'] //从左到右依次查找
+    }
+}
+```
+这样配置之后，import Dialog from 'dialog'，会去寻找 ./src/components/dialog，不再需要使用相对路径导入。如果在 ./src/components 下找不到的话，就会到 node_modules 下寻找。
+2. alias  
+resolve.alias 配置项通过别名把原导入路径映射成一个新的导入路径
+``` 
+//webpack.config.js
+module.exports = {
+    //....
+    resolve: {
+        alias: {
+            'react-native': '@my/react-native-web' //这个包名是我随便写的哈
+        }
+    }
+}
+```
+3. extensions  
+适配多端的项目中，可能会出现 .web.js, .wx.js，例如在转web的项目中，希望首先找 .web.js，如果没有，再找 .js。我们可以这样配置:
+``` 
+//webpack.config.js
+module.exports = {
+    //....
+    resolve: {
+        extensions: ['web.js', '.js'] //当然，你还可以配置 .json, .css
+    }
+}
+```
+``` 
+import dialog from '../dialog';
+```
+首先寻找 ../dialog.web.js ，如果不存在的话，再寻找 ../dialog.js。这在适配多端的代码中非常有用，否则就需要根据不同的平台去引入文件(以牺牲了速度为代价)。  
+配置 extensions，我们就可以缺省文件后缀，在导入语句没带文件后缀时，会自动带上extensions 中配置的后缀后，去尝试访问文件是否存在，因此要将高频的后缀放在前面，并且数组不要太长，减少尝试次数。如果没有配置 extensions，默认只会找对对应的js文件。
+4.enforceExtensio  
+resolve.enforceExtension 为 true，那么导入语句不能缺省文件后缀。
+5.mainFields  
+有一些第三方模块会提供多份代码，例如 bootstrap，可以查看 bootstrap 的 package.json 文件：
+``` 
+{
+    "style": "dist/css/bootstrap.css",
+    "sass": "scss/bootstrap.scss",
+    "main": "dist/js/bootstrap",
+}
+```
+resolve.mainFields 默认配置是 ['browser', 'main']，即首先找对应依赖 package.json 中的 brower 字段，如果没有，找 main 字段。  
+如：import 'bootstrap' 默认情况下，找得是对应的依赖的 package.json 的 main 字段指定的文件，即 dist/js/bootstrap。  
+假设希望，import 'bootsrap' 默认去找 css 文件的话，可以配置 resolve.mainFields 为:
+``` 
+//webpack.config.js
+module.exports = {
+    //....
+    resolve: {
+        mainFields: ['style', 'main'] 
+    }
+}
+```
+##  区分不同的环境
+创建多个配置文件，如: webpack.base.js、webpack.dev.js、webpack.prod.
+- webpack.base.js 定义公共的配置
+- webpack.dev.js：定义开发环境的配置
+- webpack.prod.js：定义生产环境的配置
 
+webpack-merge 专为 webpack 设计，提供了一个 merge 函数，用于连接数组，合并对象
+``` 
+npm install webpack-merge -D
+```
+``` 
+const merge = require('webpack-merge');
+merge({
+    devtool: 'cheap-module-eval-source-map',
+    module: {
+        rules: [
+            {a: 1}
+        ]
+    },
+    plugins: [1,2,3]
+}, {
+    devtool: 'none',
+    mode: "production",
+    module: {
+        rules: [
+            {a: 2},
+            {b: 1}
+        ]
+    },
+    plugins: [4,5,6],
+});
+//合并后的结果为
+{
+    devtool: 'none',
+    mode: "production",
+    module: {
+        rules: [
+            {a: 1},
+            {a: 2},
+            {b: 1}
+        ]
+    },
+    plugins: [1,2,3,4,5,6]
+}
+```
+webpack.config.base.js 中是通用的 webpack 配置，以 webpack.config.dev.js 为例，如下：
+``` 
+//webpack.config.dev.js
+const merge = require('webpack-merge');
+const baseWebpackConfig = require('./webpack.config.base');
 
+module.exports = merge(baseWebpackConfig, {
+    mode: 'development'
+    //...其它的一些配置
+});
+```
+修改我们的 package.json，指定对应的 config 
+``` 
+//package.json
+{
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development webpack-dev-server --config=webpack.config.dev.js",
+        "build": "cross-env NODE_ENV=production webpack --config=webpack.config.prod.js"
+    },
+}
+```
+## 定义环境变量
+使用 webpack 内置插件 DefinePlugin 来定义环境变量。DefinePlugin 中的每个键，是一个标识符.
+- 如果 value 是一个字符串，会被当做 code 片段
+- 如果 value 不是一个字符串，会被stringify
+- 如果 value 是一个对象，正常对象定义即可
+- 如果 key 中有 typeof，它只针对 typeof 调用定义
+``` 
+//webpack.config.dev.js
+const webpack = require('webpack');
+module.exports = {
+    plugins: [
+        new webpack.DefinePlugin({
+            DEV: JSON.stringify('dev'), //字符串
+            FLAG: 'true' //FLAG 是个布尔类型
+        })
+    ]
+```
+``` 
+//index.js
+if(DEV === 'dev') {
+    //开发环境
+}else {
+    //生产环境
+}
+```
+## 利用webpack解决跨域问题
+前端在3000端口，服务端在4000端口，我们通过 webpack 配置的方式去实现跨域。
+本地创建一个 server.js
+``` 
+let express = require('express');
 
+let app = express();
 
+app.get('/api/user', (req, res) => {
+    res.json({name: 'ces'});
+});
 
-
-
-
-
-
-
+app.listen(4000);
+```
+执行代码(run code)，可以在浏览器中访问到此接口: http://localhost:4000/api/user。  
+在 index.js 中请求 /api/user，修改 index.js 如下:  
+``` 
+//需要将 localhost:3000 转发到 localhost:4000（服务端） 端口
+fetch("/api/user")
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
+```
+**配置代理**
+修改webpack配置
+``` 
+//webpack.config.js
+module.exports = {
+    //...
+    devServer: {
+        proxy: {
+            "/api": "http://localhost:4000"
+        }
+    }
+}
+```
+后端提供的接口并不包含 /api，即：/user，/info、/list 等，配置代理时不可能罗列出每一个api。  
+修改我们的服务端代码  
+尽管后端的接口并不包含 /api，我们在请求后端接口时，仍然以 /api 开头，在配置代理时，去掉 /api，修改配置:
+``` 
+//webpack.config.js
+module.exports = {
+    //...
+    devServer: {
+        proxy: {
+            '/api': {
+                target: 'http://localhost:4000',
+                pathRewrite: {
+                    '/api': ''
+                }
+            }
+        }
+    }
+}
+```
+## 前端模拟数据
+mocker-api 为 REST API 创建模拟 API。在没有实际 REST API 服务器的情况下测试应用程序时，它会很有用。
+1. 安装 mocker-api:
+``` 
+npm install mocker-api -D
+```
+2. 新建mock文件夹，新建 mocker.js.文件
+``` 
+module.exports = {
+    'GET /user': {name: 'ces'},
+    'POST /login/account': (req, res) => {
+        const { password, username } = req.body
+        if (password === '888888' && username === 'admin') {
+            return res.send({
+                status: 'ok',
+                code: 0,
+                token: 'sdfsdfsdfdsf',
+                data: { id: 1, name: 'ces' }
+            })
+        } else {
+            return res.send({ status: 'error', code: 403 })
+        }
+    }
+}
+```
+3, 修改 webpack.config.base.js
+``` 
+const apiMocker = require('mocker-api');
+module.export = {
+    //...
+    devServer: {
+        before(app){
+            apiMocker(app, path.resolve('./mock/mocker.js'))
+        }
+    }
+}
+```
+4. 重启 npm run dev
 
 参考:
 [带你深度解锁Webpack系列(进阶篇)](https://juejin.cn/post/6844904084927938567)
