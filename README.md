@@ -49,7 +49,8 @@
 ## 框架
 1. [寻找框架设计的平衡点](article/frame/寻找框架设计的平衡点.md)
 ### React
-1.[编写弹性组件](./article/frame/react/编写弹性组件.md)
+1. [编写弹性组件](./article/frame/react/编写弹性组件.md)
+2. [react开发34个技巧](./article/frame/react/react开发34个技巧.md)
 ### Vue
 1. [vue组件将传值的几种方式](
 article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
