@@ -714,7 +714,662 @@ export default class Ten extends React.Component {
 }
 ```
 ## PropTypes
+场景:检测传入子组件的数据类型  
+类型检查PropTypes自React v15.5起已弃用，请使用prop-types
+``` 
+// 旧的写法
+class PropTypeOne extends React.Component {
+  render() {
+    return (
+      <div>
+        <div>{this.props.email}</div>
+        <div>{this.props.name}</div>
+      </div>
+    );
+  }
+}
 
+PropTypeOne.propTypes = {
+  name: PropTypes.string, //值可为array,bool,func,number,object,symbol
+  email: function(props, propName, componentName) { //自定义校验
+    if (
+      !/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test(
+        props[propName]
+      )
+    ) {
+      return new Error(
+        "组件" + componentName + "里的属性" + propName + "不符合邮箱的格式"
+      );
+    }
+  },
+};
+```
+利用 ES7 的静态属性关键字 static
+``` 
+class PropTypeTwo extends React.Component {
+  static propTypes = {
+      name:PropTypes.string
+  };
+  render() {
+    return (
+      <div>
+        <div>{this.props.name}</div>
+      </div>
+    );
+  }
+}
+```
+## 使用类字段声明语法
+在不使用构造函数的情况下初始化本地状态，并通过使用箭头函数声明类方法，而无需额外对它们进行绑定
+``` 
+class Counter extends Component {
+  state = { value: 0 };
+
+  handleIncrement = () => {
+    this.setState(prevState => ({
+      value: prevState.value + 1
+    }));
+  };
+
+  handleDecrement = () => {
+    this.setState(prevState => ({
+      value: prevState.value - 1
+    }));
+  };
+
+  render() {
+    return (
+      <div>
+        {this.state.value}
+
+        <button onClick={this.handleIncrement}>+</button>
+        <button onClick={this.handleDecrement}>-</button>
+      </div>
+    )
+  }
+}
+```
+## 异步组件
+安装 react-loadable ,babel插件安装 syntax-dynamic-import. react-loadable是通过webpack的异步import实现的
+``` 
+const Loading = () => {
+  return <div>loading</div>;
+};
+
+const LoadableComponent = Loadable({
+  loader: () => import("../../components/TwoTen/thirteen"),
+  loading: Loading
+});
+
+export default class Thirteen extends React.Component {
+  render() {
+    return <LoadableComponent></LoadableComponent>;
+  }
+}
+```
+## 动态组件
+利用三元表达式判断组件是否显示
+``` 
+class FourteenChildOne extends React.Component {
+    render() {
+        return <div>这是动态组件 1</div>;
+    }
+}
+
+class FourteenChildTwo extends React.Component {
+    render() {
+        return <div>这是动态组件 2</div>;
+    }
+}
+
+export default class Fourteen extends React.Component {
+  state={
+      oneShowFlag:true
+  }
+  tab=()=>{
+      this.setState({oneShowFlag:!this.state.oneShowFlag})
+  }
+  render() {
+    const {oneShowFlag} = this.state
+    return (<div>
+        <Button type="primary" onClick={this.tab}>显示组件{oneShowFlag?2:1}</Button>
+        {oneShowFlag?<FourteenChildOne></FourteenChildOne>:<FourteenChildTwo></FourteenChildTwo>}
+    </div>);
+  }
+}
+```
+## 递归组件
+利用React.Fragment或者 div 包裹循环
+``` 
+class Item extends React.Component {
+  render() {
+    const list = this.props.children || [];
+    return (
+      <div className="item">
+        {list.map((item, index) => {
+          return (
+            <React.Fragment key={index}>
+              <h3>{item.name}</h3>
+              {// 当该节点还有children时，则递归调用本身
+              item.children && item.children.length ? (
+                <Item>{item.children}</Item>
+              ) : null}
+            </React.Fragment>
+          );
+        })}
+      </div>
+    );
+  }
+}
+```
+## 受控组件和不受控组件
+受控组件:组件的状态通过React 的状态值 state 或者 props 控制  
+``` 
+class Controll extends React.Component {
+  constructor() {
+    super();
+    this.state = { value: "这是受控组件默认值" };
+  }
+  render() {
+    return <div>{this.state.value}</div>;
+  }
+}
+```
+不受控组件:组件不被 React的状态值控制,通过 dom 的特性或者React 的ref 来控制
+``` 
+class NoControll extends React.Component {
+  render() {
+    return <div>{this.props.value}</div>;
+  }
+}
+```
+导入代码:
+``` 
+export default class Sixteen extends React.Component {
+  componentDidMount() {
+    console.log("ref 获取的不受控组件值为", this.refs["noControll"]);
+  }
+  render() {
+    return (
+      <div>
+        <Controll></Controll>
+        <NoControll
+          value={"这是不受控组件传入值"}
+          ref="noControll"
+        ></NoControll>
+      </div>
+    );
+  }
+}
+```
+## 高阶组件(HOC)
+将组件作为参数或者返回一个组件的组件
+``` 
+// 属性代理
+import React,{Component} from 'react';
+
+const Seventeen = WrappedComponent =>
+  class extends React.Component {
+    render() {
+      const props = {
+        ...this.props,
+        name: "这是高阶组件"
+      };
+      return <WrappedComponent {...props} />;
+    }
+  };
+
+class WrappedComponent extends React.Component {
+  state={
+     baseName:'这是基础组件' 
+  }
+  render() {
+    const {baseName} = this.state
+    const {name} = this.props
+    return <div>
+        <div>基础组件值为{baseName}</div>
+        <div>通过高阶组件属性代理的得到的值为{name}</div>
+    </div>
+  }
+}
+
+export default Seventeen(WrappedComponent)
+```
+``` 
+// 反向继承,利用 super 改变改组件的 this 方向,继而就可以在该组件处理容器组件的一些值
+  const Seventeen = (WrappedComponent)=>{
+    return class extends WrappedComponent {
+        componentDidMount() {
+            this.setState({baseName:'这是通过反向继承修改后的基础组件名称'})
+        }
+        render(){
+            return super.render();
+        }
+    }
+}
+
+class WrappedComponent extends React.Component {
+  state={
+     baseName:'这是基础组件' 
+  }
+  render() {
+    const {baseName} = this.state
+    return <div>
+        <div>基础组件值为{baseName}</div>
+    </div>
+  }
+}
+
+export default Seventeen(WrappedComponent);
+```
+## .元素是否显示
+``` 
+flag?<div>显示内容</div>:''
+ flag&&<div>显示内容</div>
+```
+## Dialog 组件创建
+通过 state 控制组件是否显示
+``` 
+ class NineteenChildOne extends React.Component {
+  render() {
+    const Dialog = () => <div>这是弹层1</div>;
+
+    return this.props.dialogOneFlag && <Dialog />;
+  }
+}
+```
+通过ReactDom.render创建弹层-挂载根节点外层,通过原生的createElement,appendChild, removeChild和react 的ReactDOM.render,ReactDOM.unmountComponentAtNode来控制元素的显示和隐藏
+NineteenChild.jsx
+``` 
+import ReactDOM from "react-dom";
+
+class Dialog {
+  constructor(name) {
+    this.div = document.createElement("div");
+    this.div.style.width = "200px";
+    this.div.style.height = "200px";
+    this.div.style.backgroundColor = "green";
+    this.div.style.position = "absolute";
+    this.div.style.top = "200px";
+    this.div.style.left = "400px";
+    this.div.id = "dialog-box";
+  }
+  show(children) {
+    // 销毁
+    const dom = document.querySelector("#dialog-box");
+    if(!dom){ //兼容多次点击
+      // 显示
+      document.body.appendChild(this.div);
+      ReactDOM.render(children, this.div);
+    }
+  }
+  destroy() {
+    // 销毁
+    const dom = document.querySelector("#dialog-box");
+    if(dom){//兼容多次点击
+      ReactDOM.unmountComponentAtNode(this.div);
+      dom.parentNode.removeChild(dom);
+    }
+  }
+}
+export default {
+  show: function(children) {
+    new Dialog().show(children);
+  },
+  hide: function() {
+    new Dialog().destroy();
+  }
+};
+```
+nineteen.jsx
+``` 
+twoSubmit=()=>{
+    Dialog.show('这是弹层2')
+  }
+
+  twoCancel=()=>{
+    Dialog.hide()
+  }
+```
+## React.memo
+当类组件的输入属性相同时，可以使用 pureComponent 或 shouldComponentUpdate 来避免组件的渲染
+``` 
+import React from "react";
+
+function areEqual(prevProps, nextProps) {
+  /*
+  如果把 nextProps 传入 render 方法的返回结果与
+  将 prevProps 传入 render 方法的返回结果一致则返回 true，
+  否则返回 false
+  */
+  if (prevProps.val === nextProps.val) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// React.memo()两个参数,第一个是纯函数,第二个是比较函数
+export default React.memo(function twentyChild(props) {
+  console.log("MemoSon rendered : " + Date.now());
+  return <div>{props.val}</div>;
+}, areEqual);
+```
+## React.PureComponent
+作用:
+1. React.PureComponent 和 React.Component类似，都是定义一个组件类。
+2. 不同是React.Component没有实现shouldComponentUpdate()，而 React.PureComponent通过props和state的浅比较实现了。
+3. React.PureComponent是作用在类中,而React.memo是作用在函数中。
+4. 如果组件的props和state相同时，render的内容也一致，那么就可以使用React.PureComponent了,这样可以提高组件的性能
+``` 
+class TwentyOneChild extends React.PureComponent{  //组件直接继承React.PureComponent
+  render() {
+    return <div>{this.props.name}</div>
+  }
+}
+
+export default class TwentyOne extends React.Component{
+    render(){
+        return (
+            <div>
+              <TwentyOneChild name={'这是React.PureComponent的使用方法'}></TwentyOneChild>
+            </div>
+        )
+    }
+}
+```
+## React.Component
+基于ES6 class的React组件,React允许定义一个class或者function作为组件，那么定义一个组件类，就需要继承React.Component
+``` 
+export default class TwentyTwo extends React.Component{ //组件定义方法
+    render(){
+        return (
+            <div>这是技巧22</div>
+        )
+    }
+}
+```
+## 在JSX 打印 falsy 值
+定义:
+1. falsy 值 (虚值) 是在 Boolean 上下文中认定为 false 的值;
+2. 值有 0,"",'',``,null,undefined,NaN
+``` 
+export default class TwentyThree extends React.Component{
+    state={myVariable:null}
+    render(){
+        return (
+            <div>{String(this.state.myVariable)}</div>
+        )
+    }
+}
+```
+虚值如果直接展示,会发生隐式转换,为 false,所以页面不显示
+## ReactDOM.createPortal
+组件的render函数返回的元素会被挂载在它的父级组件上,createPortal 提供了一种将子节点渲染到存在于父组件以外的 DOM 节点的优秀的方案
+``` 
+import React from "react";
+import ReactDOM from "react-dom";
+import {Button} from "antd"
+
+const modalRoot = document.body;
+
+class Modal extends React.Component {
+  constructor(props) {
+    super(props);
+    this.el = document.createElement("div");
+    this.el.style.width = "200px";
+    this.el.style.height = "200px";
+    this.el.style.backgroundColor = "green";
+    this.el.style.position = "absolute";
+    this.el.style.top = "200px";
+    this.el.style.left = "400px";
+  }
+
+  componentDidMount() {
+    modalRoot.appendChild(this.el);
+  }
+
+  componentWillUnmount() {
+    modalRoot.removeChild(this.el);
+  }
+
+  render() {
+    return ReactDOM.createPortal(this.props.children, this.el);
+  }
+}
+
+function Child() {
+  return (
+    <div className="modal">
+      这个是通过ReactDOM.createPortal创建的内容
+    </div>
+  );
+}
+
+export default class TwentyFour extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { clicks: 0 };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(prevState => ({
+      clicks: prevState.clicks + 1
+    }));
+  }
+
+  render() {
+    return (
+      <div>
+          <Button onClick={this.handleClick}>点击加1</Button>
+        <p>点击次数: {this.state.clicks}</p>
+        <Modal>
+          <Child />
+        </Modal>
+      </div>
+    );
+  }
+}
+```
+这样元素就追加到指定的元素下面啦
+## 在 React 使用innerHTML
+有些后台返回是 html 格式字段,就需要用到 innerHTML 属性
+``` 
+export default class TwentyFive extends React.Component {
+  render() {
+    return (
+      <div dangerouslySetInnerHTML={{ __html: "<span>这是渲染的 HTML 内容</span>" }}></div>
+    );
+  }
+}
+```
+## React.createElement
+``` 
+// 源码
+export default class TwentySix extends React.Component {
+  render() {
+    return (
+      <div>
+        {React.createElement(
+          "div",
+          { id: "one", className: "two" },
+          React.createElement("span", { id: "spanOne" }, "这是第一个 span 标签"),
+          React.createElement("br"),
+          React.createElement("span", { id: "spanTwo" }, "这是第二个 span 标签")
+        )}
+      </div>
+    );
+  }
+}
+```
+原理:实质上 JSX 的 dom 最后转化为 js 都是React.createElement
+``` 
+// jsx 语法
+<div id='one' class='two'>
+    <span id="spanOne">this is spanOne</span>
+    <span id="spanTwo">this is spanTwo</span>
+</div>
+
+// 转化为 js
+React.createElement(
+  "div",
+ { id: "one", class: "two" },
+ React.createElement( "span", { id: "spanOne" }, "this is spanOne"), 
+ React.createElement("span", { id: "spanTwo" }, "this is spanTwo")
+);
+```
+## React.cloneElement
+复制组件,给组件传值或者添加属性
+``` 
+React.Children.map(children, child => {
+  return React.cloneElement(child, {
+    count: _this.state.count
+  });
+});
+```
+## React.Fragment
+聚合一个子元素列表，并且不在DOM中增加额外节点
+``` 
+render() {
+    const { info } = this.state;
+    return (
+      <div>
+        {info.map((item, index) => {
+          return (
+            <React.Fragment key={index}>
+              <div>{item.name}</div>
+              <div>{item.age}</div>
+            </React.Fragment>
+          );
+        })}
+      </div>
+    );
+  }
+
+```
+## 循环元素
+``` 
+{arr.map((item,index)=>{
+  return(
+    <div key={item.id}>
+      <span>{item.name}</span>
+      <span>{item.age}</span>
+    </div>
+  )
+})}
+```
+## 给 DOM 设置和获取自定义属性
+``` 
+export default class Thirty extends React.Component {
+  click = e => {
+    console.log(e.target.getAttribute("data-row"));
+  };
+
+  render() {
+    return (
+      <div>
+        <div data-row={"属性1"} data-col={"属性 2"} onClick={this.click}>
+          点击获取属性
+        </div>
+      </div>
+    );
+  }
+```
+## 绑定事件
+``` 
+import React from "react";
+import { Button } from 'antd'
+
+export default class Three extends React.Component {
+  state = {
+    flag: true,
+    flagOne: 1
+  };
+  click(data1,data2){
+    console.log('data1 值为',data1)
+    console.log('data2 值为',data2)
+  }
+  render() {
+    return (
+      <div>
+        <Button type="primary" onClick={this.click.bind(this,'参数 1','参数 2')}>点击事件</Button>
+      </div>
+    );
+  }
+}
+```
+## React-Router
+### V3和 V4的区别
+1. V3或者说V早期版本是把router 和 layout components 分开;
+2. V4是集中式 router,通过 Route 嵌套，实现 Layout 和 page 嵌套,Layout 和 page 组件 是作为 router 的一部分;
+3. 在V3 中的 routing 规则是 exclusive，意思就是最终只获取一个 route;
+4. V4 中的 routes 默认是 inclusive 的，这就意味着多个;   可以同时匹配和呈现.如果只想匹配一个路由，可以使用Switch，在  中只有一个  会被渲染，同时可以再在每个路由添加exact，做到精准匹配
+Redirect，浏览器重定向，当多有都不匹配的时候，进行匹配
+### 使用
+``` 
+import { HashRouter as Router, Switch  } from "react-router-dom";
+
+class App extends React.Component{
+    render(){
+        const authPath = '/login' // 默认未登录的时候返回的页面，可以自行设置
+        let authed = this.props.state.authed || localStorage.getItem('authed') // 如果登陆之后可以利用redux修改该值
+        return (
+            <Router>
+                <Switch>
+                    {renderRoutes(routes, authed, authPath)}
+                </Switch>
+            </Router>
+        )
+    }
+}
+```
+V4是通过 Route 嵌套，实现 Layout 和 page 嵌套,Switch切换路由的作用
+## 样式引入方法
+内联方式
+``` 
+import React from 'react';
+
+const Header = () => {
+
+    const heading = '头部组件'
+
+    return(
+        <div style={{backgroundColor:'orange'}}>
+            <h1>{heading}</h1>
+        </div>
+    )
+}
+
+或者
+import React from 'react';
+
+const footerStyle = {
+    width: '100%',
+    backgroundColor: 'green',
+    padding: '50px',
+    font: '30px',
+    color: 'white',
+    fontWeight: 'bold'
+}
+
+export const Footer = () => {
+    return(
+        <div style={footerStyle}>
+            底部组件
+        </div>
+    )
+}
+```
+## 动态绑定 className
+``` 
+render(){
+  const flag=true
+  return (
+    <div className={flag?"active":"no-active"}>这是技巧 34</div>
+  )
+}
+```
 
 参考:  
 [React 开发必须知道的 34 个技巧](https://juejin.cn/post/6844903993278201870)
