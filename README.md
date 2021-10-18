@@ -28,6 +28,8 @@
 ## 浏览器
 1. [浏览器存储](article/browser/浏览器存储.md)
 ## JavaScript
+### ES6
+1.[ES6的使用](./article/js/ES6/ES6的使用.md)
 ### ES2015
 1. [call、apply、bind的区别和使用](./article/js/ES2015/bind、apply和call.md)
 2. [掌握事件循环](./article/js/ES2015/掌握eventLoop.md)
