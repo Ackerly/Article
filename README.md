@@ -11,7 +11,7 @@
 9. [CSS禁止用户拖拽](./article/css/CSS禁止用户拖拽.md)
 10. [让滚动嵌套时父滚动不触发](./article/css/让滚动嵌套时父滚动不触发.md)
 11. [revert关键字还原display显示元素](./article/css/revert关键字还原display显示元素.md)
-12. [抛弃Sass/Less,迎接原子化CSS时代](./article/css/抛弃Sass Less,迎接原子化CSS时代.md)
+12. [抛弃Sass/Less,迎接原子化CSS时代](./article/css/抛弃Sass%20Less,迎接原子化CSS时代.md)
 13. [借助HTML ping属性实现数据是上报](./article/css/借助HTML%20ping属性实现数据是上报.md)
 14. [CSS text-combine-upright实现字符的横向合并](./article/css/CSS%20text-combine-upright实现字符的横向合并.md)
 15. [CSS marker伪元素简介](./article/css/CSS%20marker伪元素简介.md)
@@ -29,7 +29,8 @@
 1. [浏览器存储](article/browser/浏览器存储.md)
 ## JavaScript
 ### ES6
-1.[ES6的使用](./article/js/ES6/ES6的使用.md)
+1. [ES6的使用](./article/js/ES6/ES6的使用.md)
+2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
 ### ES2015
 1. [call、apply、bind的区别和使用](./article/js/ES2015/bind、apply和call.md)
 2. [掌握事件循环](./article/js/ES2015/掌握eventLoop.md)
