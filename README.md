@@ -31,6 +31,7 @@
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
+3. [ES6的Map](./article/js/ES6/ES6的Map.md)
 ### ES2015
 1. [call、apply、bind的区别和使用](./article/js/ES2015/bind、apply和call.md)
 2. [掌握事件循环](./article/js/ES2015/掌握eventLoop.md)
@@ -119,6 +120,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 ## 架构
 1. [以前端架构师的身份，从零开始搞事](./article/architecture/以前端架构师的身份，从零开始搞事.md)
 2. [字节跳动如何落地微前端](./article/architecture/字节跳动如何落地微前端.md)
+3. [前端部署都在部署什么](article/architecture/前端部署都在部署什么.md)
 
 ## 算法
 1. [回溯](./article/algorithm/回溯.md)
