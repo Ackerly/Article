@@ -21,6 +21,7 @@
 19. [CSS实现渐变色边框](./article/css/CSS实现渐变色边框.md)
 20. [CSS实现文本“不定行数”截断](./article/css/CSS实现文本“不定行数”截断.md)
 21. [12个CSS技巧](./article/css/12个CSS技巧.md)
+22. [css实现跳动的声波](./article/css/css实现跳动的声波.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
