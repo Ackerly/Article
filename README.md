@@ -107,6 +107,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 - [jest测试环境踩坑](./article/frame/vue/test/jest测试环境踩坑.md)
 ### 小程序
 1. [如何让10万条数据的小程序列表如丝般顺滑](./article/frame/mini%20program/如何让10万条数据的小程序列表如丝般顺滑.md)
+2. [如何确保每个页面都已经登录](./article/frame/mini%20program/如何确保每个页面都已经登录.md)
 
 ### TypeScript
 1. [理解泛型](./article/frame/typescript/理解泛型.md)
