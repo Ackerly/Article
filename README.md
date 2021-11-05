@@ -50,6 +50,7 @@
 12. [深入学习JSON.stringify](./article/js/ES2015/深入学习JSON.stringify.md)
 13. [详解NaN](./article/js/ES2015/详解NaN.md)
 14. [掌握正则表达式](./article/js/ES2015/掌握正则表达式.md)
+15. [关闭浏览器页面选项卡](./article/js/ES2015/关闭浏览器页面选项卡.md)
 ## WebAssembly
 1. [WebAssembly入门](./article/webAssembly/webAssembly入门.md)
 
