@@ -23,6 +23,7 @@
 21. [12个CSS技巧](./article/css/12个CSS技巧.md)
 22. [css实现跳动的声波](./article/css/css实现跳动的声波.md)
 23. [CSS实现3D穿梭](./article/css/CSS实现3D穿梭.md)
+24. [炫酷文字粒子效果实现](./article/css/炫酷文字粒子效果实现.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
