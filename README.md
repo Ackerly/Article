@@ -30,6 +30,7 @@
 2. [重绘和回流及其优化](./article/HTML/重绘和回流及其优化.md)
 3. [HTML5Video视频与WebVTT字幕](./article/HTML/HTML5Video视频与WebVTT字幕.md)
 4. [前端动画之React和Vue都在用的FLIP思想实战](./article/other/前端动画之React%20和%20Vue%20都在用的%20FLIP%20思想实战.md)
+5. [web 20Animation](./article/HTML/web%20Animation.md)
 ## 浏览器
 1. [浏览器存储](article/browser/浏览器存储.md)
 ## JavaScript
@@ -158,6 +159,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 ### Git
 1. [Git常用指令](./article/tool/git/git常用知识点.md)
 2. [Git工作流](./article/tool/git/git工作流.md)
+3. [git小知识技巧](./article/tool/git/git小知识技巧.md)
 
 ## 其他
 1. [前端技术调研应该怎么做](./article/other/前端技术调研应该怎么做.md)
