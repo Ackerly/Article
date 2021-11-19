@@ -57,6 +57,7 @@
 16. [为什么𠮷𠮷𠮷的长度不为3](./article/js/ES2015/为什么%20𠮷𠮷𠮷的长度不为3.md)
 17. [原型和原型链](./article/js/ES2015/原型和原型链.md)
 18. [你不知道的Blob](./article/js/ES2015/你不知道的Blob.md)
+19. [了解setTimeout](./article/js/ES2015/了解setTimeout.md)
 ## WebAssembly
 1. [WebAssembly入门](./article/webAssembly/webAssembly入门.md)
 
