@@ -58,6 +58,7 @@
 17. [原型和原型链](./article/js/ES2015/原型和原型链.md)
 18. [你不知道的Blob](./article/js/ES2015/你不知道的Blob.md)
 19. [了解setTimeout](./article/js/ES2015/了解setTimeout.md)
+20. [数组reduce高级用法](./article/js/ES2015/数组reduce高级用法.md)
 ## WebAssembly
 1. [WebAssembly入门](./article/webAssembly/webAssembly入门.md)
 
