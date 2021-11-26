@@ -144,6 +144,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 4. [页面可视化搭建工具技术要点](./article/architecture/页面可视化搭建工具技术要点.md)
 5. [谈谈依赖和解耦](./article/architecture/谈谈依赖和解耦.md)
 6. [项目中跟踪和分析函数调用链](./article/architecture/项目中跟踪和分析函数调用链.md)
+7. [前端构建大型应用](./article/architecture/前端构建大型应用.md)
 
 ## 算法
 1. [回溯](./article/algorithm/回溯.md)
