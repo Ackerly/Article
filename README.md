@@ -147,7 +147,8 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 7. [前端构建大型应用](./article/architecture/前端构建大型应用.md)
 8. [VSCode 事件系统设计](./article/architecture/VSCode%20事件系统设计.md)
 9. [响应式编程在前端领域的应用](./article/architecture/响应式编程在前端领域的应用.md)
-10. [VSCode IPC通信机制](./article/architecture/VSCode IPC通信机制.md)
+10. [VSCode IPC通信机制](./article/architecture/VSCode%20IPC通信机制.md)
+11. [在线文档的网络层设计思考](./article/architecture/在线文档的网络层设计思考.md)
 
 ## 算法
 1. [回溯](./article/algorithm/回溯.md)
