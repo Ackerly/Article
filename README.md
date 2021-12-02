@@ -151,6 +151,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 11. [在线文档的网络层设计思考](./article/architecture/在线文档的网络层设计思考.md)
 12. [web前端性能分析的工具](./article/architecture/web前端性能分析的工具.md)
 13. [前端监控体系搭建](./article/architecture/前端监控体系搭建.md)
+14. [在线Excel项目设计](./article/architecture/在线Excel项目设计.md)
 
 ## 算法
 1. [回溯](./article/algorithm/回溯.md)
