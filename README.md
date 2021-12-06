@@ -164,6 +164,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 4. [算法的时间复杂度和空间复杂度](./article/algorithm/算法的时间复杂度和空间复杂度.md)
 5. [背包问题](./article/algorithm/背包问题.md)
 6. [反转字符串](./article/algorithm/反转字符串.md)
+7. [分治法求最大子数组](./article/algorithm/分治法求最大子数组.md)
 
 ## 工具
 1. [项目中如何封装axios](./article/tool/npm/项目中如何封装axios.md)
