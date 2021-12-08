@@ -40,7 +40,7 @@
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
 3. [ES6的Map](./article/js/ES6/ES6的Map.md)
 ### ES2015
-1. [call、apply、bind的区别和使用](./article/js/ES2015/bind、apply和call.md)
+1. [call、apply、bind的区别和使用](article/js/ES2015/bind原理、使用场景及模拟实现.md)
 2. [掌握事件循环](./article/js/ES2015/掌握eventLoop.md)
 3. [深拷贝实现](./article/js/ES2015/深拷贝实现.md)
 4. [Javascript高阶函数](./article/js/ES2015/Javascript高阶函数.md)
@@ -66,7 +66,8 @@
 ## 存储
 1. [了解cookie](./article/storage/了解cookie.md)
 ## 框架
-1. [寻找框架设计的平衡点](article/frame/寻找框架设计的平衡点.md)
+1. [寻找框架设计的平衡点](./article/frame/寻找框架设计的平衡点.md)
+2. [组件配置化](./article/frame/组件配置化.md)
 ### React
 1. [编写弹性组件](./article/frame/react/编写弹性组件.md)
 2. [react开发34个技巧](./article/frame/react/react开发34个技巧.md)
