@@ -40,7 +40,7 @@
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
 3. [ES6的Map](./article/js/ES6/ES6的Map.md)
 ### ES2015
-1. [call、apply、bind的区别和使用](article/js/ES2015/bind原理、使用场景及模拟实现.md)
+1. [bind原理、使用场景及模拟实现](article/js/ES2015/bind原理、使用场景及模拟实现.md)
 2. [掌握事件循环](./article/js/ES2015/掌握eventLoop.md)
 3. [深拷贝实现](./article/js/ES2015/深拷贝实现.md)
 4. [Javascript高阶函数](./article/js/ES2015/Javascript高阶函数.md)
@@ -60,6 +60,7 @@
 18. [你不知道的Blob](./article/js/ES2015/你不知道的Blob.md)
 19. [了解setTimeout](./article/js/ES2015/了解setTimeout.md)
 20. [数组reduce高级用法](./article/js/ES2015/数组reduce高级用法.md)
+21. [实现一个倒计时组件](./article/frame/vue/实现一个倒计时组件.md)
 ## WebAssembly
 1. [WebAssembly入门](./article/webAssembly/webAssembly入门.md)
 
