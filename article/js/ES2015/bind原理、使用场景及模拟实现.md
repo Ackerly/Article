@@ -220,7 +220,122 @@ obj.friend;
 ```
 上面例子中，运行结果this.value 输出为 undefined，这不是全局value 也不是foo对象中的value，这说明 bind 的 this 对象失效了，new 的实现中生成一个新的对象，这个时候的 this指向的是 obj。  
 可以通过修改返回函数的原型来实现
+```
+Function.prototype.bind2 = function (context) {
+    var self = this;
+    var args = Array.prototype.slice.call(arguments, 1);
 
+    var fBound = function () {
+        var bindArgs = Array.prototype.slice.call(arguments);
+        
+        // 注释1
+        return self.apply(
+            this instanceof fBound ? this : context, 
+            args.concat(bindArgs)
+        );
+    }
+    // 注释2
+    fBound.prototype = this.prototype;
+    return fBound;
+}
+```
+- 注释1：
+    - 当作为构造函数时，this 指向实例，此时 this instanceof fBound 结果为 true，可以让实例获得来自绑定函数的值，即上例中实例会具有 habit 属性。
+    - 当作为普通函数时，this 指向 window，此时结果为 false，将绑定函数的 this 指向 context
+- 注释2
+    - 修改返回函数的 prototype 为绑定函数的 prototype，实例就可以继承绑定函数的原型中的值，即上例中 obj 可以获取到 bar 原型上的 friend
 
+**模拟实现第四步**  
+fBound.prototype = this.prototype有一个缺点，直接修改 fBound.prototype 的时候，也会直接修改 this.prototype。  
+``` 
+// 测试用例
+var value = 2;
+var foo = {
+    value: 1
+};
+function bar(name, age) {
+    this.habit = 'shopping';
+    console.log(this.value);
+    console.log(name);
+    console.log(age);
+}
+bar.prototype.friend = 'kevin';
+
+var bindFoo = bar.bind2(foo, 'Jack'); // bind2
+var obj = new bindFoo(20); // 返回正确
+// undefined
+// Jack
+// 20
+
+obj.habit; // 返回正确
+// shopping
+
+obj.friend; // 返回正确
+// kevin
+
+obj.__proto__.friend = "Kitty"; // 修改原型
+
+bar.prototype.friend; // 返回错误，这里被修改了
+// Kitty
+```
+解决方案是用一个空对象作为中介，把 fBound.prototype 赋值为空对象的实例（原型式继承）。  
+直接使用ES5的 Object.create()方法生成一个新对象  
+``` 
+fBound.prototype = Object.create(this.prototype);
+```
+不过 bind 和 Object.create()都是ES5方法，部分IE浏览器（IE < 9）并不支持，Polyfill中不能用 Object.create()实现 bind，不过原理是一样的。  
+最终： 
+``` 
+Function.prototype.bind2 = function (context) {
+    var self = this;
+    var args = Array.prototype.slice.call(arguments, 1);
+
+    var fNOP = function () {};
+
+    var fBound = function () {
+        var bindArgs = Array.prototype.slice.call(arguments);
+        return self.apply(
+            this instanceof fNOP ? this : context, 
+            args.concat(bindArgs)
+        );
+    }
+
+    fNOP.prototype = this.prototype;
+    fBound.prototype = new fNOP();
+    return fBound;
+}
+```
+
+**模拟实现第五步**  
+有一个问题是调用 bind 的不是函数，这时候需要抛出异常。  
+``` 
+if (typeof this !== "function") {
+  throw new Error("Function.prototype.bind - what is trying to be bound is not callable");
+}
+```
+
+```                          
+// 第五版
+Function.prototype.bind2 = function (context) {
+
+    if (typeof this !== "function") {
+      throw new Error("Function.prototype.bind - what is trying to be bound is not callable");
+    }
+
+    var self = this;
+    var args = Array.prototype.slice.call(arguments, 1);
+
+    var fNOP = function () {};
+
+    var fBound = function () {
+        var bindArgs = Array.prototype.slice.call(arguments);
+        return self.apply(this instanceof fNOP ? this : context, args.concat(bindArgs));
+    }
+
+    fNOP.prototype = this.prototype;
+    fBound.prototype = new fNOP();
+    return fBound;
+}
+```
 参考：  
 [深度解析bind原理、使用场景及模拟实现](https://github.com/yygmind/blog/issues/23)
