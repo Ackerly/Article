@@ -142,6 +142,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 1. [理解MVC](./article/design%20patterns/理解MVC.md)
 2. [Abstract Factory(抽象工厂)](./article/design%20patterns/Abstract%20Factory(抽象工厂).md)
 3. [Factory Method(工厂方法](./article/design%20patterns/Factory%20Method(工厂方法).md)
+4. [Prototype(原型模式)](./article/design%20patterns/Prototype(原型模式).md)
 ## 架构
 1. [以前端架构师的身份，从零开始搞事](./article/architecture/以前端架构师的身份，从零开始搞事.md)
 2. [字节跳动如何落地微前端](./article/architecture/字节跳动如何落地微前端.md)
