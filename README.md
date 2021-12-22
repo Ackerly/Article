@@ -147,6 +147,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 6. [Adapter(适配器模式)](./article/design%20patterns/Adapter(适配器模式).md)
 7. [Composite组合模式](./article/design%20patterns/Composite组合模式.md)
 8. [Decorator(装饰器模式)](./article/design%20patterns/Decorator(装饰器模式).md)
+9. [Facade(外观模式)](./article/design%20patterns/Facade(外观模式).md)
 ## 架构
 1. [以前端架构师的身份，从零开始搞事](./article/architecture/以前端架构师的身份，从零开始搞事.md)
 2. [字节跳动如何落地微前端](./article/architecture/字节跳动如何落地微前端.md)
