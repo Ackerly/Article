@@ -106,6 +106,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 29. [vue插槽](./article/frame/vue/vue插槽.md)
 30. [vue3+TS可视化开发的研究](./article/frame/vue/vue3+TS可视化开发的研究.md)
 31. [前端模板引擎](./article/frame/前端模板引擎.md)
+32. [Vue3.2更新内容](./article/frame/vue/Vue3.2更新内容.md)
 
 ##### Vue源码学习
 - [手写与事件相关的实例方法](./article/frame/vue/source%20code%20study/手写与事件相关的实例方法.md)
@@ -148,6 +149,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 7. [Composite组合模式](./article/design%20patterns/Composite组合模式.md)
 8. [Decorator(装饰器模式)](./article/design%20patterns/Decorator(装饰器模式).md)
 9. [Facade(外观模式)](./article/design%20patterns/Facade(外观模式).md)
+10. [Flyweight享元模式](./article/design%20patterns/Flyweight享元模式.md)
 ## 架构
 1. [以前端架构师的身份，从零开始搞事](./article/architecture/以前端架构师的身份，从零开始搞事.md)
 2. [字节跳动如何落地微前端](./article/architecture/字节跳动如何落地微前端.md)
