@@ -35,6 +35,7 @@
 ## 浏览器
 1. [浏览器存储](article/browser/浏览器存储.md)
 ## JavaScript
+1. [V8编译浅谈](./js/../article/js/V8编译浅谈.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
