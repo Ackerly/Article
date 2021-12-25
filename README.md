@@ -35,7 +35,8 @@
 ## 浏览器
 1. [浏览器存储](article/browser/浏览器存储.md)
 ## JavaScript
-1. [V8编译浅谈](./js/../article/js/V8编译浅谈.md)
+1. [V8编译浅谈](./article/js/V8编译浅谈.md)
+2. [Axios如何实现请求重试](./article/js/Axios如何实现请求重试.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
@@ -191,6 +192,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 3. [webpack基础篇](./article/tool/webpack/webpack基础篇.md)
 4. [webpack优化篇](./article/tool/webpack/webpack优化篇.md)
 5. [webpack进阶篇](article/tool/webpack/webpack进阶篇.md)
+6. [webpack模块热替换(HMR)原理](./article/tool/webpack/webpack模块热替换(HMR)原理.md)
 ### Git
 1. [Git常用指令](./article/tool/git/git常用知识点.md)
 2. [Git工作流](./article/tool/git/git工作流.md)
