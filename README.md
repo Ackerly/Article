@@ -152,6 +152,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 8. [Decorator(装饰器模式)](./article/design%20patterns/Decorator(装饰器模式).md)
 9. [Facade(外观模式)](./article/design%20patterns/Facade(外观模式).md)
 10. [Flyweight享元模式](./article/design%20patterns/Flyweight享元模式.md)
+11. [Chain Responsibility(职责链模式)](./article/design%20patterns/Chain%20of%20Responsibility(职责链模式).md)
 ## 架构
 1. [以前端架构师的身份，从零开始搞事](./article/architecture/以前端架构师的身份，从零开始搞事.md)
 2. [字节跳动如何落地微前端](./article/architecture/字节跳动如何落地微前端.md)
@@ -180,6 +181,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 5. [背包问题](./article/algorithm/背包问题.md)
 6. [反转字符串](./article/algorithm/反转字符串.md)
 7. [分治法求最大子数组](./article/algorithm/分治法求最大子数组.md)
+8. [加权轮询算法](./article/algorithm/加权轮询算法.md)
 
 ## 工具
 1. [项目中如何封装axios](./article/tool/npm/项目中如何封装axios.md)
