@@ -15,5 +15,22 @@ Angular 或 Vue 这类前端框架采用双向绑定视图更新技术，即对�
 在业务代码使用对象与修改对象的地方插入这段逻辑，显然会增加巨大的维护成本，如何做到业务层无感知呢？  
 代理模式可以很好的解决这个问题，其实业务层拿到的对象已经是代理对象了，它在被访问与被修改时，都会执行固定的钩子做视图绑定与视图刷新。
 
+![image](./../../assets/images/design%20patterns/Proxy.png)
+
+Subject 定义的是 RealSubject 与 Proxy 共用的接口，这样任何使用 RealSubject 的地方都可以使用 Proxy。  
+RealSubject 指的是原始对象，Proxy 是一个代理实体。  
+当客户端要访问 subject 时，第一层访问的是 Proxy 代理，由这个代理将 realSubject 转发给客户端  
+``` 
+// 对象 obj
+const proxy = new Proxy(obj, {
+  get(target,key) {}
+  set(target,key,value) {}
+})
+```
+
+## 缺点
+代理模式会增加微弱的开销，因此请不要将所有对象都变成代理，没有意义的代理只会徒增程序开销。  
+另外代理对象过多，也会导致调试困难，因为代理层的存在，往往可能忽略这一层带来的影响，导致忘记这个对象其实是一个代理。
+
 参考:  
 [代理模式](https://github.com/ascoders/weekly/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/178.%E7%B2%BE%E8%AF%BB%E3%80%8A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20-%20Proxy%20%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F%E3%80%8B.md)

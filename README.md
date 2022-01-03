@@ -152,7 +152,11 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 8. [Decorator(装饰器模式)](./article/design%20patterns/Decorator(装饰器模式).md)
 9. [Facade(外观模式)](./article/design%20patterns/Facade(外观模式).md)
 10. [Flyweight享元模式](./article/design%20patterns/Flyweight享元模式.md)
-11. [Chain Responsibility(职责链模式)](./article/design%20patterns/Chain%20of%20Responsibility(职责链模式).md)
+11. [Chain Responsibility(职责链模式)](./article/design%20patterns/Chain%20of%20Responsibility(职责链模式).md)  
+12. [Proxy代理模式](./article/design%20patterns/Proxy代理模式.md)
+13. [Command(命令模式)](./article/design%20patterns/Command(命令模式).md)
+14. [Interpreter解释器模式](./article/design%20patterns/Interpreter解释器模式.md)
+15. [Iterator 迭代器模式](./article/design%20patterns/Iterator%20迭代器模式.md)
 ## 架构
 1. [以前端架构师的身份，从零开始搞事](./article/architecture/以前端架构师的身份，从零开始搞事.md)
 2. [字节跳动如何落地微前端](./article/architecture/字节跳动如何落地微前端.md)
