@@ -110,6 +110,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 30. [vue3+TS可视化开发的研究](./article/frame/vue/vue3+TS可视化开发的研究.md)
 31. [前端模板引擎](./article/frame/前端模板引擎.md)
 32. [Vue3.2更新内容](./article/frame/vue/Vue3.2更新内容.md)
+33. [vue3之watchEffect用途](./article/frame/vue/vue3之watchEffect用途.md)
 
 ##### Vue源码学习
 - [手写与事件相关的实例方法](./article/frame/vue/source%20code%20study/手写与事件相关的实例方法.md)
