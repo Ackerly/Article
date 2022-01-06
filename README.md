@@ -206,6 +206,9 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 2. [Git工作流](./article/tool/git/git工作流.md)
 3. [git小知识技巧](./article/tool/git/git小知识技巧.md)
 
+## 技术方案
+1. [前端实现计时准确](./article/solution/前端实现计时准确.md)
+
 ## 其他
 1. [前端技术调研应该怎么做](./article/other/前端技术调研应该怎么做.md)
 2. [如何搭建一套无痕埋点体系](./article/other/如何搭建一套无痕埋点体系.md)
