@@ -25,6 +25,7 @@
 23. [CSS实现3D穿梭](./article/css/CSS实现3D穿梭.md)
 24. [炫酷文字粒子效果实现](./article/css/炫酷文字粒子效果实现.md)
 25. [css长度单位](./article/css/css长度单位.md)
+26. [CSS新特性contain](./article/css/CSS新特性contain.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
