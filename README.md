@@ -34,6 +34,7 @@
 3. [HTML5Video视频与WebVTT字幕](./article/HTML/HTML5Video视频与WebVTT字幕.md)
 4. [前端动画之React和Vue都在用的FLIP思想实战](./article/other/前端动画之React%20和%20Vue%20都在用的%20FLIP%20思想实战.md)
 5. [web 20Animation](./article/HTML/web%20Animation.md)
+6. [前端Video播放器](./article/HTML/前端Video播放器.md)
 ## 浏览器
 1. [浏览器存储](article/browser/浏览器存储.md)
 ## JavaScript
