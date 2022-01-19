@@ -181,6 +181,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 15. [设计一个任务管理器](./article/architecture/设计一个任务管理器.md)
 16. [在线文档之职责驱动设计](./article/architecture/在线文档之职责驱动设计.md)
 17. [在线文档之依赖关系](./article/architecture/在线文档之依赖关系.md)
+18. [前端Log日志(小程序)](./article/architecture/前端Log日志(偏小程序).md)
 
 
 ## 算法
@@ -192,6 +193,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 6. [反转字符串](./article/algorithm/反转字符串.md)
 7. [分治法求最大子数组](./article/algorithm/分治法求最大子数组.md)
 8. [加权轮询算法](./article/algorithm/加权轮询算法.md)
+9. [滑动窗口](./article/algorithm/滑动窗口.md)
 
 ## 工具
 1. [项目中如何封装axios](./article/tool/npm/项目中如何封装axios.md)
