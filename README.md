@@ -45,6 +45,7 @@
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
 3. [ES6的Map](./article/js/ES6/ES6的Map.md)
+4. [8个JS新功能](./article/js/ES6/8个JS新功能.md)
 ### ES2015
 1. [bind原理、使用场景及模拟实现](article/js/ES2015/bind原理、使用场景及模拟实现.md)
 2. [掌握事件循环](./article/js/ES2015/掌握eventLoop.md)
@@ -223,3 +224,4 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 4. [JavaScript在线解压ZIP文件](article/other/JavaScript在线解压ZIP文件.md)
 5. [移动端适配](./article/other/移动端适配.md)
 6. [什么是LOD表达式](./article/other/什么是LOD表达式.md)
+7. [有赞前端质量保障体系](./article/other/有赞前端质量保障体系.md)
