@@ -203,6 +203,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 2. [自动化生成Vue组件文档](./article/tool/解放生产力，自动化生成Vue组件文档.md)
 3. [使用这些配置规范并格式化你的代码](./article/tool/使用这些配置规范并格式化你的代码.md)
 4. [element-ui新增组件功能解析](./article/tool/element-ui新增组件功能解析.md)
+5. [github搜索技巧](./article/tool/github搜索技巧.md)
 ### webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
