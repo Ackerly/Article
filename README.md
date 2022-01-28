@@ -197,6 +197,8 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 7. [分治法求最大子数组](./article/algorithm/分治法求最大子数组.md)
 8. [加权轮询算法](./article/algorithm/加权轮询算法.md)
 9. [滑动窗口](./article/algorithm/滑动窗口.md)
+10. [二叉树](./article/algorithm/二叉树.md)
+11. [二叉搜索树](./article/algorithm/二叉搜索树.md)
 
 ## 工具
 1. [项目中如何封装axios](./article/tool/npm/项目中如何封装axios.md)
