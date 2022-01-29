@@ -42,6 +42,7 @@
 1. [V8编译浅谈](./article/js/V8编译浅谈.md)
 2. [Axios如何实现请求重试](./article/js/Axios如何实现请求重试.md)
 3. [IndexedDB问题](./article/js/IndexedDB问题.md)
+4. [前端枚举](./article/js/前端枚举.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
