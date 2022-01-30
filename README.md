@@ -235,3 +235,4 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 8. [编写可维护代码-优化逻辑判断](./article/other/编写可维护代码-优化逻辑判断.md)
 9. [评估JS库需要关心的事](./article/other/评估JS库需要关心的事.md)
 10. [2022年前端未来趋势](./article/other/2022年前端未来趋势.md)
+11. [JSON Schema简介](./article/other/JSON%20Schema简介.md)
