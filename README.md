@@ -28,6 +28,7 @@
 26. [CSS新特性contain](./article/css/CSS新特性contain.md)
 27. [CSS Shapes实现元素滚动自动环绕iPhone的刘海](./article/css/CSS%20Shapes实现元素滚动自动环绕iPhone的刘海.md)
 28. [LoL Ban Pick 选人阶段的遮罩效果是如何实现的](./article/css/LoL%20Ban%20Pick%20选人阶段的遮罩效果是如何实现的.md)
+29. [CSS Mask](./article/css/CSS%20Mask.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
