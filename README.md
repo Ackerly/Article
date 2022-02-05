@@ -30,6 +30,7 @@
 28. [LoL Ban Pick 选人阶段的遮罩效果是如何实现的](./article/css/LoL%20Ban%20Pick%20选人阶段的遮罩效果是如何实现的.md)
 29. [CSS Mask](./article/css/CSS%20Mask.md)
 30. [webkit-box-reflect 倒影实现各类动效](./article/css/webkit-box-reflect%20倒影实现各类动效.md)
+31. [CSS文字动画](./article/css/CSS文字动画.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
