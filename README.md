@@ -82,6 +82,7 @@
 ## 框架
 1. [寻找框架设计的平衡点](./article/frame/寻找框架设计的平衡点.md)
 2. [组件配置化](./article/frame/组件配置化.md)
+3. [10个Element-UI技巧](./article/frame/10个Element-UI技巧.md)
 ### React
 1. [编写弹性组件](./article/frame/react/编写弹性组件.md)
 2. [react开发34个技巧](./article/frame/react/react开发34个技巧.md)
@@ -203,6 +204,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 9. [滑动窗口](./article/algorithm/滑动窗口.md)
 10. [二叉树](./article/algorithm/二叉树.md)
 11. [二叉搜索树](./article/algorithm/二叉搜索树.md)
+12. [等差素数数列](./article/algorithm/等差素数数列.md)
 
 ## 工具
 1. [项目中如何封装axios](./article/tool/npm/项目中如何封装axios.md)
