@@ -157,6 +157,49 @@ export default {
 }
 </style>
 ```
+## el-form 只校验表单其中一个字段
+``` 
+this.$refs.form.validateField('name', valid => {
+    if (valid) { 
+        console.log('send!'); 
+    } else { 
+        console.log('error send!'); 
+        return false; 
+    }
+})
+```
+## el-dialog 重新打开弹窗，清除表单信息
+``` 
+<el-dialog @closed="resetForm">
+    <el-form ref="form">
+    </el-form>
+</el-dialog>
+
+<script>
+export default {
+    methods: {
+        resetForm() {
+            this.$refs.form.resetFields()
+        }
+    }
+}
+</script>
+```
+## el-dialog 的 destroy-on-close 属性设置无效
+``` 
+<el-dialog :visible.sync="visible" v-if="visible" destroy-on-close>
+</el-dialog>
+```
+## el-table 表格内容超出省略
+``` 
+<el-table-column
+  prop="address"
+  label="地址"
+  width="180"
+  show-overflow-tooltip
+>
+</el-table-column>
+```
 
 参考：  
 [Element-UI 10个奇淫技巧，你知道几个？](https://juejin.cn/post/7017957779176423454?utm_source=gold_browser_extension)
