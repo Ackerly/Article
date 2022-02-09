@@ -206,6 +206,9 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 11. [二叉搜索树](./article/algorithm/二叉搜索树.md)
 12. [等差素数数列](./article/algorithm/等差素数数列.md)
 
+### leetcode
+1. [公交路线](./article/algorithm/leetcode/公交路线.md)
+
 ## 工具
 1. [项目中如何封装axios](./article/tool/npm/项目中如何封装axios.md)
 2. [自动化生成Vue组件文档](./article/tool/解放生产力，自动化生成Vue组件文档.md)
