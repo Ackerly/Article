@@ -41,6 +41,7 @@
 6. [前端Video播放器](./article/HTML/前端Video播放器.md)
 ## 浏览器
 1. [浏览器存储](article/browser/浏览器存储.md)
+2. [前端实现浏览器端扫码功能](./article/browser/前端实现浏览器端扫码功能.md)
 ## JavaScript
 1. [V8编译浅谈](./article/js/V8编译浅谈.md)
 2. [Axios如何实现请求重试](./article/js/Axios如何实现请求重试.md)
@@ -232,6 +233,9 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 1. [前端实现计时准确](./article/solution/前端实现计时准确.md)
 2. [前端内存泄漏解决方案](./article/solution/前端内存泄漏解决方案.md)
 3. [有赞组件化方案](./article/solution/有赞组件化方案.md)
+
+## 面试
+1. [webpack十连问](./article/interview/webpack十连问.md)
 
 ## 其他
 1. [前端技术调研应该怎么做](./article/other/前端技术调研应该怎么做.md)
