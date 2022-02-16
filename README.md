@@ -130,7 +130,8 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 - [Vue.directive、Vue.filter、Vue.component实现](./article/frame/vue/source%20code%20study/Vue.directive、Vue.filter、Vue.component实现.md)
 - [Patch算法](./article/frame/vue/source%20code%20study/Patch算法.md)
 - [vue-router源码解析](./article/frame/vue/source%20code%20study/vue-router源码解析.md)
-- [](./article/frame/vue/source%20code%20study/熟悉模板编译原理.md)
+- [熟悉模板编译原理](./article/frame/vue/source%20code%20study/熟悉模板编译原理.md)
+- [手写优化器](./article/frame/vue/source code study/手写优化器)
 ##### 优雅实践
 - [模态框封装方案](./article/frame/vue/优雅实践/模态框封装方案.md)
 - [高阶组件HOC](./article/frame/vue/优雅实践/高阶组件HOC.md)
@@ -207,6 +208,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 10. [二叉树](./article/algorithm/二叉树.md)
 11. [二叉搜索树](./article/algorithm/二叉搜索树.md)
 12. [等差素数数列](./article/algorithm/等差素数数列.md)
+13. [计数排序](./article/algorithm/计数排序.md)
 
 ### leetcode
 1. [公交路线](./article/algorithm/leetcode/公交路线.md)
