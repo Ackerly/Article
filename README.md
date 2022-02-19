@@ -75,6 +75,8 @@
 20. [数组reduce高级用法](./article/js/ES2015/数组reduce高级用法.md)
 21. [实现一个倒计时组件](./article/frame/vue/实现一个倒计时组件.md)
 22. [深拷贝解决循环引用](./article/js/ES2015/深拷贝解决循环引用.md)
+23. [JS宏任务,微任务](./article/js/ES2015/JS宏任务,微任务.md)
+24. [浏览器的五种Observer](./article/js/ES2015/浏览器的五种Observer.md)
 ## WebAssembly
 1. [WebAssembly入门](./article/webAssembly/webAssembly入门.md)
 
@@ -220,6 +222,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 4. [element-ui新增组件功能解析](./article/tool/element-ui新增组件功能解析.md)
 5. [github搜索技巧](./article/tool/github搜索技巧.md)
 6. [npm,yarn与pnpm依赖管理逻辑](./article/tool/npm,yarn与pnpm依赖管理逻辑.md)
+7. [前端架师了解的git知识](./article/tool/git/前端架师了解的git知识.md)
 ### webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
