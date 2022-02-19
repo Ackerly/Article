@@ -101,7 +101,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 7. [plugin开发](article/frame/vue/plugin开发.md)
 8. [vue的9种高级用法](article/frame/vue/vue的9种高级用法.md)
 9. [v-for每项元素绑定事件需要事件代理吗](article/frame/vue/v-for每项元素绑定事件需要用事件代理.md)
-10. [使用nextTick](./aritcle/frame/vue/使用nextTick.md)
+10. [使用nextTick](./article/frame/vue/使用nextTick.md)
 11. [vue3 2020个响应式API](./article/frame/vue/vue3%2020个响应式API.md)
 12. [Vite2.x+Vue3.x有哪些基操](./article/frame/vue/Vite2.x+Vue3.x有哪些基操.md)
 13. [vue3.0七大亮点](./article/frame/vue/vue3.0七大亮点.md)
@@ -147,6 +147,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 ### TypeScript
 1. [理解泛型](./article/frame/typescript/理解泛型.md)
 2. [深入TypeScript中的子类型、逆变、协变](./article/frame/typescript/深入TypeScript中的子类型、逆变、协变.md)
+3. [掌握TS泛型](./article/frame/typescript/掌握TS泛型.md)
 ## 性能
 1. [vue长列表性能分析](./article/performance/vue长列表性能分析.md)
 2. [100万成员的数组去第一个和最后一个有性能差距吗](./article/performance/100万成员的数组去第一个和最后一个有性能差距吗.md)
