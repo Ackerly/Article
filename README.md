@@ -240,6 +240,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 1. [前端实现计时准确](./article/solution/前端实现计时准确.md)
 2. [前端内存泄漏解决方案](./article/solution/前端内存泄漏解决方案.md)
 3. [有赞组件化方案](./article/solution/有赞组件化方案.md)
+4. [仿微博@人功能实现](./article/solution/仿微博@人功能实现.md)
 
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
