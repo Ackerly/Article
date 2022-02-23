@@ -39,6 +39,7 @@
 4. [前端动画之React和Vue都在用的FLIP思想实战](./article/other/前端动画之React%20和%20Vue%20都在用的%20FLIP%20思想实战.md)
 5. [web 20Animation](./article/HTML/web%20Animation.md)
 6. [前端Video播放器](./article/HTML/前端Video播放器.md)
+7. [Web Animations API](./article/HTML/Web%20Animations%20API.md)
 ## 浏览器
 1. [浏览器存储](article/browser/浏览器存储.md)
 2. [前端实现浏览器端扫码功能](./article/browser/前端实现浏览器端扫码功能.md)
