@@ -213,6 +213,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 11. [二叉搜索树](./article/algorithm/二叉搜索树.md)
 12. [等差素数数列](./article/algorithm/等差素数数列.md)
 13. [计数排序](./article/algorithm/计数排序.md)
+14. [堆排序](./article/algorithm/堆排序.md)
 
 ### leetcode
 1. [公交路线](./article/algorithm/leetcode/公交路线.md)
