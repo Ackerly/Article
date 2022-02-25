@@ -225,7 +225,6 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 4. [element-ui新增组件功能解析](./article/tool/element-ui新增组件功能解析.md)
 5. [github搜索技巧](./article/tool/github搜索技巧.md)
 6. [npm,yarn与pnpm依赖管理逻辑](./article/tool/npm,yarn与pnpm依赖管理逻辑.md)
-7. [前端架师了解的git知识](./article/tool/git/前端架师了解的git知识.md)
 ### webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
@@ -237,7 +236,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 1. [Git常用指令](./article/tool/git/git常用知识点.md)
 2. [Git工作流](./article/tool/git/git工作流.md)
 3. [git小知识技巧](./article/tool/git/git小知识技巧.md)
-
+4. [前端架师了解的git知识](./article/tool/git/前端架师了解的git知识.md)
 ## 技术方案
 1. [前端实现计时准确](./article/solution/前端实现计时准确.md)
 2. [前端内存泄漏解决方案](./article/solution/前端内存泄漏解决方案.md)
