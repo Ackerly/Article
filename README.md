@@ -31,6 +31,7 @@
 29. [CSS Mask](./article/css/CSS%20Mask.md)
 30. [webkit-box-reflect 倒影实现各类动效](./article/css/webkit-box-reflect%20倒影实现各类动效.md)
 31. [CSS文字动画](./article/css/CSS文字动画.md)
+32. [运用transform导致文本模糊现象](./article/css/运用transform导致文本模糊的现象.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
@@ -90,6 +91,7 @@
 ### React
 1. [编写弹性组件](./article/frame/react/编写弹性组件.md)
 2. [react开发34个技巧](./article/frame/react/react开发34个技巧.md)
+3. [react解决方案之组件数据请求](./article/frame/react/react解决方案之组件数据请求.md)
 ### Vue
 1. [vue组件将传值的几种方式](
 article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
@@ -197,7 +199,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 17. [在线文档之依赖关系](./article/architecture/在线文档之依赖关系.md)
 18. [前端Log日志(小程序)](./article/architecture/前端Log日志(偏小程序).md)
 19. [学习lodash源码整体架构](./article/architecture/学习lodash源码整体架构.md)
-
+20. [直播间海量聊天消息的架构设计难点](./article/architecture/直播间海量聊天消息的架构设计难点.md)
 
 ## 算法
 1. [回溯](./article/algorithm/回溯.md)
