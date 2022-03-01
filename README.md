@@ -44,6 +44,7 @@
 ## 浏览器
 1. [浏览器存储](article/browser/浏览器存储.md)
 2. [前端实现浏览器端扫码功能](./article/browser/前端实现浏览器端扫码功能.md)
+3. [浏览器仅打开1个页面，为什么有4个进程](./article/browser/仅打开1个页面，为什么有4个进程.md)
 ## JavaScript
 1. [V8编译浅谈](./article/js/V8编译浅谈.md)
 2. [Axios如何实现请求重试](./article/js/Axios如何实现请求重试.md)
