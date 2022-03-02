@@ -180,6 +180,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 13. [Command(命令模式)](./article/design%20patterns/Command(命令模式).md)
 14. [Interpreter解释器模式](./article/design%20patterns/Interpreter解释器模式.md)
 15. [Iterator 迭代器模式](./article/design%20patterns/Iterator%20迭代器模式.md)
+16. [幂等设计](./article/design patterns/幂等设计.md)
 ## 架构
 1. [以前端架构师的身份，从零开始搞事](./article/architecture/以前端架构师的身份，从零开始搞事.md)
 2. [字节跳动如何落地微前端](./article/architecture/字节跳动如何落地微前端.md)
