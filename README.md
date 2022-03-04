@@ -89,6 +89,7 @@
 1. [寻找框架设计的平衡点](./article/frame/寻找框架设计的平衡点.md)
 2. [组件配置化](./article/frame/组件配置化.md)
 3. [10个Element-UI技巧](./article/frame/10个Element-UI技巧.md)
+4. [为什么Vue和React都选择了Hooks](./article/frame/为什么Vue和React都选择了Hooks.md)
 ### React
 1. [编写弹性组件](./article/frame/react/编写弹性组件.md)
 2. [react开发34个技巧](./article/frame/react/react开发34个技巧.md)
@@ -268,3 +269,4 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 11. [JSON Schema简介](./article/other/JSON%20Schema简介.md)
 12. [探索微前端的场景极限](./article/other/探索微前端的场景极限.md)
 13. [babel知识点](./article/other/babel知识点.md)
+14. [NLP分词后的文本如何高亮显示](article/other/NLP分词后的文本如何高亮显示.md)
