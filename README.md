@@ -205,6 +205,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 18. [前端Log日志(小程序)](./article/architecture/前端Log日志(偏小程序).md)
 19. [学习lodash源码整体架构](./article/architecture/学习lodash源码整体架构.md)
 20. [直播间海量聊天消息的架构设计难点](./article/architecture/直播间海量聊天消息的架构设计难点.md)
+21. [项目稳定性治理：十五个防御性CSS技能](./article/architecture/项目稳定性治理：十五个防御性CSS技能.md)
 
 ## 算法
 1. [回溯](./article/algorithm/回溯.md)
@@ -244,6 +245,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 2. [Git工作流](./article/tool/git/git工作流.md)
 3. [git小知识技巧](./article/tool/git/git小知识技巧.md)
 4. [前端架师了解的git知识](./article/tool/git/前端架师了解的git知识.md)
+5. [git的5条提高效率命令](./article/tool/git/git的5条提高效率命令.md)
 ## 技术方案
 1. [前端实现计时准确](./article/solution/前端实现计时准确.md)
 2. [前端内存泄漏解决方案](./article/solution/前端内存泄漏解决方案.md)
