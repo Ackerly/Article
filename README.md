@@ -91,6 +91,7 @@
 2. [组件配置化](./article/frame/组件配置化.md)
 3. [10个Element-UI技巧](./article/frame/10个Element-UI技巧.md)
 4. [为什么Vue和React都选择了Hooks](./article/frame/为什么Vue和React都选择了Hooks.md)
+5. [100多行源码的element-ui 新增组件功能告诉你减少重复工作](./article/frame/100多行源码的%20element-ui%20新增组件功能告诉你减少重复工作.md)
 ### React
 1. [编写弹性组件](./article/frame/react/编写弹性组件.md)
 2. [react开发34个技巧](./article/frame/react/react开发34个技巧.md)
@@ -206,6 +207,8 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 19. [学习lodash源码整体架构](./article/architecture/学习lodash源码整体架构.md)
 20. [直播间海量聊天消息的架构设计难点](./article/architecture/直播间海量聊天消息的架构设计难点.md)
 21. [项目稳定性治理：十五个防御性CSS技能](./article/architecture/项目稳定性治理：十五个防御性CSS技能.md)
+22. [用DDD(领域驱动设计)和ADT(代数数据类型)提升代码质](article/architecture/用DDD(领域驱动设计)和ADT(代数数据类型)提升代码质量.md)
+23. [如何提升前端线上问题发现率](./article/architecture/如何提升前端线上问题发现率.md)
 
 ## 算法
 1. [回溯](./article/algorithm/回溯.md)
@@ -274,3 +277,4 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 12. [探索微前端的场景极限](./article/other/探索微前端的场景极限.md)
 13. [babel知识点](./article/other/babel知识点.md)
 14. [NLP分词后的文本如何高亮显示](article/other/NLP分词后的文本如何高亮显示.md)
+15. [要写易删除，而不是易扩展的代码](./article/other/要写易删除，而不是易扩展的代码.md)
