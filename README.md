@@ -96,6 +96,7 @@
 1. [编写弹性组件](./article/frame/react/编写弹性组件.md)
 2. [react开发34个技巧](./article/frame/react/react开发34个技巧.md)
 3. [react解决方案之组件数据请求](./article/frame/react/react解决方案之组件数据请求.md)
+4. [聊聊时间切片](./article/frame/react/聊聊时间切片.md)
 ### Vue
 1. [vue组件将传值的几种方式](
 article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
