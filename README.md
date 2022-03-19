@@ -51,6 +51,7 @@
 3. [IndexedDB问题](./article/js/IndexedDB问题.md)
 4. [前端枚举](./article/js/前端枚举.md)
 5. [33个实用JavaScript一行代码](./article/js/33个实用JavaScript一行代码.md)
+6. [前端十个技巧](./article/js/前端十个技巧.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
@@ -134,6 +135,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 32. [Vue3.2更新内容](./article/frame/vue/Vue3.2更新内容.md)
 33. [vue3之watchEffect用途](./article/frame/vue/vue3之watchEffect用途.md)
 34. [Pinia上手指南](./article/frame/vue/Pinia上手指南.md)
+35. [vue移动端适配方案](./article/frame/vue/vue移动端适配方案.md)
 
 ##### Vue源码学习
 - [手写与事件相关的实例方法](./article/frame/vue/source%20code%20study/手写与事件相关的实例方法.md)
@@ -238,6 +240,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 4. [element-ui新增组件功能解析](./article/tool/element-ui新增组件功能解析.md)
 5. [github搜索技巧](./article/tool/github搜索技巧.md)
 6. [npm,yarn与pnpm依赖管理逻辑](./article/tool/npm,yarn与pnpm依赖管理逻辑.md)
+7. [可以永远相信debugger，但不能永远相信console](./article/tool/可以永远相信debugger，但不能永远相信console.md)
 ### webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
