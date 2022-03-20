@@ -41,6 +41,7 @@
 5. [web 20Animation](./article/HTML/web%20Animation.md)
 6. [前端Video播放器](./article/HTML/前端Video播放器.md)
 7. [Web Animations API](./article/HTML/Web%20Animations%20API.md)
+8. [什么是BFC](./article/HTML/什么是BFC.md)
 ## 浏览器
 1. [浏览器存储](article/browser/浏览器存储.md)
 2. [前端实现浏览器端扫码功能](./article/browser/前端实现浏览器端扫码功能.md)
@@ -87,6 +88,7 @@
 
 ## 存储
 1. [了解cookie](./article/storage/了解cookie.md)
+2. [20k级别的前端在项目中怎么使用LocalStorge](./article/storage/20k级别的前端在项目中怎么使用LocalStorge.md)
 ## 框架
 1. [寻找框架设计的平衡点](./article/frame/寻找框架设计的平衡点.md)
 2. [组件配置化](./article/frame/组件配置化.md)
