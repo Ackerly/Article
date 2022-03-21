@@ -234,6 +234,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 ### leetcode
 1. [公交路线](./article/algorithm/leetcode/公交路线.md)
 2. [找不同](./article/algorithm/leetcode/找不同.md)
+3. [不用加号到加法](./article/algorithm/leetcode/不用加号到加法.md)
 
 ## 工具
 1. [项目中如何封装axios](./article/tool/npm/项目中如何封装axios.md)
