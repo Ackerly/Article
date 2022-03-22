@@ -168,6 +168,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 1. [get和post的区别](./article/http/get和post的区别.md)
 2. [HTTP的不同版本特性](./article/http/HTTP协议的不同版本及区别.md)
 3. [永久重定向(301)和临时重定向(302)](./article/http/永久重定向(301)和临时重定向(302).md)
+4. [HTTPS的加密原理](./article/http/HTTPS的加密原理.md)
 ## 安全
 1. [6大Web安全攻防解析](./article/security/6大Web安全攻防解析.md)
 2. [如何防止他人恶意调试你的web程序](./article/security/如何防止他人恶意调试你的web程序.md)
