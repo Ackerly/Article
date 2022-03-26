@@ -258,6 +258,8 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 3. [git小知识技巧](./article/tool/git/git小知识技巧.md)
 4. [前端架师了解的git知识](./article/tool/git/前端架师了解的git知识.md)
 5. [git的5条提高效率命令](./article/tool/git/git的5条提高效率命令.md)
+6. [GitLab CI打造一条自己的流水线](./article/tool/git/GitLab%20CI打造一条自己的流水线.md)
+7. []()
 ## 技术方案
 1. [前端实现计时准确](./article/solution/前端实现计时准确.md)
 2. [前端内存泄漏解决方案](./article/solution/前端内存泄漏解决方案.md)
