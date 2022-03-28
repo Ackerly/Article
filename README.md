@@ -215,6 +215,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 21. [项目稳定性治理：十五个防御性CSS技能](./article/architecture/项目稳定性治理：十五个防御性CSS技能.md)
 22. [用DDD(领域驱动设计)和ADT(代数数据类型)提升代码质](article/architecture/用DDD(领域驱动设计)和ADT(代数数据类型)提升代码质量.md)
 23. [如何提升前端线上问题发现率](./article/architecture/如何提升前端线上问题发现率.md)
+24. [Observable防腐层项目实战](./article/architecture/Observable防腐层项目实战.md)
 
 ## 算法
 1. [回溯](./article/algorithm/回溯.md)
