@@ -169,6 +169,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 2. [HTTP的不同版本特性](./article/http/HTTP协议的不同版本及区别.md)
 3. [永久重定向(301)和临时重定向(302)](./article/http/永久重定向(301)和临时重定向(302).md)
 4. [HTTPS的加密原理](./article/http/HTTPS的加密原理.md)
+5. [QUIC和HTTP3队头阻塞的细节](./article/http/QUIC和HTTP3队头阻塞的细节.md)
 ## 安全
 1. [6大Web安全攻防解析](./article/security/6大Web安全攻防解析.md)
 2. [如何防止他人恶意调试你的web程序](./article/security/如何防止他人恶意调试你的web程序.md)
@@ -291,3 +292,4 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 13. [babel知识点](./article/other/babel知识点.md)
 14. [NLP分词后的文本如何高亮显示](article/other/NLP分词后的文本如何高亮显示.md)
 15. [要写易删除，而不是易扩展的代码](./article/other/要写易删除，而不是易扩展的代码.md)
+16. [编程20年的指导原则](./article/other/编程20年的指导原则.md)
