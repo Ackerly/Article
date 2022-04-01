@@ -32,6 +32,7 @@
 30. [webkit-box-reflect 倒影实现各类动效](./article/css/webkit-box-reflect%20倒影实现各类动效.md)
 31. [CSS文字动画](./article/css/CSS文字动画.md)
 32. [运用transform导致文本模糊现象](./article/css/运用transform导致文本模糊的现象.md)
+33. [CSS国际化](./article/css/CSS国际化.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
@@ -261,7 +262,6 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 4. [前端架师了解的git知识](./article/tool/git/前端架师了解的git知识.md)
 5. [git的5条提高效率命令](./article/tool/git/git的5条提高效率命令.md)
 6. [GitLab CI打造一条自己的流水线](./article/tool/git/GitLab%20CI打造一条自己的流水线.md)
-7. []()
 ## 技术方案
 1. [前端实现计时准确](./article/solution/前端实现计时准确.md)
 2. [前端内存泄漏解决方案](./article/solution/前端内存泄漏解决方案.md)
