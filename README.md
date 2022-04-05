@@ -91,12 +91,14 @@
 ## 存储
 1. [了解cookie](./article/storage/了解cookie.md)
 2. [20k级别的前端在项目中怎么使用LocalStorge](./article/storage/20k级别的前端在项目中怎么使用LocalStorge.md)
+3. [深入理解Cache工作原理](./article/storage/深入理解Cache工作原理.md)
 ## 框架
 1. [寻找框架设计的平衡点](./article/frame/寻找框架设计的平衡点.md)
 2. [组件配置化](./article/frame/组件配置化.md)
 3. [10个Element-UI技巧](./article/frame/10个Element-UI技巧.md)
 4. [为什么Vue和React都选择了Hooks](./article/frame/为什么Vue和React都选择了Hooks.md)
 5. [100多行源码的element-ui 新增组件功能告诉你减少重复工作](./article/frame/100多行源码的%20element-ui%20新增组件功能告诉你减少重复工作.md)
+6. [基于 TypeScript 理解程序设计的 SOLID 原则](./article/frame/基于%20TypeScript%20理解程序设计的%20SOLID%20原则.md)
 ### React
 1. [编写弹性组件](./article/frame/react/编写弹性组件.md)
 2. [react开发34个技巧](./article/frame/react/react开发34个技巧.md)
