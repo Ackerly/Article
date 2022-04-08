@@ -297,3 +297,5 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 14. [NLP分词后的文本如何高亮显示](article/other/NLP分词后的文本如何高亮显示.md)
 15. [要写易删除，而不是易扩展的代码](./article/other/要写易删除，而不是易扩展的代码.md)
 16. [编程20年的指导原则](./article/other/编程20年的指导原则.md)
+17. [网易云音乐低代码体系建设思考与实践](./article/other/网易云音乐低代码体系建设思考与实践.md)
+18. [前端跨页面通信](./article/other/前端跨页面通信.md)
