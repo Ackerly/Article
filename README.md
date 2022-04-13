@@ -280,6 +280,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 ## 服务
 1. [NodeJS落地WebSocket实践](./article/serve/NodeJS落地WebSocket实践.md)
 2. [Nest如何实现AOP结构](./article/serve/Nest如何实现AOP结构.md)
+3. [Node多文件 Stream 合并，串行和并发两种模式实现](./article/serve/Node多文件%20Stream%20合并，串行和并发两种模式实现.md)
 
 ## 其他
 1. [前端技术调研应该怎么做](./article/other/前端技术调研应该怎么做.md)
