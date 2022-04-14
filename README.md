@@ -301,3 +301,4 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 16. [编程20年的指导原则](./article/other/编程20年的指导原则.md)
 17. [网易云音乐低代码体系建设思考与实践](./article/other/网易云音乐低代码体系建设思考与实践.md)
 18. [前端跨页面通信](./article/other/前端跨页面通信.md)
+19. [共置](./article/other/共置.md）
