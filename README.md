@@ -251,6 +251,8 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 5. [github搜索技巧](./article/tool/github搜索技巧.md)
 6. [npm,yarn与pnpm依赖管理逻辑](./article/tool/npm,yarn与pnpm依赖管理逻辑.md)
 7. [可以永远相信debugger，但不能永远相信console](./article/tool/可以永远相信debugger，但不能永远相信console.md)
+8. [11+ chrome高级调试技巧](./article/tool/11+%20chrome高级调试技巧.md)
+9. [前端包管理器探究](./article/tool/前端包管理器探究.md)
 ### webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
@@ -271,6 +273,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 2. [前端内存泄漏解决方案](./article/solution/前端内存泄漏解决方案.md)
 3. [有赞组件化方案](./article/solution/有赞组件化方案.md)
 4. [仿微博@人功能实现](./article/solution/仿微博@人功能实现.md)
+5. [聚类算法在D2C布局中的应用](./article/solution/聚类算法在D2C布局中的应用.md)
 
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
@@ -301,4 +304,4 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 16. [编程20年的指导原则](./article/other/编程20年的指导原则.md)
 17. [网易云音乐低代码体系建设思考与实践](./article/other/网易云音乐低代码体系建设思考与实践.md)
 18. [前端跨页面通信](./article/other/前端跨页面通信.md)
-19. [共置](./article/other/共置.md）
+19. [共置](./article/other/共置.md)
