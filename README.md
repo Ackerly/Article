@@ -268,12 +268,14 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 5. [git的5条提高效率命令](./article/tool/git/git的5条提高效率命令.md)
 6. [GitLab CI打造一条自己的流水线](./article/tool/git/GitLab%20CI打造一条自己的流水线.md)
 7. [用 Git Subtree 在多个 Git 项目间双向同步子项目](./article/tool/git/用%20Git%20Subtree%20在多个%20Git%20项目间双向同步子项目.md)
+8. [45 个 Git 经典操作场景](./article/tool/git/45%20个%20Git%20经典操作场景.md)
 ## 技术方案
 1. [前端实现计时准确](./article/solution/前端实现计时准确.md)
 2. [前端内存泄漏解决方案](./article/solution/前端内存泄漏解决方案.md)
 3. [有赞组件化方案](./article/solution/有赞组件化方案.md)
 4. [仿微博@人功能实现](./article/solution/仿微博@人功能实现.md)
 5. [聚类算法在D2C布局中的应用](./article/solution/聚类算法在D2C布局中的应用.md)
+6. [智能代码平台神笔马良的研发与实践](./article/solution/智能代码平台神笔马良的研发与实践.md)
 
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
@@ -305,3 +307,4 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 17. [网易云音乐低代码体系建设思考与实践](./article/other/网易云音乐低代码体系建设思考与实践.md)
 18. [前端跨页面通信](./article/other/前端跨页面通信.md)
 19. [共置](./article/other/共置.md)
+20. [了解SourceMap](./article/other/了解SourceMap.md)
