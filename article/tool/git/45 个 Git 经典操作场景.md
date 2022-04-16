@@ -227,6 +227,272 @@ git fetch --all
 git checkout --track origin/daves  
 ```
 ## Rebasing 和合并(Merging)
+**撤销rebase/merge**  
+合并(merge)或rebase了一个错误的分支, 或者完成不了一个进行中的rebase/merge。Git 在进行危险操作的时候会把原始的HEAD保存在一个叫ORIG_HEAD的变量里, 所以要把分支恢复到rebase/merge前的状态是很容易的。  
+```
+git reset --hard ORIG_HEAD  
+```
+**已经rebase过, 但不想强推(force push)**  
+如果你想把这些变化(changes)反应到远程分支上，你就必须得强推(force push)。是因你快进(Fast forward)了提交，改变了Git历史, 远程分支不会接受变化(changes)，除非强推(force push)。
+这就是许多人使用 merge 工作流, 而不是 rebasing 工作流的主要原因之一， 开发者的强推(force push)会使大的团队陷入麻烦。使用时需要注意，一种安全使用 rebase 的方法是，不要把你的变化(changes)反映到远程分支上, 而是按下面的做:  
+```
+(main)$ git checkout my-branch  
+(my-branch)$ git rebase -i main  
+(my-branch)$ git checkout main  
+(main)$ git merge --ff-only my-branch  
+```
+**组合(combine)几个提交(commit)**  
+假设你的工作分支将会做对于 main 的pull-request。一般情况下你不关心提交(commit)的时间戳，只想组合 所有 提交(commit) 到一个单独的里面, 然后重置(reset)重提交(recommit)。确保主(main)分支是最新的和你的变化都已经提交了, 然后:
+```
+(my-branch)$ git reset --soft main  
+(my-branch)$ git commit -am "New awesome feature"  
+```
+如果你想要更多的控制, 想要保留时间戳, 你需要做交互式rebase (interactive rebase):  
+```
+(my-branch)$ git rebase -i main  
+```
+如果没有相对的其它分支， 你将不得不相对自己的HEAD 进行 rebase。例如：你想组合最近的两次提交(commit), 你将相对于HEAD2 进行rebase，组合最近3次提交(commit), 相对于HEAD3, 等等。
+```
+(main)$ git rebase -i HEAD~2  
+```
+在你执行了交互式 rebase的命令(interactive rebase command)后, 你将在你的编辑器里看到类似下面的内容:
+```
+pick a9c8a1d Some refactoring  
+pick 01b2fd8 New awesome feature  
+pick b729ad5 fixup  
+pick e3851e8 another fix  
+  
+# Rebase 8074d12..b729ad5 onto 8074d12  
+#  
+# Commands:  
+#  p, pick = use commit  
+#  r, reword = use commit, but edit the commit message  
+#  e, edit = use commit, but stop for amending  
+#  s, squash = use commit, but meld into previous commit  
+#  f, fixup = like "squash", but discard this commit's log message  
+#  x, exec = run command (the rest of the line) using shell  
+#  
+# These lines can be re-ordered; they are executed from top to bottom.  
+#  
+# If you remove a line here THAT COMMIT WILL BE LOST.  
+#  
+# However, if you remove everything, the rebase will be aborted.  
+#  
+# Note that empty commits are commented out  
+```
+可以用任何上面命令列表的命令替换 pick, 你也可以通过删除对应的行来删除一个提交(commit)。  
+例如, 如果你想 单独保留最旧(first)的提交(commit),组合所有剩下的到第二个里面, 你就应该编辑第二个提交(commit)后面的每个提交(commit) 前的单词为 f:  
+```
+pick a9c8a1d Some refactoring  
+pick 01b2fd8 New awesome feature  
+f b729ad5 fixup  
+f e3851e8 another fix  
+```
+想组合这些提交(commit) 并重命名这个提交(commit), 你应该在第二个提交(commit)旁边添加一个r，或者更简单的用s 替代 f:  
+```
+pick a9c8a1d Some refactoring  
+pick 01b2fd8 New awesome feature  
+s b729ad5 fixup  
+s e3851e8 another fix  
+```
+可以在接下来弹出的文本提示框里重命名提交(commit)   
+如果成功了, 你应该看到类似下面的内容:  
+```
+(main)$ Successfully rebased and updated refs/heads/main.  
+```
+**安全合并(merging)策略**  
+--no-commit 执行合并(merge)但不自动提交, 给用户在做提交前检查和修改的机会。no-ff 会为特性分支(feature branch)的存在过留下证据, 保持项目历史一致。
+```
+(main)$ git merge --no-ff --no-commit my-branch  
+```
+需要将一个分支合并成一个提交(commit)
+```
+(main)$ git merge --squash my-branch  
+```
+只想组合(combine)未推的提交(unpushed commit):  
+在将数据推向上游之前，你有几个正在进行的工作提交(commit)。这时候不希望把已经推(push)过的组合进来，因为其他人可能已经有提交(commit)引用它们了。  
+```
+(main)$ git rebase -i @{u}  
+```
+这会产生一次交互式的rebase(interactive rebase), 只会列出没有推(push)的提交(commit)， 在这个列表时进行reorder/fix/squash 都是安全的。  
+**检查是否分支上的所有提交(commit)都合并(merge)过了**  
+检查一个分支上的所有提交(commit)是否都已经合并(merge)到了其它分支, 你应该在这些分支的head(或任何 commits)之间做一次diff:  
+```
+(main)$ git log --graph --left-right --cherry-pick --oneline HEAD...feature/120-on-scroll  
+```
+这会告诉你在一个分支里有而另一个分支没有的所有提交(commit), 和分支之间不共享的提交(commit)的列表。另一个做法可以是:  
+```
+(main)$ git log main ^feature/120-on-scroll --no-merges  
+```
+**交互式rebase(interactive rebase)可能出现的问题**
+这个rebase 编辑屏幕出现'noop'  
+这意味着你rebase的分支和当前分支在同一个提交(commit)上, 或者 领先(ahead) 当前分支。你可以尝试:  
+- 检查确保主(main)分支没有问题
+- rebase  HEAD~2 或者更早
+
+有冲突的情况:
+如果你不能成功的完成rebase, 你可能必须要解决冲突。首先执行 git status 找出哪些文件有冲突:  
+```
+(my-branch)$ git status  
+On branch my-branch  
+Changes not staged for commit:  
+  (use "git add <file>..." to update what will be committed)  
+  (use "git checkout -- <file>..." to discard changes in working directory)  
+  
+ modified:   README.md  
+```
+在这个例子里面, README.md 有冲突。打开这个文件找到类似下面的内容:  
+```
+<<<<<<< HEAD  
+   some code  
+   =========  
+   some code  
+   >>>>>>> new-commit
+```
+你需要解决新提交的代码(示例里, 从中间==线到new-commit的地方)与HEAD 之间不一样的地方.  
+有时候这些合并非常复杂，你应该使用可视化的差异编辑器(visual diff editor):  
+```
+(main*)$ git mergetool -t opendiff  
+```
+在你解决完所有冲突和测试过后, git add 变化了的(changed)文件, 然后用git rebase --continue 继续rebase。  
+```
+(my-branch)$ git add README.md  
+(my-branch)$ git rebase --continue  
+```
+如果在解决完所有的冲突过后，得到了与提交前一样的结果, 可以执行git rebase --skip。  
+任何时候你想结束整个rebase 过程，回来rebase前的分支状态, 你可以做:
+```
+(my-branch)$ git rebase --abort 
+```
+## Stash
+**暂存所有改动**  
+暂存你工作目录下的所有改动  
+```
+git stash 
+```
+使用-u来排除一些文件
+```
+git stash -u  
+```
+**暂存指定文件**  
+假设只想暂存某一个文件  
+```
+git stash push working-directory-path/filename.ext  
+```
+假设你想暂存多个文件  
+```
+git stash push working-directory-path/filename1.ext working-directory-path/filename2.ext  
+```
+**暂存时记录消息**  
+可以在list时看到它  
+```
+git stash save <message> 
+```
+或
+```
+git stash push -m <message> 
+```
+**使用某个指定暂存**  
+可以查看你的stash记录
+```
+git stash list  
+```
+apply某个stash
+```
+git stash apply "stash@{n}"  
+```
+n'是stash在栈中的位置，最上层的stash会是0  
+也可以使用时间标记(假如你能记得的话)。
+```
+git stash apply "stash@{2.hours.ago}"  
+```
+**暂存时保留未暂存的内容**  
+手动create一个stash commit， 然后使用git stash store
+```
+git stash create  
+git stash store -m "commit-message" CREATED_SHA1  
+```
+## 杂项(Miscellaneous Objects)
+**克隆所有子模块**  
+```
+git clone --recursive git://github.com/foo/bar.git  
+```
+如果已经克隆了:
+```
+git submodule update --init --recursive  
+```
+**删除标签(tag)**  
+```
+git tag -d <tag_name>  
+git push <remote> :refs/tags/<tag_name>
+```
+**恢复已删除标签(tag)**  
+如果你想恢复一个已删除标签(tag), 可以按照下面的步骤: 首先, 需要找到无法访问的标签(unreachable tag):  
+```
+git fsck --unreachable | grep tag  
+```
+记下这个标签(tag)的hash，然后用Git的 update-ref
+```
+git update-ref refs/tags/<tag_name> <hash>  
+```
+**已删除补丁(patch)**  
+如果某人在 GitHub 上给你发了一个pull request, 但是然后他删除了他自己的原始 fork, 你将没法克隆他们的提交(commit)或使用 git am。在这种情况下, 最好手动的查看他们的提交(commit)，并把它们拷贝到一个本地新分支，然后做提交。  
+做完提交后, 再修改作者，参见变更作者。然后, 应用变化, 再发起一个新的pull request。  
+## 跟踪文件(Tracking Files)
+改变一个文件名字的大小写，而不修改内容
+```
+git mv --force myfile MyFile  
+```
+想从Git删除一个文件，但保留该文件
+```
+git rm --cached log.txt 
+```
+## 配置(Configuration)]
+**想给一些Git命令添加别名(alias)**  
+在 OS X 和 Linux 下, 你的 Git的配置文件储存在 ~/.gitconfig。可以在[alias] 部分添加了一些快捷别名(和一些容易拼写错误的)，如下:
+```
+[alias]  
+    a = add  
+    amend = commit --amend  
+    c = commit  
+    ca = commit --amend  
+    ci = commit -a  
+    co = checkout  
+    d = diff  
+    dc = diff --changed  
+    ds = diff --staged  
+    f = fetch  
+    loll = log --graph --decorate --pretty=oneline --abbrev-commit  
+    m = merge  
+    one = log --pretty=oneline  
+    outstanding = rebase -i @{u}  
+    s = status  
+    unpushed = log @{u}  
+    wc = whatchanged  
+    wip = rebase -i @{u}  
+    zap = fetch -p  
+```
+**缓存一个仓库(repository)的用户名和密码**  
+可能有一个仓库需要授权，这时你可以缓存用户名和密码，而不用每次推/拉(push/pull)的时候都输入，Credential helper能帮你。
+```
+git config --global credential.helper cache  
+git config --global credential.helper 'cache --timeout=3600'
+```
+**不知道做错了些什么**  
+你 重置(reset) 了一些东西, 或者你合并了错误的分支, 亦或你强推了后找不到你自己的提交(commit)了。有些时候, 你一直都做得很好, 但你想回到以前的某个状态。  
+这就是 git reflog 的目的， reflog 记录对分支顶端(the tip of a branch)的任何改变, 即使那个顶端没有被任何分支或标签引用。基本上, 每次HEAD的改变, 一条新的记录就会增加到reflog。遗憾的是，这只对本地分支起作用，且它只跟踪动作 (例如，不会跟踪一个没有被记录的文件的任何改变)。  
+```
+(main)$ git reflog  
+0a2e358 HEAD@{0}: reset: moving to HEAD~2  
+0254ea7 HEAD@{1}: checkout: moving from 2.2 to main  
+c10f740 HEAD@{2}: checkout: moving from main to 2.2  
+```
+上面的reflog展示了从main分支签出(checkout)到2.2 分支，然后再签回。那里，还有一个硬重置(hard reset)到一个较旧的提交。最新的动作出现在最上面以 HEAD@{0}标识.  
+如果事实证明你不小心回移(move back)了提交(commit), reflog 会包含你不小心回移前main上指向的提交(0254ea7)。  
+```
+git reset --hard 0254ea7  
+```
+然后使用git reset就可以把main改回到之前的commit，这提供了一个在历史被意外更改情况下的安全网。  
 
 参考：  
 [45 个 Git 经典操作场景，专治不会合代码](https://mp.weixin.qq.com/s/yGLg3kLcqcCBhtBqOE0dyQ)
