@@ -44,6 +44,7 @@
 6. [前端Video播放器](./article/HTML/前端Video播放器.md)
 7. [Web Animations API](./article/HTML/Web%20Animations%20API.md)
 8. [什么是BFC](./article/HTML/什么是BFC.md)
+9. [前端图片隐写](./article/HTML/前端图片隐写.md)
 ## 浏览器
 1. [浏览器存储](article/browser/浏览器存储.md)
 2. [前端实现浏览器端扫码功能](./article/browser/前端实现浏览器端扫码功能.md)
@@ -55,6 +56,7 @@
 4. [前端枚举](./article/js/前端枚举.md)
 5. [33个实用JavaScript一行代码](./article/js/33个实用JavaScript一行代码.md)
 6. [前端十个技巧](./article/js/前端十个技巧.md)
+7. [前端并发10个相同的请求，怎么控制为只发一个请求](./article/js/前端并发10个相同的请求，怎么控制为只发一个请求.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
@@ -281,6 +283,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 1. [webpack十连问](./article/interview/webpack十连问.md)
 2. [12道腾讯面试真题及答案](./article/interview/12道腾讯面试真题及答案.md)
 3. [关于box-size面试题](./article/interview/关于box-size面试题.md)
+4. [解释什么是前端模块化](./article/interview/解释什么是前端模块化.md)
 
 ## 服务
 1. [NodeJS落地WebSocket实践](./article/serve/NodeJS落地WebSocket实践.md)
