@@ -57,6 +57,7 @@
 5. [33个实用JavaScript一行代码](./article/js/33个实用JavaScript一行代码.md)
 6. [前端十个技巧](./article/js/前端十个技巧.md)
 7. [前端并发10个相同的请求，怎么控制为只发一个请求](./article/js/前端并发10个相同的请求，怎么控制为只发一个请求.md)
+8. [由Babel理解前端编译原理](./article/js/由Babel理解前端编译原理.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
