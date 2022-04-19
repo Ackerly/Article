@@ -63,6 +63,7 @@
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
 3. [ES6的Map](./article/js/ES6/ES6的Map.md)
 4. [8个JS新功能](./article/js/ES6/8个JS新功能.md)
+5. [2022必学的五个JS新特性](./article/js/ES6/2022必学的五个JS新特性.md)
 ### ES2015
 1. [bind原理、使用场景及模拟实现](article/js/ES2015/bind原理、使用场景及模拟实现.md)
 2. [掌握事件循环](./article/js/ES2015/掌握eventLoop.md)
@@ -312,3 +313,4 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 18. [前端跨页面通信](./article/other/前端跨页面通信.md)
 19. [共置](./article/other/共置.md)
 20. [了解SourceMap](./article/other/了解SourceMap.md)
+21. [前端深水区](./article/other/前端深水区.md)
