@@ -108,6 +108,7 @@
 2. [react开发34个技巧](./article/frame/react/react开发34个技巧.md)
 3. [react解决方案之组件数据请求](./article/frame/react/react解决方案之组件数据请求.md)
 4. [聊聊时间切片](./article/frame/react/聊聊时间切片.md)
+5. [深入理解scheduler原理](./article/frame/react/深入理解scheduler原理.md)
 ### Vue
 1. [vue组件将传值的几种方式](
 article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
@@ -314,3 +315,4 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 19. [共置](./article/other/共置.md)
 20. [了解SourceMap](./article/other/了解SourceMap.md)
 21. [前端深水区](./article/other/前端深水区.md)
+22. [可维护性思考](./article/other/可维护性思考.md)
