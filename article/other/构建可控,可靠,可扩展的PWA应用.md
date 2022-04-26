@@ -179,8 +179,209 @@ if (navigator.serviceWorker) {
         });
 }
 ```
-可以通过服务器对 ServiceWorker 文件的响应设置 Service-Worker-Allowed 头部，去扩大作用域。  
+可以通过服务器对 ServiceWorker 文件的响应设置 Service-Worker-Allowed 头部，去扩大作用域。 
+**MPA下的 ServiceWorker 治理**  
+现代 Web App 项目主要有两种架构形式存在：SPA(Single Page Application) 和 MPA(Multiple Page Application)  
+MPA 这种架构的模式在现如今的大型 Web App 非常常见，这种 Web App 相比较于 SPA 能够承受更重的业务体量，并且利于大型 Web App 的后期维护和扩展，它往往会有多个团队去维护。  
+假设我们有一个 MPA 的站点：  
+``` 
+.
+|-- app1
+|   |-- app1-service-worker.js
+|   `-- index.html
+|-- app2
+|   `-- index.html
+|-- index.html
+`-- root-service-worker.js
+```
+app1 和 app2 分别由不同的团队维护。  
+如果我们在根目录 '/' 注册了 root-service-worker.js，去完成一些通用的功能，例如：「日志收集」、「静态资源缓存」等。  
+然后 app1 团队利用 ServiceWorker 的能力开发了一些特定的功能需要，例如 app1 的「离线化功能」。  
+他们在 app1/index.html 目录注册了 app1-service-worker.js。  
+访问 app1/* 下的所有页面，ServiceWorker 控制权会交给 app1-service-worker.js，也就是只有app1的「离线化功能」在工作，而原来的「日志收集」、「静态缓存」等功能会失效。  
+解决这个问题有两种方案：  
+- 封装「日志收集」、「静态资源缓存」功能，app1-service-worker.js引入并使用这些功能。
+- 把「离线化功能」整合到 root-service-worker.js，只允许注册该 ServiceWorker。
 
+关于方案一，封装通用功能这是正确的，但是主域下的功能可能完全没办法一一拆解，并且后续主域的 ServiceWorker 更新了新功能，子域下的 ServiceWorker 还需要主动去更新和升级。  
+关于方案二，显然可以解决方案一的问题，但是其他应用，例如 app2 可能不需要「离线化功能」。 基于此，我们引入方案三：功能整合到主域，支持功能的组合按照作用域隔离。  
+基于 GlacierJS 的话代码上可能会是这样的  
+``` 
+const mainPlugins = [
+  new Collector(); // 日志收集功能
+  new AssetsCache(); // 静态资源缓存功能
+];
+
+glacier.use('/', mainPlugins)；
+glacier.use('/app1', [
+  ...mainPlugins,
+  new Offiline(),  // 离线化功能
+])；
+```
+## 资源缓存
+ServiceWorker 一个很核心的能力就是能结合 CacheAPI 进行灵活的缓存资源，从而达到优化站点的加载速度、弱网访问、离线应用等。  
+对于静态资源有五种常用的缓存策略：  
+- stale-while-revalidate: 该模式允许您使用缓存（如果可用）尽快响应请求，如果没有缓存则回退到网络请求，然后使用网络请求来更新缓存，它是一种比较安全的缓存策略。
+- cache-first: 离线 Web 应用程序将严重依赖缓存，但对于非关键且可以逐渐缓存的资源，**「缓存优先」**是最佳选择。如果缓存中有响应，则将使用缓存的响应来满足请求，并且根本不会使用网络。如果没有缓存响应，则请求将由网络请求完成，然后响应会被缓存，以便下次直接从缓存中提供下一个请求。
+- network-first: 对于频繁更新的请求，**「网络优先」**策略是理想的解决方案。默认情况下，它会尝试从网络获取最新响应。如果请求成功，它会将响应放入缓存中。如果网络未能返回响应，则将使用缓存的响应。
+- network-only: 如果您需要从网络满足特定请求，network-only 模式会将资源请求进行透传到网络
+- cache-only: 该策略确保从缓存中获取响应。这种场景不太常见，它一般匹配着「预缓存」策略会比较有用。
+
+那这些策略中，我们应该使用哪种呢？答案是根据资源的种类具体选择。  
+例如一些资源如果只是在 Web 应用发布的时候才会更新，我们就可以使用 cache-first 策略，例如一些 JS、样式、图片等。
+而 index.html 作为页面的加载的主入口，更加适宜使用 stale-while-revalidate 策略。  
+以 GlacierJS 的缓存插件（@glacierjs/plugin-assets-cache）为例：  
+``` 
+// in service-worker.js
+importScripts("//cdn.jsdelivr.net/npm/@glacierjs/core/dist/index.min.js");
+importScripts('//cdn.jsdelivr.net/npm/@glacierjs/sw/dist/index.min.js');
+importScripts('//cdn.jsdelivr.net/npm/@glacierjs/plugin-assets-cache/dist/index.min.js');
+
+const { GlacierSW } = self['@glacierjs/sw'];
+const { AssetsCacheSW, Strategy } = self['@glacierjs/plugin-assets-cache'];
+
+const glacierSW = new GlacierSW();
+
+glacierSW.use(new AssetsCacheSW({
+    routes: [{
+        // capture as string: store index.html with stale-while-revalidate strategy.
+        capture: 'https://mysite.com/index.html',
+        strategy: Strategy.STALE_WHILE_REVALIDATE,
+    }, {
+        // capture as RegExp: store all images with cache-first strategy
+        capture: /\.(png|jpg)$/,
+        strategy: Strategy.CACHE_FIRST
+    }, {
+        // capture as function: store all stylesheet with cache-first strategy
+        capture: ({ request }) => request.destination === 'style',
+        strategy: Strategy.CACHE_FIRST
+    }],
+}));
+```
+**远程控制**  
+基于 ServiceWorker 的原理，一旦在浏览器安装上了，如果遇到紧急线上问题，唯有发布新的 ServiceWorker 才能解决问题。但是 ServiceWorker 的安装是有时延的，再加上有些团队从修改代码到发布的流程，这个反射弧就很长了。我们有什么办法能缩短对于线上问题的反射弧呢？  
+怎么去获取配置呢？  
+方案一，如果我们在主线程中获取配置：  
+- 需要用户主动刷新页面才会生效。
+- 做不到轻量的功能关闭，什么意思呢，我们会有开关的场景，主线程只能通过卸载或者清理缓存去实现「关闭」，这个太重了。
+方案二，如果我们在 ServiceWorker 线程去获取配置：  
+- 可以实现轻量功能关闭，透传请求就行了。
+- 但是如果遇到要干净的清理用户环境的需要，去卸载 ServiceWorker 的时候，就会导致主进程每次注册，到了 ServiceWorker 就卸载，造成频繁安装卸载。
+
+所以我们的 最后方案 是 「基于双线程的实时配置获取」。  
+主线程也要获取配置，然后配置前面要加上防抖保护，防止 onFetch 事件短时间并发的问题。  
+使用 Glacier 的插件 @glacierjs/plugin-remote-controller 可以轻松实现远程控制：  
+```  
+// in ./remote-controller-sw.ts
+import { RemoteControllerSW } from '@glacierjs/plugin-remote-controller';
+import { GlacierSW } from '@glacierjs/sw';
+import { options } from './options';
+
+const glacierSW = new GlacierSW();
+glacierSW.use(new RemoteControllerSW({
+  fetchConfig: () => getMyRemoteConfig();
+}));
+
+// 其中 getMyRemoteConfig 用于获取你存在远端的配置，返回的格式规定如下：
+const getMyRemoteConfig = async () => {
+    const config: RemoteConfig = {
+        // 全局关闭，卸载 ServiceWorker
+        switch: true,
+      
+        // 缓存功能开关
+        assetsEnable: true,
+
+                // 精细控制特定缓存
+        assetsCacheRoutes: [{
+            capture: 'https://mysite.com/index.html',
+            strategy: Strategy.STALE_WHILE_REVALIDATE,
+        }],
+    },
+}
+```
+## 数据收集
+ServiceWorker 发布之后，我们需要保持对线上情况的把控。对于一些必要的统计指标，我们可能需要进行上统计和上报。  
+@glacierjs/plugin-collector 内置了五个常见的数据事件：  
+- ServiceWorker 注册：SW_REGISTER
+- ServiceWorker 安装成功：SW_INSTALLED
+- ServiceWorker 控制中：SW_CONTROLLED
+- 命中 onFetch 事件：SW_FETCH
+- 命中浏览器缓存：CACHE_HIT of CacheFrom.Window
+- 命中 CacheAPI 缓存：CACHE_HIT of CacheFrom.SW
+
+基于以上数据的收集，我们就可以得到一些常见的通用指标：  
+- ServiceWorker 安装率 = SW_REGISTER / SW_INSTALLED
+- ServiceWorker 控制率 = SW_REGISTER / SW_CONTROLLED
+- ServiceWorker 缓存命中率 = SW_FETCH / CACHE_HIT (of CacheFrom.SW)
+
+在 ServiceWorker 线程中注册 plugin-collector：  
+``` 
+import { AssetsCacheSW } from '@glacierjs/plugin-assets-cache';
+import { CollectorSW } from '@glacierjs/plugin-collector';
+import { GlacierSW } from '@glacierjs/sw';
+
+const glacierSW = new GlacierSW();
+
+// should use plugin-assets-cache first in order to make CollectedDataType.CACHE_HIT work.
+glacierSW.use(new AssetsCacheSW({...}));
+glacierSW.use(new CollectorSW());
+```
+在主线程中注册 plugin-collector，并且监听数据事件，进行数据上报：  
+``` 
+import {
+  CollectorWindow,
+  CollectedData,
+  CollectedDataType,
+} from '@glacierjs/plugin-collector';
+import { CacheFrom } from '@glacierjs/plugin-assets-cache';
+import { GlacierWindow } from '@glacierjs/window';
+
+const glacierWindow = new GlacierWindow('./service-worker.js');
+
+glacierWindow.use(new CollectorWindow({
+    send(data: CollectedData) {
+      const { type, data } = data;
+
+      switch (type) {
+        case CollectedDataType.SW_REGISTER:
+          myReporter.event('sw-register-count');
+          break;
+
+        case CollectedDataType.SW_INSTALLED:
+          myReporter.event('sw-installed-count');
+          break;
+
+        case CollectedDataType.SW_CONTROLLED:
+          myReporter.event('sw-controlled-count');
+          break;
+
+        case CollectedDataType.SW_FETCH:
+          myReporter.event('sw-fetch-count');
+          break;
+
+        case CollectedDataType.CACHE_HIT:
+          // hit service worker cache
+          if (data?.from === CacheFrom.SW) {
+            myReporter.event(`sw-assets-count:hit-sw-${data?.url}`);
+          }
+
+          // hit browser cache or network
+          if (data?.from === CacheFrom.Window) {
+            myReporter.event(`sw-assets-count:hit-window-${data?.url}`);
+          }
+          break;
+      }
+    },
+}));
+```
+其中 myReporter.event 是你可能会实现的数据上报库  
+## 单元测试
+ServiceWorker 测试可以分解为常见的测试组.
+在顶层的是 「集成测试」，在这一层，我们检查整体的行为，例如：测试页面可加载，ServiceWorker注册，离线功能等。集成测试是最慢的，但是也是最接近现实情况的。  
+再往下一层的是 「浏览器单元测试」，由于 ServiceWorker 的生命周期，以及一些 API 只有在浏览器环境下才能有，所以我们使用浏览器去进行单元测试，会减少很多环境的问题。  
+接着是 「ServiceWorker 单元测试」，这种测试也是在浏览器环境中注册了测试用的 ServiceWorker 为前提进行的单元测试。
+最后一种是 「模拟 ServiceWorker」，这种测试粒度会更加精细，精细到某个类某个方法，只检测入参和返回。这意味着没有了浏览器启动成本，并且最终是一种可预测的方式测试代码的方式。
+但是模拟 ServiceWorker 是一件困难的事情，如果 mock 的 API 表面不正确，则在集成测试或者浏览器单元测试之前问题不会被发现。我们可以使用 service-worker-mock 或者 MSW 在 NodeJS 环境中进行 ServiceWorker 的单元测试。
 
 参考:
 [如何构建可控,可靠,可扩展的 PWA 应用](https://mp.weixin.qq.com/s/4fuP1puANOOGdGj0oAny1Q)
