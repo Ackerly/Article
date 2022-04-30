@@ -46,6 +46,7 @@
 7. [Web Animations API](./article/HTML/Web%20Animations%20API.md)
 8. [什么是BFC](./article/HTML/什么是BFC.md)
 9. [前端图片隐写](./article/HTML/前端图片隐写.md)
+10. [了解web3.0](./article/HTML/了解web3.0.md)
 ## 浏览器
 1. [浏览器存储](article/browser/浏览器存储.md)
 2. [前端实现浏览器端扫码功能](./article/browser/前端实现浏览器端扫码功能.md)
