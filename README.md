@@ -284,7 +284,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 4. [仿微博@人功能实现](./article/solution/仿微博@人功能实现.md)
 5. [聚类算法在D2C布局中的应用](./article/solution/聚类算法在D2C布局中的应用.md)
 6. [智能代码平台神笔马良的研发与实践](./article/solution/智能代码平台神笔马良的研发与实践.md)
-
+7. [vivo 商品中台的可视化微前端实践](./article/solution/vivo%20商品中台的可视化微前端实践.md)
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
 2. [12道腾讯面试真题及答案](./article/interview/12道腾讯面试真题及答案.md)
