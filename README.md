@@ -176,6 +176,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 ## 性能
 1. [vue长列表性能分析](./article/performance/vue长列表性能分析.md)
 2. [100万成员的数组去第一个和最后一个有性能差距吗](./article/performance/100万成员的数组去第一个和最后一个有性能差距吗.md)
+3. [web页面全链路性能优化指南](./article/performance/web页面全链路性能优化指南.md)
 ## HTTP
 1. [get和post的区别](./article/http/get和post的区别.md)
 2. [HTTP的不同版本特性](./article/http/HTTP协议的不同版本及区别.md)
