@@ -30,6 +30,68 @@ Web 无障碍开发的基础知识参考资料:
 在浏览器内部，使用语义化标签会隐式加上特定的 role 属性，最后朗读时的结尾修饰词也正是这些 role 属性的值以及分类，其他 role 的值朗读时也可以以此类推，而以上标签与 role 属性具体对应的关系如下：  
 
 
+|  HTML 标签   | role 属性值  |  
+|  ----  | ----  |
+| header  | banner |
+| footer  | contentinfo |
+| nav  | navigation |
+| section  | region |
+| main  | main |
+| aside  | complementary |
+| button  | button |
+| a  | link |
+
+**role 属性**  
+如果出于其他考虑，使用了非对应语义的标签，例如开头提到的使用 a 标签实现按钮，就需要添加 role="button" 属性来声明这是一个按钮。同理，其他类似情况也可以这样处理，主要的就是影响朗读时的修饰词。  
+**禁用状态使用 disabled 属性**  
+使用特定的 class 来增加禁用态样式是常见的手法，但由于 class 语义并不能被读屏软件识别，因此读屏时无法知道当前处于禁用态。可以改为使用 disabled 属性实现禁用态，例如：  
+``` 
+<input type="search" name="q" placeholder="请输入用户名" aria-label="搜索用户" disabled/>
+/* 禁用态样式 */
+input[disabled] {
+    opacity: .5;
+}
+```
+会读作 搜索用户 请输入用户名 变暗 搜索栏，读屏软件会用"变暗"这个词表示搜索栏处于不可用的状态。而对于没有 disabled 属性的标签，例如 a 标签，可以使用 aria-disabled 属性达到同样的效果。  
+**可使用 aria 标签向不存在原生语义的元素添加语义**  
+aria-label="screen reader only label"，用于添加朗读时的描述，读屏时会读出其中的内容，而忽略标签的原有的文字，例如为 a 标签同时添加 role="button" 和 aria-label="额外的按钮描述"，最终会朗读成"额外的按钮描述 按钮"。  
+aria-controls="main"，用于给操作按钮关联控制区域，VoiceOver 上这个属性没有任何作用，但 PC 读屏软件中，添加了该属性后，可以把焦点从按钮快速移动到被控制区域。  
+aria-live="true"，添加了该属性的元素，在其内容发送变化时，读屏软件会自动读出变化后的新内容。可以用于会动态刷新的元素，例如发现卡片上的“XXX人参与活动”，书城的换一批功能，用于监听实时变化的数据。实际效果可以参考这个 demo。  
+**动画**  
+可在 iOS 下通过 CSS 选择器 @media(prefers-reduced-motion) 来针对开启了“避免动画”的用户取消动画。  
+**隐藏屏幕外的元素**  
+确保屏幕外的内容已通过 display: none 或 visibility: hidden 隐藏（如浮动出现的 alert 和 banner 等），如没有隐藏，读屏软件仍会读出元素内容，但屏幕外的元素通常不希望被读出，如果不方便使用样式进行隐藏，可以为元素添加 aria-hidden="true" 属性，元素则会被读屏软件忽略。  
+## 常用场景
+**图像的编写**  
+图像需要补充文字描述，补充时需要使用具体的内容标题，例如书籍封面，可以使用书籍名称，而不要直接统一描述为"书籍封面"，同理用户头像也应该使用用户名作为描述文字。  
+**按钮的编写**  
+在 H5 中，为了避免一些浏览器默认样式的干扰，以及制作点击效果（具体原因），目前采用 a 标签实现。但从无障碍的角度考虑，a 标签默认会被当做链接处理，读屏时会读作"链接内的文字 链接"。  
+**基础无障碍适配**  
+需要加上 aria="button" 属性，例如：  
+``` 
+<a class="test_btn" role="button" href="javascript:;">文字</a>
+```
+读屏时会读出"文字 按钮"。  
+**增加描述文字**  
+如果 a 标签内本身没有文字，例如以图片、背景色和边框制作的按钮，还需要加上 aria-label="描述文字"，读屏时会读作"描述文字 按钮"的形式。当 a 标签内的文字对于视障人士不足以描述清楚按钮作用时（例如需要结合上下的元素，或者结合按钮本身的背景图才能理解按钮的含义时），也可以加上 aria-label 属性，aria-label 的内容会被优先读出，例如：  
+``` 
+<a class="test_btn" role="button" href="javascript:;" aria-label="更完整的描述">文字</a>
+```
+**多重标签嵌套**  
+a 标签内容如果有嵌套的标签，并不会影响文字被读出，例如：  
+``` 
+<a class="test_btn" role="button" href="javascript:;">
+    <span class="test_btn_inner">
+        <span class="test_btn_inner_text">文字</span>
+    </span>
+</a>
+```
+读屏时仍会读出"文字 按钮"。
+
+## 整块可点击元素的编写
+
+
+
 
 参考:
 [Web 可访问性与无障碍最佳实践](https://mp.weixin.qq.com/s/JByRPTi0jp08Cj6Kp5ekIg)
