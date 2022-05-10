@@ -175,6 +175,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 1. [理解泛型](./article/frame/typescript/理解泛型.md)
 2. [深入TypeScript中的子类型、逆变、协变](./article/frame/typescript/深入TypeScript中的子类型、逆变、协变.md)
 3. [掌握TS泛型](./article/frame/typescript/掌握TS泛型.md)
+4. [理解TS各种高级用法](./article/frame/typescript/理解TS各种高级用法.md)
 ## 性能
 1. [vue长列表性能分析](./article/performance/vue长列表性能分析.md)
 2. [100万成员的数组去第一个和最后一个有性能差距吗](./article/performance/100万成员的数组去第一个和最后一个有性能差距吗.md)
