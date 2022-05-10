@@ -89,8 +89,28 @@ a 标签内容如果有嵌套的标签，并不会影响文字被读出，例如
 读屏时仍会读出"文字 按钮"。
 
 ## 整块可点击元素的编写
-
-
+在遇到 banner 等本身由多个子元素组成，但点击时为整块点击的元素，需要分为两种情况考虑：  
+**使用 a 标签实现**  
+使用了默认的点击效果，即使用了 a 标签实现外层框，读屏时子元素会被分别选中，但实际上单独读出每个子元素不能表达按钮整体的完整含义。因为，我们建议整块当作按钮处理，但一般无需添加 aria-label，让读屏软件直接按 DOM 顺序读出子元素的文字内容即可，例如：  
+``` 
+<a class="welcomeBonus_packet" href="javascript:;" role="button" @click="packetRedeem">
+    <div class="welcomeBonus_packet_info">
+        <div class="welcomeBonus_packet_info_title">主标题内容文字</div>
+        <div class="welcomeBonus_packet_info_desc">描述文字</div>
+    </div>
+    <div class="welcomeBonus_packet_btn">
+        <span>提示文字</span>
+    </div>
+</a>
+```
+会被读作"主标题内容文字 描述文字 提示文字 按钮"，视障人士会清楚这是整体点击的按钮，并且了解到其作用。如果部分内容不希望被读出来，精简朗读文案的时长，例如作用不大的辅助语句，可以单独添加 aria-hidden="true"。  
+可点击元素点击后跳转页面通常采用 role="link" 声明，而点击后进行一些操作则通常采用 role="button" 声明，读屏的时候结尾分别为"链接"和"按钮"，但本场景下建议统一使用 role="button"，因为 role="link" 并不会让元素整块被识别，实际体验上，整体识别能带来更好的体验，而视障人士对于"链接"和"按钮"的理解包容度也比较高。  
+**使用语义化标签实现**  
+无需使用默认的点击效果，建议使用语义化的标签实现外层框，例如 section、aside，这样用户在使用“container 模式”进行读屏时，元素会直接被整体识别，而不会单独读出子元素。  
+以 VoiceOver 为例，双指旋转可以调节焦点选择的模式，”container 模式“下焦点仅会被 section 这类外层容器捕捉。  
+**小程序注意事项**  
+小程序中目前仅支持 aria-role（相当于原生 Web 的 role）和 aria-label 两个属性，如果读屏时需要忽略某些元素，无法使用 aria-hidden 来声明，因此需要注意尽量让无需被读屏的元素不输出 DOM。  
+小程序中没有语义标签，因此整块点击的元素只能加上 aria-role="button"。
 
 
 参考:
