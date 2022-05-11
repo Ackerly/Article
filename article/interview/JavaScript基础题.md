@@ -82,13 +82,14 @@ foo()
 console.log(typeof a)
 console.log(typeof b)
 ```
-console.log 打印出的值是undefined, b
+console.log 打印出的值是undefined, number
+注意：a 是一个局部变量，b 是个全局变量
 ## 第8题 — 类型转换
 ``` 
 console.log(+true)
 console.log(!"ConardLi")
 ```
-console.log 打印出的值是1,true
+console.log 打印出的值是1,false
 ## 第9题 — ESM
 ``` 
 // module.js 
@@ -100,7 +101,7 @@ import * as data from "./module"
 
 console.log(data)
 ```
-console.log打印出的值是() => "Hello world"和name = "c"
+console.log打印出的值是{ default: function default(), name: "c" }
 ## 第10题 — 对象做 key
 ``` 
 const a = {};
@@ -112,7 +113,11 @@ a[c] = 456;
 
 console.log(a[b]);
 ```
-console.log 打印出的值是123
-
+console.log 打印出的值是456
+注意：
+``` 
+a["Object object"] = 123;
+a["Object object"] = 456;
+```
 参考:
 [进来做几道 JavaScript 基础题找找自信](https://mp.weixin.qq.com/s/h-oZm_4o_2RcEy99UsdYKg)
