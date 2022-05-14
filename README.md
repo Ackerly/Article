@@ -63,6 +63,7 @@
 8. [由Babel理解前端编译原理](./article/js/由Babel理解前端编译原理.md)
 9. [理解状态管理](./article/js/理解状态管理.md)
 10. [JavaScript Containers](./article/js/JavaScript%20Containers.md)
+11. [了解Web Worker](./article/js/了解Web%20Worker.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
@@ -115,6 +116,7 @@
 3. [react解决方案之组件数据请求](./article/frame/react/react解决方案之组件数据请求.md)
 4. [聊聊时间切片](./article/frame/react/聊聊时间切片.md)
 5. [深入理解scheduler原理](./article/frame/react/深入理解scheduler原理.md)
+6. [React并发渲染](./article/frame/react/React并发渲染.md)
 ### Vue
 1. [vue组件将传值的几种方式](
 article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
@@ -251,6 +253,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 12. [等差素数数列](./article/algorithm/等差素数数列.md)
 13. [计数排序](./article/algorithm/计数排序.md)
 14. [堆排序](./article/algorithm/堆排序.md)
+15. [前端算法系统练习之栈和队列篇](./article/algorithm/前端算法系统练习之栈和队列篇.md)
 
 ### leetcode
 1. [公交路线](./article/algorithm/leetcode/公交路线.md)
