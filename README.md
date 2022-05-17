@@ -35,6 +35,7 @@
 33. [CSS国际化](./article/css/CSS国际化.md)
 34. [CSS投影与透视](./article/css/CSS投影与透视.md)
 35. [CSS 数学函数之 calc](./article/css/CSS%20数学函数之%20calc.md)
+36. [10个CSS技巧](./article/css/10个CSS技巧.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
@@ -254,6 +255,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 13. [计数排序](./article/algorithm/计数排序.md)
 14. [堆排序](./article/algorithm/堆排序.md)
 15. [前端算法系统练习之栈和队列篇](./article/algorithm/前端算法系统练习之栈和队列篇.md)
+16. [从数据集中随机抽取一定数量的数据](./article/algorithm/从数据集中随机抽取一定数量的数据.md)
 
 ### leetcode
 1. [公交路线](./article/algorithm/leetcode/公交路线.md)
