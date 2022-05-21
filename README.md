@@ -49,6 +49,7 @@
 9. [前端图片隐写](./article/HTML/前端图片隐写.md)
 10. [了解web3.0](./article/HTML/了解web3.0.md)
 11. [Web可访问性与无障碍最佳实践](./article/HTML/Web可访问性与无障碍最佳实践.md)
+12. [充分理解WebGL](./article/HTML/充分理解WebGL.md)
 ## 浏览器
 1. [浏览器存储](article/browser/浏览器存储.md)
 2. [前端实现浏览器端扫码功能](./article/browser/前端实现浏览器端扫码功能.md)
@@ -156,6 +157,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 33. [vue3之watchEffect用途](./article/frame/vue/vue3之watchEffect用途.md)
 34. [Pinia上手指南](./article/frame/vue/Pinia上手指南.md)
 35. [vue移动端适配方案](./article/frame/vue/vue移动端适配方案.md)
+36. [Vue性能指标逐渐反超React](./article/frame/vue/Vue性能指标逐渐反超React.md)
 
 ##### Vue源码学习
 - [手写与事件相关的实例方法](./article/frame/vue/source%20code%20study/手写与事件相关的实例方法.md)
