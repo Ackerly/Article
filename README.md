@@ -54,6 +54,7 @@
 1. [浏览器存储](article/browser/浏览器存储.md)
 2. [前端实现浏览器端扫码功能](./article/browser/前端实现浏览器端扫码功能.md)
 3. [浏览器仅打开1个页面，为什么有4个进程](./article/browser/仅打开1个页面，为什么有4个进程.md)
+4. [点击浏览器的前进后退按钮，页面的缓存机制](./article/browser/点击浏览器的前进后退按钮，页面的缓存机制.md)
 ## JavaScript
 1. [V8编译浅谈](./article/js/V8编译浅谈.md)
 2. [Axios如何实现请求重试](./article/js/Axios如何实现请求重试.md)
@@ -240,6 +241,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 22. [用DDD(领域驱动设计)和ADT(代数数据类型)提升代码质](article/architecture/用DDD(领域驱动设计)和ADT(代数数据类型)提升代码质量.md)
 23. [如何提升前端线上问题发现率](./article/architecture/如何提升前端线上问题发现率.md)
 24. [Observable防腐层项目实战](./article/architecture/Observable防腐层项目实战.md)
+25. [面向未来与浏览器规范的前端DDD架构设计](./article/architecture/面向未来与浏览器规范的前端DDD架构设计.md)
 
 ## 算法
 1. [回溯](./article/algorithm/回溯.md)
