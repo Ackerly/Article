@@ -159,6 +159,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 34. [Pinia上手指南](./article/frame/vue/Pinia上手指南.md)
 35. [vue移动端适配方案](./article/frame/vue/vue移动端适配方案.md)
 36. [Vue性能指标逐渐反超React](./article/frame/vue/Vue性能指标逐渐反超React.md)
+37. [vue项目会用的性能优化](./article/frame/vue/vue项目会用的性能优化.md)
 
 ##### Vue源码学习
 - [手写与事件相关的实例方法](./article/frame/vue/source%20code%20study/手写与事件相关的实例方法.md)
@@ -187,6 +188,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 1. [vue长列表性能分析](./article/performance/vue长列表性能分析.md)
 2. [100万成员的数组去第一个和最后一个有性能差距吗](./article/performance/100万成员的数组去第一个和最后一个有性能差距吗.md)
 3. [web页面全链路性能优化指南](./article/performance/web页面全链路性能优化指南.md)
+4. [边缘渲染如何提高前端性能](./article/performance/边缘渲染如何提高前端性能.md)
 ## HTTP
 1. [get和post的区别](./article/http/get和post的区别.md)
 2. [HTTP的不同版本特性](./article/http/HTTP协议的不同版本及区别.md)
@@ -276,6 +278,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 7. [可以永远相信debugger，但不能永远相信console](./article/tool/可以永远相信debugger，但不能永远相信console.md)
 8. [11+ chrome高级调试技巧](./article/tool/11+%20chrome高级调试技巧.md)
 9. [前端包管理器探究](./article/tool/前端包管理器探究.md)
+10. [设置 NPM Registry 的 4 种姿势](./article/tool/npm/设置%20NPM%20Registry%20的%204%20种姿势.md)
 ### webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
@@ -338,3 +341,4 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 24. [开发人员需要知道的五个设计技巧](./article/other/开发人员需要知道的五个设计技巧.md)
 25. [解决前端常见问题之竞态条件](./article/other/解决前端常见问题之竞态条件.md)
 26. [开发和设计之间的鸿沟](./article/other/开发和设计之间的鸿沟.md)
+27. [浅谈文档实时协同编辑](./article/other/浅谈文档实时协同编辑.md)
