@@ -73,7 +73,121 @@ Hack pipe 操作符可以让我们更好地表达这段代码的意思：
 const y = x |> f(%) |> g(%) |> h(%);
 ```
 **F# 管道运算符**  
+F# 管道运算符与 Hack 管道运算符大致相似。但是，它没有特殊变量 %。相反，运算符右侧的函数并会直接应用于其左侧。因此，以下两个表达式是等价的：  
+``` 
+'ConardLi' |> console.log
 
+console.log('ConardLi')
+```
+F# 管道运算符更适合单参数的函数，下面三个函数是等价的：  
+``` 
+const y = h(g(f(x))); // no pipe
+const y = x |> f(%) |> g(%) |> h(%); // Hack pipe
+const y = x |> f |> g |> h; // F# pipe
+```
+在这种情况下，Hack pipe 比 F# pipe 更冗长。  
+但是，如果是多参数的情况下，F# pipe 的写法就要复杂一点了：  
+``` 
+5 |> add2(1, %) // Hack pipe
+5 |> $ => add2(1, $) // F# pipe
+```
+F# pipe 还要多写一个匿名函数，这显然相对与 Hack pipe 来讲缺失了一些灵活性。这可能也是大家更倾向于 Hack pipe 的原因。  
+## 管道运算符的一些实际用例  
+**嵌套函数调用的扁平写法**  
+JavaScript 标准库创建的所有迭代器都有一个共同的原型。这个原型是不能直接访问的，但我们可以像这样检索它：  
+``` 
+const IteratorPrototype =
+  Object.getPrototypeOf(
+    Object.getPrototypeOf(
+      [][Symbol.iterator]()
+    )
+  )
+;
+```
+使用管道运算符，代码会更容易理解一些：  
+``` 
+const IteratorPrototype =
+  [][Symbol.iterator]()
+  |> Object.getPrototypeOf(%)
+  |> Object.getPrototypeOf(%)
+;
+```
+**后期处理**  
+看看下面的代码：  
+``` 
+function myFunc() {
+  // ···
+  return conardLi.someMethod();
+}
+```
+现在我们想在函数返回前对返回值做一些其他的操作，我们应该怎么办呢？
+以前我们肯定要定义一个临时变量或者在函数外侧再包一个函数，使用管道运算符，我们可以这样做：  
+``` 
+function myFunc() {
+  // ···
+  return theResult |> (console.log(%), %); // (A)
+}
+```
+后处理的值是一个函数，可以向它添加一个属性：  
+``` 
+const testPlus = () => {
+  assert.equal(3+4, 7);
+} |> Object.assign(%, {
+  name: 'Test the plus operator',
+});
+```
+前面的代码等价于：  
+``` 
+const testPlus = () => {
+  assert.equal(3+4, 7);
+}
+Object.assign(testPlus, {
+  name: 'Testing +',
+});
+```
+也可以像这样使用管道运算符：  
+``` 
+const testPlus = () => {
+  assert.equal(3+4, 7);
+}
+|> (%.name = 'Test the plus operator', %)
+;
+```
+**链式函数调用**  
+可以用 Array 的一些方法例如 .filter()和 .map() 实现链式调用，但是这仅仅是内置在数组里的一些方法，我们没办法通过库引入更多的 Array 方法。  
+使用管道运算符，我们可以像数组本身的方法一样实现一些其他方法的链式调用：  
+``` 
+import {Iterable} from '@rauschma/iterable/sync';
+const {filter, map} = Iterable;
+
+const resultSet = inputSet
+  |> filter(%, x => x >= 0)
+  |> map(%, x => x * 2)
+  |> new Set(%)
+;
+```
+ 
+``` 
+const regexOperators =
+  ['*', '+', '[', ']']
+  .map(ch => escapeForRegExp(ch))
+  .join('')
+  |> '[' + % + ']'
+  |> new RegExp(%)
+;
+```
+实际上就等价于  
+``` 
+let _ref;
+
+const regexOperators =
+  (
+    (_ref = ['*', '+', '[', ']']
+      .map(ch => escapeForRegExp(ch))
+      .join('')), 
+    new RegExp(`[${_ref}]`)
+  );
+```
 
 参考:  
 [JS 代码越来越难读了 ...](https://mp.weixin.qq.com/s/Ng-38P0jvvWbsPSwAjrJdA)
