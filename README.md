@@ -67,6 +67,7 @@
 9. [理解状态管理](./article/js/理解状态管理.md)
 10. [JavaScript Containers](./article/js/JavaScript%20Containers.md)
 11. [了解Web Worker](./article/js/了解Web%20Worker.md)
+12. [JS代码越来越难读了](./article/js/JS代码越来越难读了.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
