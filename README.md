@@ -287,6 +287,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 4. [webpack优化篇](./article/tool/webpack/webpack优化篇.md)
 5. [webpack进阶篇](article/tool/webpack/webpack进阶篇.md)
 6. [webpack模块热替换(HMR)原理](./article/tool/webpack/webpack模块热替换(HMR)原理.md)
+7. [在Webpack写一个Loader](./article/tool/webpack/在Webpack写一个Loader.md)
 ### Git
 1. [Git常用指令](./article/tool/git/git常用知识点.md)
 2. [Git工作流](./article/tool/git/git工作流.md)
