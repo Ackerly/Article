@@ -121,6 +121,7 @@
 4. [聊聊时间切片](./article/frame/react/聊聊时间切片.md)
 5. [深入理解scheduler原理](./article/frame/react/深入理解scheduler原理.md)
 6. [React并发渲染](./article/frame/react/React并发渲染.md)
+7. [从一次富文本编辑器升级探索React元素渲染](./article/frame/react/从一次富文本编辑器升级探索React元素渲染.md)
 ### Vue
 1. [vue组件将传值的几种方式](
 article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
@@ -263,6 +264,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 14. [堆排序](./article/algorithm/堆排序.md)
 15. [前端算法系统练习之栈和队列篇](./article/algorithm/前端算法系统练习之栈和队列篇.md)
 16. [从数据集中随机抽取一定数量的数据](./article/algorithm/从数据集中随机抽取一定数量的数据.md)
+17. [数据结构之双向链表](./article/algorithm/数据结构之双向链表.md)
 
 ### leetcode
 1. [公交路线](./article/algorithm/leetcode/公交路线.md)
