@@ -50,6 +50,7 @@
 10. [了解web3.0](./article/HTML/了解web3.0.md)
 11. [Web可访问性与无障碍最佳实践](./article/HTML/Web可访问性与无障碍最佳实践.md)
 12. [充分理解WebGL](./article/HTML/充分理解WebGL.md)
+13. [2022年Web平台新动态](./article/HTML/2022年Web平台新动态.md)
 ## 浏览器
 1. [浏览器存储](article/browser/浏览器存储.md)
 2. [前端实现浏览器端扫码功能](./article/browser/前端实现浏览器端扫码功能.md)
@@ -308,6 +309,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 6. [智能代码平台神笔马良的研发与实践](./article/solution/智能代码平台神笔马良的研发与实践.md)
 7. [vivo 商品中台的可视化微前端实践](./article/solution/vivo%20商品中台的可视化微前端实践.md)
 8. [从零开始搞监控系统——SDK](./article/solution/从零开始搞监控系统——SDK.md)
+9. [为了在线教室的复杂前端业务，我用了这个神库](./article/solution/为了在线教室的复杂前端业务，我用了这个神库.md)
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
 2. [12道腾讯面试真题及答案](./article/interview/12道腾讯面试真题及答案.md)
