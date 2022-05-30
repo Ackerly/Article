@@ -300,6 +300,8 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 6. [GitLab CI打造一条自己的流水线](./article/tool/git/GitLab%20CI打造一条自己的流水线.md)
 7. [用 Git Subtree 在多个 Git 项目间双向同步子项目](./article/tool/git/用%20Git%20Subtree%20在多个%20Git%20项目间双向同步子项目.md)
 8. [45 个 Git 经典操作场景](./article/tool/git/45%20个%20Git%20经典操作场景.md)
+### vite
+1. [如何做SSG、静态资源发布以及自动化部署](./article/tool/vite/如何做SSG、静态资源发布以及自动化部署.md)
 ## 技术方案
 1. [前端实现计时准确](./article/solution/前端实现计时准确.md)
 2. [前端内存泄漏解决方案](./article/solution/前端内存泄漏解决方案.md)
