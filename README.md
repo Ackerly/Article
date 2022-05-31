@@ -124,9 +124,7 @@
 6. [React并发渲染](./article/frame/react/React并发渲染.md)
 7. [从一次富文本编辑器升级探索React元素渲染](./article/frame/react/从一次富文本编辑器升级探索React元素渲染.md)
 ### Vue
-1. [vue组件将传值的几种方式](
-article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
-)
+1. [vue组件将传值的几种方式](article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md)
 2. [vue-router实现原理](/article/frame/vue/vue-router实现原理.md)
 3. [理解vue循环中的key](/article/frame/vue/vue的循环为什么要绑定key.md)
 4. [vue路由总结](article/frame/vue/vue路由总结.md)
@@ -214,7 +212,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 8. [Decorator(装饰器模式)](./article/design%20patterns/Decorator(装饰器模式).md)
 9. [Facade(外观模式)](./article/design%20patterns/Facade(外观模式).md)
 10. [Flyweight享元模式](./article/design%20patterns/Flyweight享元模式.md)
-11. [Chain Responsibility(职责链模式)](./article/design%20patterns/Chain%20of%20Responsibility(职责链模式).md)  
+11. [Chain Responsibility(职责链模式)](./article/design%20patterns/Chain%20of%20Responsibility(职责链模式).md)
 12. [Proxy代理模式](./article/design%20patterns/Proxy代理模式.md)
 13. [Command(命令模式)](./article/design%20patterns/Command(命令模式).md)
 14. [Interpreter解释器模式](./article/design%20patterns/Interpreter解释器模式.md)
@@ -283,6 +281,7 @@ article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md
 8. [11+ chrome高级调试技巧](./article/tool/11+%20chrome高级调试技巧.md)
 9. [前端包管理器探究](./article/tool/前端包管理器探究.md)
 10. [设置 NPM Registry 的 4 种姿势](./article/tool/npm/设置%20NPM%20Registry%20的%204%20种姿势.md)
+11. [现代Monorepo工程技术选型](/article/tool/现代Monorepo工程技术选型.md)
 ### webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
