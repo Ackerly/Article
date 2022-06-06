@@ -126,6 +126,7 @@
 5. [深入理解scheduler原理](./article/frame/react/深入理解scheduler原理.md)
 6. [React并发渲染](./article/frame/react/React并发渲染.md)
 7. [从一次富文本编辑器升级探索React元素渲染](./article/frame/react/从一次富文本编辑器升级探索React元素渲染.md)
+8. [不要滥用effect](./article/frame/react/不要滥用effect.md)
 ### Vue
 1. [vue组件将传值的几种方式](article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md)
 2. [vue-router实现原理](/article/frame/vue/vue-router实现原理.md)
