@@ -317,6 +317,7 @@
 7. [vivo 商品中台的可视化微前端实践](./article/solution/vivo%20商品中台的可视化微前端实践.md)
 8. [从零开始搞监控系统——SDK](./article/solution/从零开始搞监控系统——SDK.md)
 9. [为了在线教室的复杂前端业务，我用了这个神库](./article/solution/为了在线教室的复杂前端业务，我用了这个神库.md)
+10. [深入浅出区块链技术](./article/solution/深入浅出区块链技术.md)
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
 2. [12道腾讯面试真题及答案](./article/interview/12道腾讯面试真题及答案.md)
