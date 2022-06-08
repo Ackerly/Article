@@ -104,6 +104,7 @@
 22. [深拷贝解决循环引用](./article/js/ES2015/深拷贝解决循环引用.md)
 23. [JS宏任务,微任务](./article/js/ES2015/JS宏任务,微任务.md)
 24. [浏览器的五种Observer](./article/js/ES2015/浏览器的五种Observer.md)
+25. [reduce常见用法](./article/js/ES2015/reduce常见用法.md)
 ## WebAssembly
 1. [WebAssembly入门](./article/webAssembly/webAssembly入门.md)
 
