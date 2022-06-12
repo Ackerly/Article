@@ -206,6 +206,7 @@
 1. [6大Web安全攻防解析](./article/security/6大Web安全攻防解析.md)
 2. [如何防止他人恶意调试你的web程序](./article/security/如何防止他人恶意调试你的web程序.md)
 3. [关于鉴权](./article/security/关于鉴权.md)
+4. [CSRF攻击原理和防护方法](./article/security/CSRF攻击原理和防护方法.md)
 
 ## 设计模式
 1. [理解MVC](./article/design%20patterns/理解MVC.md)
