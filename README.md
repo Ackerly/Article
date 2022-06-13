@@ -73,6 +73,7 @@
 12. [JS代码越来越难读了](./article/js/JS代码越来越难读了.md)
 13. [浅谈控制反转与依赖注入](./article/js/浅谈控制反转与依赖注入.md)
 14. [可选链和模块动态导入，改变了前端生态规则](./article/js/可选链和模块动态导入，改变了前端生态规则.md)
+15. [动态监听DOM元素高度变化](./article/js/动态监听DOM元素高度变化.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
