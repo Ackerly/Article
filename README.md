@@ -197,6 +197,7 @@
 2. [100万成员的数组去第一个和最后一个有性能差距吗](./article/performance/100万成员的数组去第一个和最后一个有性能差距吗.md)
 3. [web页面全链路性能优化指南](./article/performance/web页面全链路性能优化指南.md)
 4. [边缘渲染如何提高前端性能](./article/performance/边缘渲染如何提高前端性能.md)
+5. [使用 content-visibility 优化渲染性能](./article/performance/使用%20content-visibility%20优化渲染性能.md)
 ## HTTP
 1. [get和post的区别](./article/http/get和post的区别.md)
 2. [HTTP的不同版本特性](./article/http/HTTP协议的不同版本及区别.md)
@@ -309,6 +310,7 @@
 6. [GitLab CI打造一条自己的流水线](./article/tool/git/GitLab%20CI打造一条自己的流水线.md)
 7. [用 Git Subtree 在多个 Git 项目间双向同步子项目](./article/tool/git/用%20Git%20Subtree%20在多个%20Git%20项目间双向同步子项目.md)
 8. [45 个 Git 经典操作场景](./article/tool/git/45%20个%20Git%20经典操作场景.md)
+9. [Git存储原理及部分实现](./article/tool/git/Git存储原理及部分实现.md)
 ### vite
 1. [如何做SSG、静态资源发布以及自动化部署](./article/tool/vite/如何做SSG、静态资源发布以及自动化部署.md)
 ## 技术方案
@@ -363,3 +365,4 @@
 26. [开发和设计之间的鸿沟](./article/other/开发和设计之间的鸿沟.md)
 27. [浅谈文档实时协同编辑](./article/other/浅谈文档实时协同编辑.md)
 28. [让组件库井井有条](./article/other/让组件库井井有条.md)
+29. [CDN 为什么这么设计](./article/other/CDN%20为什么这么设计.md)
