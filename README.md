@@ -37,6 +37,7 @@
 35. [CSS 数学函数之 calc](./article/css/CSS%20数学函数之%20calc.md)
 36. [10个CSS技巧](./article/css/10个CSS技巧.md)
 37. [使用display:content实现幽灵节点](./article/css/使用display:content实现幽灵节点.md)
+38. [为什么说移动端该放弃rem适配方案了](./article/css/为什么说移动端该放弃rem适配方案了.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
@@ -229,6 +230,7 @@
 15. [Iterator 迭代器模式](./article/design%20patterns/Iterator%20迭代器模式.md)
 16. [幂等设计](./article/design patterns/幂等设计.md)
 17. [Javascript之迪米特法则](./article/design%20patterns/Javascript之迪米特法则.md)
+18. [前端代码的三种设计模式](./article/design%20patterns/前端代码的三种设计模式.md)
 ## 架构
 1. [以前端架构师的身份，从零开始搞事](./article/architecture/以前端架构师的身份，从零开始搞事.md)
 2. [字节跳动如何落地微前端](./article/architecture/字节跳动如何落地微前端.md)
