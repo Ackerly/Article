@@ -38,6 +38,7 @@
 36. [10个CSS技巧](./article/css/10个CSS技巧.md)
 37. [使用display:content实现幽灵节点](./article/css/使用display:content实现幽灵节点.md)
 38. [为什么说移动端该放弃rem适配方案了](./article/css/为什么说移动端该放弃rem适配方案了.md)
+39. [图片裁切 object-view-box 属性](./article/css/图片裁切%20object-view-box%20属性.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
