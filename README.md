@@ -280,6 +280,7 @@
 17. [数据结构之双向链表](./article/algorithm/数据结构之双向链表.md)
 18. [数据结构之循环链表](./article/algorithm/数据结构之循环链表)
 19. [利用 JS 实现多种图片相似度算法](./article/algorithm/利用%20JS%20实现多种图片相似度算法.md)
+20. [最长公共子序列(LCS)算法在重新排序项目中的应用](./article/algorithm/最长公共子序列(LCS)算法在重新排序项目中的应用.md)
 
 ### leetcode
 1. [公交路线](./article/algorithm/leetcode/公交路线.md)
@@ -331,6 +332,7 @@
 10. [深入浅出区块链技术](./article/solution/深入浅出区块链技术.md)
 11. [App常用跨端技术栈深入分析](./article/solution/App常用跨端技术栈深入分析.md)
 12. [Semi Design 中的无障碍设计](./article/solution/Semi%20Design%20中的无障碍设计.md)
+13. [实现一个大文件切片上传+断点续传](./article/solution/实现一个大文件切片上传+断点续传.md)
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
 2. [12道腾讯面试真题及答案](./article/interview/12道腾讯面试真题及答案.md)
