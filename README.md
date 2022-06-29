@@ -377,3 +377,4 @@
 28. [让组件库井井有条](./article/other/让组件库井井有条.md)
 29. [CDN 为什么这么设计](./article/other/CDN%20为什么这么设计.md)
 30. [研发同学应该如何负责好一个项目](./article/other/研发同学应该如何负责好一个项目.md)
+31. [浅谈 Function Programing 编程范式](./article/other/浅谈%20Function%20Programing%20编程范式.md)
