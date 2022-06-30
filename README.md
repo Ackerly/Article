@@ -135,6 +135,7 @@
 7. [从一次富文本编辑器升级探索React元素渲染](./article/frame/react/从一次富文本编辑器升级探索React元素渲染.md)
 8. [不要滥用effect](./article/frame/react/不要滥用effect.md)
 9. [搞懂12个Hooks](./article/frame/react/搞懂12个Hooks.md)
+10. [使用 React Testing Library 的 15 个常见错误](./article/frame/react/使用%20React%20Testing%20Library%20的%2015%20个常见错误.md)
 ### Vue
 1. [vue组件将传值的几种方式](article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md)
 2. [vue-router实现原理](/article/frame/vue/vue-router实现原理.md)
