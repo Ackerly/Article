@@ -341,6 +341,7 @@
 3. [关于box-size面试题](./article/interview/关于box-size面试题.md)
 4. [解释什么是前端模块化](./article/interview/解释什么是前端模块化.md)
 5. [请使用JS完成一个LRU缓存](./article/interview/请使用JS完成一个LRU缓存.md)
+6. [出错行author 的原理其实就是 Git Blame](./article/interview/监控SDK的架构设计和难点亮点.md)
 
 ## 服务
 1. [NodeJS落地WebSocket实践](./article/serve/NodeJS落地WebSocket实践.md)
