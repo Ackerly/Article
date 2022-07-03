@@ -215,6 +215,7 @@
 2. [如何防止他人恶意调试你的web程序](./article/security/如何防止他人恶意调试你的web程序.md)
 3. [关于鉴权](./article/security/关于鉴权.md)
 4. [CSRF攻击原理和防护方法](./article/security/CSRF攻击原理和防护方法.md)
+5. [前端JS攻防对抗](./article/security/前端JS攻防对抗.md)
 
 ## 设计模式
 1. [理解MVC](./article/design%20patterns/理解MVC.md)
@@ -335,6 +336,7 @@
 11. [App常用跨端技术栈深入分析](./article/solution/App常用跨端技术栈深入分析.md)
 12. [Semi Design 中的无障碍设计](./article/solution/Semi%20Design%20中的无障碍设计.md)
 13. [实现一个大文件切片上传+断点续传](./article/solution/实现一个大文件切片上传+断点续传.md)
+14. [移动端数据可视化方案的挑战与设计](./article/solution/移动端数据可视化方案的挑战与设计.md)
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
 2. [12道腾讯面试真题及答案](./article/interview/12道腾讯面试真题及答案.md)
