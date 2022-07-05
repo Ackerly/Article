@@ -75,13 +75,131 @@ CSS-doodle 它是一个基于 Web-Component 的库。允许我们快速的创建
 3. 整个代码的核心部分即是 background: hsl(@rn(255, 1, 2), @rn(10%, 90%), @rn(10%, 90%))，这里即表示对每个 grid item 赋予背景色，其中 @rn()，就是最核心的部分，利用了柏林噪声算法，有规律的将背景色 map 到每一个 grid 上
 
 @rn() 的实现使用的就是柏林噪声的实现。同时，函数相当于是类似 p5.js 里面的 noise 函数同时做了 map，map 到前面函数参数设定的 from 到 to 范围内。  
-@rn() 柏林噪声随机会根据 Grid 网格，Map 到每一个网格上，使之相邻的 Grid item 之间的值，存在一定的关联。  
+@rn() 柏林噪声随机会根据 Grid 网格，Map 到每一个网格上，使之相邻的 Grid item 之间的值，存在一定的关联。这就使得，我们利用它创造出来的图形，会具备一定的规律。  
 
 源码的实现  
 ``` 
+rn({ x, y, context, position, grid, extra, shuffle }) {
+      let counter = 'noise-2d' + position;
+      let [ni, nx, ny, nm, NX, NY] = last(extra) || [];
+      let isSeqContext = (ni && nm);
+      return (...args) => {
+        let {from = 0, to = from, frequency = 1, amplitude = 1} = get_named_arguments(args, [
+          'from', 'to', 'frequency', 'amplitude'
+        ]);
+
+        if (args.length == 1) {
+          [from, to] = [0, from];
+        }
+        if (!context[counter]) {
+          context[counter] = new Perlin(shuffle);
+        }
+        frequency = clamp(frequency, 0, Infinity);
+        amplitude = clamp(amplitude, 0, Infinity);
+        let transform = [from, to].every(is_letter) ? by_charcode : by_unit;
+        let t = isSeqContext
+          ? context[counter].noise((nx - 1)/NX * frequency, (ny - 1)/NY * frequency, 0)
+          : context[counter].noise((x - 1)/grid.x * frequency, (y - 1)/grid.y * frequency, 0);
+        let fn = transform((from, to) => map2d(t * amplitude, from, to, amplitude));
+        let value = fn(from, to);
+        return push_stack(context, 'last_rand', value);
+      };
+    },
+```
+语法大概是 @rn(from, to, frequency, amplitude)，其中 from、to 表示随机范围，而 frequency 表示噪声的频率，amplitude 表示噪声的振幅。这两个参数可以理解为控制随机效果的频率和幅度。  
+其中 new Perlin(shuffle) 即运用到了柏林噪声算法。  
+**Show Time**  
+可以再添加上随机的 scale()、以及 skew()。代码是这样的： 
+``` 
+<css-doodle grid="20">
+    :doodle {
+        grid-gap: 1px;
+        width: 600px; height: 600px;
+    }
+    background: hsl(@r(360), 80%, 80%);
+    transform: 
+        scale(@r(1.1, .3, 3)) 
+        skew(@r(-45deg, 45deg, 3));
+</css-doodle>
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+```
+上述代码表示的是一个 20x20 的 Grid 网格，每个 Grid item 都设置了完全随机的背景色、scale() 以及 skew()。当然，这里我们用的是 @r()而不是 @rn()，每个格子的每个属性的随机，没有任何的关联
+在上述代码的基础上，将普通的完全随机，改为柏林噪声随机 @rn()：
+```
+<css-doodle grid="20">
+    :doodle {
+        grid-gap: 1px;
+        width: 600px; height: 600px;
+    }
+    background: hsl(@rn(360), 80%, 80%);
+    transform: 
+        scale(@rn(1.1, .3, 3)) 
+        skew(@rn(-45deg, 45deg, 3));
+</css-doodle>
+```
+此时，就能得到完全不一样的效果,这是由于每个 Grid item 的随机效果，都基于它们在 Grid 布局中的位置，彼此存在关联，这就是柏林噪声随机的效果。  
+再添加上 hue-rotate 动画：  
+``` 
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    animation: change 10s linear infinite;
+}
+@keyframes change {
+    10% {
+        filter: hue-rotate(360deg);
+    }
+}
 
 ```
 
+可以把柏林噪声随机应用在各种属性上，我们可以放飞想象，去尝试各种不一样的搭配。下面这个， 就是把柏林噪声运用在点阵定位上：  
+``` 
+<css-doodle grid="30x30">
+    :doodle {
+        @size: 90vmin;
+        perspective: 10px;
+    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    top: @rn(1%, 100%, 1.5);
+    left: @rn(1%, 100%, 1.5);
+    transform: scale(@rn(.1, 5, 2));
+    background: hsl(@rn(1, 255, 3), @rn(10%, 90%), @rn(10%, 90%));
+</css-doodle>
+```  
+亦或者配合运用在 transform: rotate() 上：  
+``` 
+<css-doodle grid="20x5">
+    @place-cell: center;
+    @size: calc(@i * 1.5%);
+    :doodle {
+        width: 60vmin; 
+        height: 60vmin;
+    }
+    z-index: calc(999 - @i);
+    border-radius: 50%;
+    border: 1px @p(dashed, solid, double) hsl(@rn(255), 70%, @rn(60, 90%));
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: 
+        rotate(@rn(-720deg, 720deg))
+        scale(@rn(.8, 1.2, 3));
+</css-doodle>
+
+```
 
 参考:  
 [利用噪声构建美妙的 CSS 图形](https://mp.weixin.qq.com/s/l80muJPaGgbLyeljZ5mK2g)

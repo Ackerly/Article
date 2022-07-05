@@ -39,6 +39,8 @@
 37. [使用display:content实现幽灵节点](./article/css/使用display:content实现幽灵节点.md)
 38. [为什么说移动端该放弃rem适配方案了](./article/css/为什么说移动端该放弃rem适配方案了.md)
 39. [图片裁切 object-view-box 属性](./article/css/图片裁切%20object-view-box%20属性.md)
+40. [利用噪声构建美妙的 CSS 图形](./article/css/利用噪声构建美妙的%20CSS%20图形.md)
+
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
