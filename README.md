@@ -138,6 +138,7 @@
 8. [不要滥用effect](./article/frame/react/不要滥用effect.md)
 9. [搞懂12个Hooks](./article/frame/react/搞懂12个Hooks.md)
 10. [使用 React Testing Library 的 15 个常见错误](./article/frame/react/使用%20React%20Testing%20Library%20的%2015%20个常见错误.md)
+11. [react组件设计过程-仿抖音订单组件](./article/frame/react/react组件设计过程-仿抖音订单组件.md)
 ### Vue
 1. [vue组件将传值的几种方式](article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md)
 2. [vue-router实现原理](/article/frame/vue/vue-router实现原理.md)
@@ -176,6 +177,7 @@
 35. [vue移动端适配方案](./article/frame/vue/vue移动端适配方案.md)
 36. [Vue性能指标逐渐反超React](./article/frame/vue/Vue性能指标逐渐反超React.md)
 37. [vue项目会用的性能优化](./article/frame/vue/vue项目会用的性能优化.md)
+38. [为什么 Vue2 this 能够直接获取到 data 和 methods](./article/frame/vue/为什么%20Vue2%20this%20能够直接获取到%20data%20和%20methods.md)
 
 ##### Vue源码学习
 - [手写与事件相关的实例方法](./article/frame/vue/source%20code%20study/手写与事件相关的实例方法.md)
