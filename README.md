@@ -353,6 +353,7 @@
 6. [出错行author 的原理其实就是 Git Blame](./article/interview/监控SDK的架构设计和难点亮点.md)
 7. [为什么模块循环依赖不会死循环？CommonJS和ES Module的处理有什么不同？](./article/interview/为什么模块循环依赖不会死循环？CommonJS和ES%20Module的处理有什么不同.md)
 8. [CORS为什么能保障安全？为什么只对复杂请求做预检](./article/interview/CORS为什么能保障安全？为什么只对复杂请求做预检？.md)
+9. [硬件加速中的“层”和层叠上下文中的“层”，是一个东西吗](./article/interview/硬件加速中的“层”和层叠上下文中的“层”，是一个东西吗.md)
 
 ## 服务
 1. [NodeJS落地WebSocket实践](./article/serve/NodeJS落地WebSocket实践.md)
