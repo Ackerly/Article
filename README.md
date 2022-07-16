@@ -309,6 +309,7 @@
 9. [前端包管理器探究](./article/tool/前端包管理器探究.md)
 10. [设置 NPM Registry 的 4 种姿势](./article/tool/npm/设置%20NPM%20Registry%20的%204%20种姿势.md)
 11. [现代Monorepo工程技术选型](/article/tool/现代Monorepo工程技术选型.md)
+12. [前端开发中的流程自动化与提效实践](./article/tool/前端开发中的流程自动化与提效实践.md)
 ### Webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
