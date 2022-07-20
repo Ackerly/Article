@@ -41,6 +41,7 @@
 39. [图片裁切 object-view-box 属性](./article/css/图片裁切%20object-view-box%20属性.md)
 40. [利用噪声构建美妙的 CSS 图形](./article/css/利用噪声构建美妙的%20CSS%20图形.md)
 41. [3 个即将推出的 CSS 特性](./article/css/3%20个即将推出的%20CSS%20特性.md)
+42. [妙用 CSS 构建花式透视背景效果](./article/css/妙用%20CSS%20构建花式透视背景效果.md)
 
 
 ## HTML
