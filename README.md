@@ -64,6 +64,7 @@
 2. [前端实现浏览器端扫码功能](./article/browser/前端实现浏览器端扫码功能.md)
 3. [浏览器仅打开1个页面，为什么有4个进程](./article/browser/仅打开1个页面，为什么有4个进程.md)
 4. [点击浏览器的前进后退按钮，页面的缓存机制](./article/browser/点击浏览器的前进后退按钮，页面的缓存机制.md)
+5. [一个 Safari 的小 Bug，探索出了 fetch 和 xhr的新玩法](./article/browser/一个%20Safari%20的小%20Bug，探索出了%20fetch%20和%20xhr的新玩法.md)
 ## JavaScript
 1. [V8编译浅谈](./article/js/V8编译浅谈.md)
 2. [Axios如何实现请求重试](./article/js/Axios如何实现请求重试.md)
@@ -181,7 +182,8 @@
 36. [Vue性能指标逐渐反超React](./article/frame/vue/Vue性能指标逐渐反超React.md)
 37. [vue项目会用的性能优化](./article/frame/vue/vue项目会用的性能优化.md)
 38. [为什么 Vue2 this 能够直接获取到 data 和 methods](./article/frame/vue/为什么%20Vue2%20this%20能够直接获取到%20data%20和%20methods.md)
-39. [Vue3解构赋值失去响应式引发的思考](https://mp.weixin.qq.com/s/es2Mwk3_PHUUz869O5ivAA)
+39. [Vue3解构赋值失去响应式引发的思考](./article/frame/vue/vue3解构赋值失去响应式引发的思考.md)
+40. [vue规定用普通函数定义方法，为什么react要用箭头函数](./article/frame/vue规定用普通函数定义方法，为什么react要用箭头函数.md)
 
 ##### Vue源码学习
 - [手写与事件相关的实例方法](./article/frame/vue/source%20code%20study/手写与事件相关的实例方法.md)
@@ -271,6 +273,7 @@
 23. [如何提升前端线上问题发现率](./article/architecture/如何提升前端线上问题发现率.md)
 24. [Observable防腐层项目实战](./article/architecture/Observable防腐层项目实战.md)
 25. [面向未来与浏览器规范的前端DDD架构设计](./article/architecture/面向未来与浏览器规范的前端DDD架构设计.md)
+26. [一个简洁、强大、可扩展的前端项目架构是什么样的](./article/architecture/一个简洁、强大、可扩展的前端项目架构是什么样的.md)
 
 ## 算法
 1. [回溯](./article/algorithm/回溯.md)
@@ -312,6 +315,7 @@
 10. [设置 NPM Registry 的 4 种姿势](./article/tool/npm/设置%20NPM%20Registry%20的%204%20种姿势.md)
 11. [现代Monorepo工程技术选型](/article/tool/现代Monorepo工程技术选型.md)
 12. [前端开发中的流程自动化与提效实践](./article/tool/前端开发中的流程自动化与提效实践.md)
+13. [node_modules 是该好好治一治了](./article/tool/npm/node_modules%20是该好好治一治了.md)
 ### Webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
@@ -359,6 +363,7 @@
 8. [CORS为什么能保障安全？为什么只对复杂请求做预检](./article/interview/CORS为什么能保障安全？为什么只对复杂请求做预检？.md)
 9. [硬件加速中的“层”和层叠上下文中的“层”，是一个东西吗](./article/interview/硬件加速中的“层”和层叠上下文中的“层”，是一个东西吗.md)
 10. [如何实现一个比较完美的reduce函数](./article/interview/如何实现一个比较完美的reduce函数.md)
+11. [一道有挑战性的 React Hook 场景题](./article/interview/一道有挑战性的%20React%20Hook%20场景题.md)
 
 ## 服务
 1. [NodeJS落地WebSocket实践](./article/serve/NodeJS落地WebSocket实践.md)
