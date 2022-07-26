@@ -402,3 +402,4 @@
 29. [CDN 为什么这么设计](./article/other/CDN%20为什么这么设计.md)
 30. [研发同学应该如何负责好一个项目](./article/other/研发同学应该如何负责好一个项目.md)
 31. [浅谈 Function Programing 编程范式](./article/other/浅谈%20Function%20Programing%20编程范式.md)
+32. [了解了解很火的前端容器技术](./article/other/了解了解很火的前端容器技术.md)
