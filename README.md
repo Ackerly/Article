@@ -316,6 +316,7 @@
 11. [现代Monorepo工程技术选型](/article/tool/现代Monorepo工程技术选型.md)
 12. [前端开发中的流程自动化与提效实践](./article/tool/前端开发中的流程自动化与提效实践.md)
 13. [node_modules 是该好好治一治了](./article/tool/npm/node_modules%20是该好好治一治了.md)
+14. [对前端构建工具的一些理解](./article/tool/对前端构建工具的一些理解.md)
 ### Webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
@@ -403,3 +404,4 @@
 30. [研发同学应该如何负责好一个项目](./article/other/研发同学应该如何负责好一个项目.md)
 31. [浅谈 Function Programing 编程范式](./article/other/浅谈%20Function%20Programing%20编程范式.md)
 32. [了解了解很火的前端容器技术](./article/other/了解了解很火的前端容器技术.md)
+33. [我们是如何记录图片的](./article/other/我们是如何记录图片的.md)
