@@ -406,4 +406,5 @@
 31. [浅谈 Function Programing 编程范式](./article/other/浅谈%20Function%20Programing%20编程范式.md)
 32. [了解了解很火的前端容器技术](./article/other/了解了解很火的前端容器技术.md)
 33. [我们是如何记录图片的](./article/other/我们是如何记录图片的.md)
-34.  [远程桌面连接指南](./article/other/远程桌面连接指南.md)
+34. [远程桌面连接指南](./article/other/远程桌面连接指南.md)
+35. [把前端项目写成一座屎山](./article/other/把前端项目写成一座屎山.md)
