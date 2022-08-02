@@ -44,6 +44,7 @@
 42. [妙用 CSS 构建花式透视背景效果](./article/css/妙用%20CSS%20构建花式透视背景效果.md)
 43. [CSS Houdini 实现磁吸效果](./article/css/CSS%20Houdini%20实现磁吸效果.md)
 44. [如何在滚动时自动添加头部阴影](./article/css/如何在滚动时自动添加头部阴影.md)
+45. [多行文本下的文字渐隐消失术](./article/css/多行文本下的文字渐隐消失术.md)
 
 
 ## HTML
@@ -145,6 +146,7 @@
 9. [搞懂12个Hooks](./article/frame/react/搞懂12个Hooks.md)
 10. [使用 React Testing Library 的 15 个常见错误](./article/frame/react/使用%20React%20Testing%20Library%20的%2015%20个常见错误.md)
 11. [react组件设计过程-仿抖音订单组件](./article/frame/react/react组件设计过程-仿抖音订单组件.md)
+12. [弄懂react的基本使用和高级特性](./article/frame/react/弄懂react的基本使用和高级特性.md)
 ### Vue
 1. [vue组件将传值的几种方式](article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md)
 2. [vue-router实现原理](/article/frame/vue/vue-router实现原理.md)
