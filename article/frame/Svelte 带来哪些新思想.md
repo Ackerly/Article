@@ -51,6 +51,20 @@ Svelte 对内存的管理做到非常极致，占用的内存也是非常小，�
 **更关注无障碍体验**  
 在使用 Svelte 开发时会 自动对无障碍访问方面的体验进行检测，比如 img 元素没有添加 alt 属性，Svelte 会向你发出一条警告。无障碍体验对特殊人事来说是很有帮助的,比如当你在 img 标签中设置好 alt 属性值，使用有声浏览器会把 alt 的内容读出来  
 
+**Svelte 的不足**  
+1. Svelte 对 IE 是非常不友好的，但我并不把这放在眼里。如果想兼容 IE 我还是推荐使用 jQuery。
+2. Svelte 的生态不够丰富。由于是“新宠”，生态方面肯定是不如 Vue 和 React 的。
+
+## 与 Svelte 相关的库  
+**Sapper**  
+Sapper 是构建在 Svelte 上的框架，Sapper 提供了页面路由、布局模板、SSR 等功能  
+**Svelte Native**  
+Svelte Native 是建立在 NativeScript之上的产物，可以开发安卓和 iOS 应用，是一个跨端技术，有点类似于 React Native 和 Weex 之类的东西。  
+**svelte-gl**  
+svelte-gl 还没正式发布，但这是个很有趣的工具，它和 three.js[38] 类似，专门做 3D 应用的
+
+## 创建项目
+
 
 参考:  
 [前端新宠 Svelte 带来哪些新思想？赶紧学起来！](https://mp.weixin.qq.com/s/5o7qiDC_BGIq6n0FWHvClw)
