@@ -63,8 +63,367 @@ Svelte Native 是建立在 NativeScript之上的产物，可以开发安卓和 i
 **svelte-gl**  
 svelte-gl 还没正式发布，但这是个很有趣的工具，它和 three.js[38] 类似，专门做 3D 应用的
 
-## 创建项目
+## 创建项目  
+创建或使用开发环境有以下几种方式：  
+1. REPL
+2. Rollup 版
+3. Webpack 版
+4. Parcel 版
+5. Vite 版
 
+**REPL**  
+REPL 是 Svelte 提供的一个线上环境，打开 Svelte 官网可以看到顶部导航栏上面有个 REPL的选项。点击该选项就可以跳转到 Svelte 线上开发环境了  
+REPL 是 read(读取)、evaluate(执行)、print(打印) 和 loop(循环) 这几个单词的缩写。  
+REPL 还提供了多组件开发，按左上角的 +号 可以创建新组件。组件的内容稍后会说到。  
+界面右侧，顶部有 3 个选项：
+- Result: 运行结果。
+- JS output: Svelte 编译后的 JS 代码。
+- CSS output: Svelte 编译后的 CSS 代码。
+
+在 REPL 界面右上角还有一个下载按钮。当你在线上环境写好代码，可以点击下载按钮把项目保存到本地，下载的文件是一个 zip，需要自己手动解压。  
+使用以下命令初始化项目并运行  
+``` 
+# 1、初始化项目
+npm install
+
+# 2、运行项目
+npm run dev
+
+# 3、在浏览器访问 http://localhost:5000
+```
+**Rollup 版**  
+``` 
+# 1、下载模板
+npx degit sveltejs/template 项目名称
+
+# 2、安装依赖
+npm install
+
+# 3、运行项目
+npm run dev
+
+# 4、在浏览器访问 http://localhost:8080
+```
+**Webpack 版**  
+``` 
+# 1、下载模板
+npx degit sveltejs/template-webpack 项目名称
+
+# 2、安装依赖
+npm install
+
+# 3、运行项目
+npm run dev
+
+# 4、在浏览器访问 http://localhost:8080/
+```
+**Parcel 版**  
+不推荐使用 该方法创建项目，因为 Svelte 并没有提供使用 Parcel 打包工具的模板。但 GitHub 上有第三方的解决方案  
+``` 
+# 1、进入 `packages/svelte-3-example` 目录
+
+# 2、安装依赖
+npm install
+
+# 3、运行项目
+npm run start
+
+# 4、在浏览器访问 http://localhost:1234/
+```
+**Vite 版**  
+``` 
+# 1、下载模板的命令
+npm init vite@latest
+
+# 2、输入项目名
+
+# 3、选择 Svelte 模板（我没选ts）
+
+# 4、进入项目并安装依赖
+npm install
+
+# 5、运行项目
+npm run dev
+
+# 6、在浏览器访问 http://127.0.0.1:5173/
+```
+## 起步
+index.html 、src/main.js 和 src/App.svelte 这三个是最主要的文件。  
+index.html 是项目运行的入口文件，它里面引用了 src/main.js 文件。  
+src/main.js 里引入了 src/App.svelte 组件，并使用以下代码将 src/App.svelte 的内容渲染到 #app 元素里。  
+``` 
+const app = new App({
+  target: document.getElementById('app')
+})
+```
+target 指明目标元素  
+**清空全局样式**  
+如果使用 Rollup 版 创建项目，不需要做这一步。  
+使用 Vite 创建的 Svelte 项目中，找到 src/app.css 文件，并把里面的内容清空掉  
+
+**改造 src/App.svelte**  
+将 src/App.svelte 文件改成以下内容  
+``` 
+<script>
+  let name = '雷猴'
+
+  function handleClick() {
+    name = '鲨鱼辣椒'
+  }
+</script>
+
+<div>Hello {name}</div>
+<button on:click={handleClick}>改名</button>
+```
+上面的代码其实和 Vue 有点像  
+- 变量和方法都写在 <script> 标签里。
+- 在 HTML 中使用 {} 可以绑定变量和方法。
+- 通过 on:click 可以绑定点击事件
+
+只需写以上代码，Svelte 就会自动帮我们做数据响应的操作。一旦数据发生改变，视图也会自动改变。  
+
+## 基础模板语法
+**插值**  
+``` 
+<script>
+  let name = '雷猴'
+</script>
+
+<div>{name}</div>
+```
+**表达式**  
+``` 
+<script>
+  let name = '雷猴'
+
+  function sayHi() {
+    return `${name} 世界！`
+  }
+
+  let a = 1
+  let b = 2
+
+  let state = false
+</script>
+
+<div>{sayHi()}</div>
+
+<div>{a} + {b} = {a + b}</div>
+
+<div>{state ? '雷猴' : '鲨鱼辣椒'}</div>
+```
+**属性绑定**  
+``` 
+<script>
+  let name = '雷猴'
+</script>
+
+<div title={name}>Hello</div>
+```
+**渲染 HTML 标签 @html**  
+只是使用插值的方法渲染带有 HTML 标签的内容，Svelte 会自动转义 < 、> 之类的标签  
+``` 
+<script>
+  let h1El = '<h1 style="color: pink;">雷猴</h1>'
+</script>
+
+<div>{h1El}</div>
+```
+Vue 中有 v-html 方法，它可以将 HTML 标签渲染出来。在 Svelte 中也有这个方法，在插值前面使用 @html 标记一下即可,但此方法有可能遭受 XSS 攻击。    
+``` 
+<script>
+  let h1El = '<h1 style="color: pink;">雷猴</h1>'
+</script>
+
+<div>{@html h1El}</div>
+```
+## 样式绑定  
+**行内样式 style**  
+``` 
+<script>
+  let color = 'red'
+
+  setTimeout(() => {
+    color = 'blue'
+  }, 1000)
+</script>
+
+<div style="color: {color}">雷猴</div>
+```
+**绑定 class**  
+``` 
+<script>
+  let foo = true
+
+  setTimeout(() => {
+    foo = false
+  }, 1000)
+</script>
+
+<div class:active={foo}>雷猴</div>
+
+<style>
+  .active {
+    color: red;
+  }
+</style>
+```
+在 HTML 里可以使用 class:xxx 动态设置要激活的类。这里的 xxx 是对应的类名。   
+语法是 class:xxx={state} ，当 state 为 true 时，这个样式就会被激活使用。  
+
+## 条件渲染 #if 
+**基础条件判断**  
+``` 
+<script>
+  let state = true
+
+  setTimeout(() => {
+    state = false
+  }, 1000)
+</script>
+
+{#if state}
+  <div>雷猴</div>
+{/if}
+```
+**两种条件**  
+``` 
+<script>
+  let state = true
+
+  setTimeout(() => {
+    state = false
+  }, 1000)
+</script>
+
+{#if state}
+  <div>雷猴</div>
+{:else}
+  <div>鲨鱼辣椒</div>
+{/if}
+```
+**多种条件**  
+``` 
+<script>
+  let count = 1
+
+  setInterval(() => {
+    count++
+  }, 1000)
+</script>
+
+{#if count === 1}
+  <div>雷猴</div>
+{:else if count === 2}
+  <div>鲨鱼辣椒</div>
+{:else}
+  <div>蟑螂恶霸</div>
+{/if}
+```
+## 列表渲染 #each  
+**遍历数组**
+``` 
+<script>
+  let list = ['a', 'b', 'c', 'd', 'e', 'f']
+</script>
+
+<ul>
+  {#each list as item}
+   <li>{item}</li>
+  {/each}
+</ul>
+```
+**遍历数组（带下标）**  
+``` 
+<script>
+  let list = ['a', 'b', 'c', 'd', 'e', 'f']
+</script>
+
+<ul>
+  {#each list as item, index}
+   <li>{index} -- {item}</li>
+  {/each}
+</ul>
+```
+注意：as 后面首先跟着元素，然后才是下标。而且元素和下标不需要用括号括起来。  
+**如果元素是对象，可以解构**  
+``` 
+<script>
+  let list = [
+    {name: '雷猴'},
+    {name: '鲨鱼辣椒'}
+  ]
+</script>
+
+<ul>
+  {#each list as {name}}
+   <li>{name}</li>
+  {/each}
+</ul>
+```
+**默认内容**  
+如果源数据没有内容，是空数组的情况下，还可以组合 {:else} 一起使用。
+```  
+<script>
+  let list = []
+</script>
+
+<div>
+  {#each list as {name}}
+   <div>{name}</div>
+  {:else}
+   <div>暂无数据</div>
+  {/each}
+</div>
+```
+## 事件绑定 on:event
+使用 on: 指令监听 DOM 事件，on: 后面跟随事件类型,
+``` 
+<script>
+  function sayHi() {
+    console.log('雷猴')
+  }
+</script>
+
+<button on:click={sayHi}>打招呼</button>
+```
+绑定其他事件（比如 change 等）也是同样的道理。
+## 事件修饰符
+你只希望某些事件只执行一次，或者取消默认行为，或者阻止冒泡等，可以使用事件修饰符。  
+``` 
+<script>
+  function sayHi() {
+    console.log('雷猴')
+  }
+</script>
+
+<button on:click|once={sayHi}>打招呼</button>
+```
+除了 once 之外，还有以下这些修饰符可以用：   
+- preventDefault ：禁止默认事件。在程序运行之前调用 event.preventDefault()
+- stopPropagation ：调用 event.stopPropagation(), 防止事件到达下一个标签
+- passive ：改善了 touch/wheel 事件的滚动表现（Svelte 会在合适的地方自动加上它）
+- capture：表示在 capture阶段而不是bubbling触发其程序
+- once ：程序运行一次后删除自身
+
+**串联修饰符**  
+修饰符还可以串联起来使用，比如 on:click|once|capture={...}  
+但需要注意，有些特殊的标签使用修饰符会出现“意想不到”的结果，比如 <a> 标签
+``` 
+<script>
+  function toLearn() {
+    console.log('还在思考要不要学Canvas')
+  }
+</script>
+
+<a
+  href="https://juejin.cn/post/7116784455561248775"
+  on:click|once|preventDefault={toLearn}
+>去学习Canvas ？</a>
+```
+本来是想给 <a> 标签绑定一个点击事件，第一次点击时在控制台输出一句话，并且禁止 <a> 标签的默认事件。所以使用了 once 和 preventDefault 修饰符。  
+但实际上并非如此。上面的代码意思是 once 设定了只执行一次 toLearn 事件，并且只有一次 preventDefault 是有效的。  
+只有点击时就不触发 toLearn 了，而且 preventDefault 也会失效。所以再次点击时，<a> 元素就会触发自身的跳转功能。  
 
 参考:  
 [前端新宠 Svelte 带来哪些新思想？赶紧学起来！](https://mp.weixin.qq.com/s/5o7qiDC_BGIq6n0FWHvClw)
