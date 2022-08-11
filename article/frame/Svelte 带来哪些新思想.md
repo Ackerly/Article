@@ -425,5 +425,295 @@ Vue 中有 v-html 方法，它可以将 HTML 标签渲染出来。在 Svelte 中
 但实际上并非如此。上面的代码意思是 once 设定了只执行一次 toLearn 事件，并且只有一次 preventDefault 是有效的。  
 只有点击时就不触发 toLearn 了，而且 preventDefault 也会失效。所以再次点击时，<a> 元素就会触发自身的跳转功能。  
 
+## 数据绑定 bind
+语法：  
+``` 
+bind:property={variable}
+```
+**input 单行输入框**
+``` 
+<script>
+  let msg = 'hello'
+
+  function print() {
+    console.log(msg)
+  }
+</script>
+
+<input type="text" value={msg} />
+<button on:click={print}>打印</button>
+```
+如果只是使用 value={msg} 的写法，input 默认值是 hello ，当输入框的值发生改变时，并没有把内容反应回 msg 变量里。此时就需要使用 bind 了
+``` 
+<input type="text" bind:value={msg} />
+```
+**textarea 多行文本框**  
+``` 
+<script>
+  let msg = 'hello'
+</script>
+
+<textarea type="text" bind:value={msg} />
+<p>{msg}</p>
+```
+**input range 范围选择**  
+``` 
+<script>
+  let val = 3
+</script>
+
+<input type="range" bind:value={val} min=0 max=10 />
+<p>{val}</p>
+```
+**radio 单选**  
+单选框通常是成组出现的，所以要绑定一个特殊的值 bind:grout={variable}  
+``` 
+<script>
+  let selected = '2'
+</script>
+
+<input type="radio" bind:group={selected} value="1" />
+<input type="radio" bind:group={selected} value="2" />
+<input type="radio" bind:group={selected} value="3" />
+<p>{selected}</p>
+```
+**checkbox 复选框**  
+``` 
+<script>
+  let roles = []
+</script>
+
+<input type="checkbox" bind:group={roles} value="雷猴" />
+<input type="checkbox" bind:group={roles} value="鲨鱼辣椒" />
+<input type="checkbox" bind:group={roles} value="蟑螂恶霸" />
+<input type="checkbox" bind:group={roles} value="蝎子莱莱" />
+
+<p>{roles}</p>
+```
+**select 选择器**  
+``` 
+<script>
+  let selected = 'a'
+</script>
+
+<select bind:value={selected}>
+ <option value='a'>a</option>
+ <option value='b'>b</option>
+ <option value='c'>c</option>
+</select>
+
+<span>{selected}</span>
+```
+**select multiple 选择器**  
+``` 
+<script>
+  let selected = []
+</script>
+
+<select multiple bind:value={selected}>
+ <option value="雷猴">雷猴</option>
+ <option value="鲨鱼辣椒">鲨鱼辣椒</option>
+ <option value="蟑螂恶霸">蟑螂恶霸</option>
+ <option value="蝎子莱莱">蝎子莱莱</option>
+</select>
+
+<span>{selected}</span>
+```
+**简写形式**  
+如果 bind 绑定的属性和在 JS 里声明的变量名相同，那可以直接绑定  
+``` 
+<script>
+  let value = 'hello'
+</script>
+
+<input type="text" bind:value />
+
+<p>{value}</p>
+```
+bind:value 绑定的属性是 value ，而在 JS 中声明的变量名也叫 value ，此时就可以使用简写的方式  
+
+## $: 声明反应性
+> 通过使用$: JS label 语法作为前缀。可以让任何位于 top-level 的语句（即不在块或函数内部）具有反应性。每当它们依赖的值发生更改时，它们都会在 component 更新之前立即运行
+
+``` 
+<script>
+  let count = 0;
+  $: doubled = count * 2;
+
+  function handleClick() {
+    count += 1;
+  }
+</script>
+
+<button on:click={handleClick}>
+  点击加1
+</button>
+
+<p>{count} 翻倍后 {doubled}</p>
+```
+使用 $: 声明的 double 会自动根据 count 的值改变而改变。  
+如果将以上代码中 $: 改成 let 或者 var 声明 count ，那么 count 将失去响应性。  
+
+## 异步渲染 #await
+语法：  
+``` 
+{#await expression}
+...
+{:then name}
+...
+{:catch name}
+...
+{/await}
+```
+以 #await 开始，以 /await 结束。  
+:then 代表成功结果，:catch 代表失败结果。  
+expression 是判断体，要求返回一个 Promise  
+
+``` 
+<script>
+  const api = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('请求成功，数据是xxxxx')
+    }, 1000)
+  })
+</script>
+
+{#await api}
+  <span>Loading...</span>
+{:then response}
+  <span>{response}</span>
+{:catch error}
+  <span>{error}</span>
+{/await}
+```
+如果将上面的 resolve 改成 reject 就会走 :catch 分支。  
+## 基础组件
+在 Svelte 中，创建组件只需要创建一个 .svelte 为后缀的文件即可。通过 import 引入子组件。
+比如，在 src 目录下有 App.svelte 和 Phone.svelte 两个组件。App.svelte 是父级，想要引入 Phone.svelte 并在 HTML 中使用。  
+App.svelte  
+``` 
+<script>
+  import Phone from './Phone.svelte'
+</script>
+
+<div>子组件 Phone 的内容：</div>
+<Phone />
+```
+Phone.svelte  
+``` 
+<div>电话：13266668888</div>
+```
+## 组件通讯
+**父传子**  
+手机号希望从 App.svelte 组件往 Phone.svelte 里传。可以在 Phone.svelte 中声明一个变量，并公开该变量。App.svelte 就可以使用对应的属性把值传入。  
+App.svelte  
+``` 
+<script>
+  import Phone from './Phone.svelte'
+</script>
+
+<div>子组件 Phone 的内容：</div>
+<Phone number="88888888" />
+```
+Phone.svelte  
+``` 
+<script>
+  export let number = '13266668888'
+</script>
+
+<div>电话：{number}</div>
+```
+如果此时 App.svelte 组件没有传值进来，Phone.svelte 就会使用默认值。  
+**子传父**  
+如果想在子组件中修改父组件的内容，需要把修改的方法定义在父组件中，并把该方法传给子组件调用. 同时需要在子组件中引入 createEventDispatcher 方法。  
+App.svelte
+``` 
+script>
+  import Phone from './Phone.svelte'
+  function print(data) {
+    console.log(`手机号: ${data.detail}`)
+  }
+</script>
+
+<div>子组件 Phone 的内容：</div>
+<Phone on:printPhone={print} />
+```
+Phone.svelte  
+``` 
+<script>
+  import { createEventDispatcher } from 'svelte'
+  const dispatch = createEventDispatcher()
+
+  function printPhone() {
+    dispatch('printPhone', '13288888888')
+  }
+</script>
+
+<button on:click={printPhone}>输出手机号</button>
+```
+父组件接受参数是一个对象，子组件传过来的值都会放在 detail 属性里。  
+
+## 插槽 slot
+App.svelte  
+``` 
+<script>
+  import Phone from './Phone.svelte'
+</script>
+
+<div>子组件 Phone 的内容：</div>
+<Phone>
+  <div>电话：</div>
+  <div>13288889999</div>
+</Phone>
+```
+Phone.svelte  
+``` 
+<style>
+ .box {
+  width: 100px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  padding: 1em;
+  margin: 1em 0;
+ }
+</style>
+
+<div class="box">
+ <slot>默认值</slot>
+</div>
+```
+## 生命周期
+Svelte 中主要有以下几个生命周期：
+- onMount: 组件挂载时调用。
+- onDestroy: 组件销毁时执行。
+- beforeUpdate: 在数据更新前执行。
+- afterUpdate: 在数据更新完成后执行。
+- tick: DOM 元素更新完成后执行。
+
+``` 
+<script>
+  import { onMount } from 'svelte'
+  let title = 'Hello world'
+
+  onMount(() => {
+    console.log('onMount')
+    setTimeout(() => title = '雷猴', 1000)
+  })
+</script>
+
+<h1>{title}</h1>
+```
+在组件加载完 1 秒后，改变 title 的值。  
+onDestroy、beforeUpdate 和 afterUpdate 都和 onMount 的用法差不多，只是执行的时间条件不同。你可以自己创建个项目试试看。  
+tick 是比较特殊的，tick 和 Vue 的 nextTick 差不多。  
+在 Svelte 中，tick 的使用语法如下：  
+``` 
+import { tick } from 'svelte'
+
+await tick()
+// 其他操作
+```
+
 参考:  
 [前端新宠 Svelte 带来哪些新思想？赶紧学起来！](https://mp.weixin.qq.com/s/5o7qiDC_BGIq6n0FWHvClw)

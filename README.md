@@ -137,6 +137,7 @@
 4. [为什么Vue和React都选择了Hooks](./article/frame/为什么Vue和React都选择了Hooks.md)
 5. [100多行源码的element-ui 新增组件功能告诉你减少重复工作](./article/frame/100多行源码的%20element-ui%20新增组件功能告诉你减少重复工作.md)
 6. [基于 TypeScript 理解程序设计的 SOLID 原则](./article/frame/基于%20TypeScript%20理解程序设计的%20SOLID%20原则.md)
+7. [Svelte 带来哪些新思想](./article/frame/Svelte%20带来哪些新思想.md)
 ### React
 1. [编写弹性组件](./article/frame/react/编写弹性组件.md)
 2. [react开发34个技巧](./article/frame/react/react开发34个技巧.md)
@@ -216,6 +217,7 @@
 3. [掌握TS泛型](./article/frame/typescript/掌握TS泛型.md)
 4. [理解TS各种高级用法](./article/frame/typescript/理解TS各种高级用法.md)
 5. [16道TypeScript题目](./article/frame/typescript/16道TypeScript题目.md)
+6. [浅谈 TypeScript 类型系统](./article/frame/typescript/浅谈%20TypeScript%20类型系统.md)
 ## 性能
 1. [vue长列表性能分析](./article/performance/vue长列表性能分析.md)
 2. [100万成员的数组去第一个和最后一个有性能差距吗](./article/performance/100万成员的数组去第一个和最后一个有性能差距吗.md)
