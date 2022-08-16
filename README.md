@@ -351,6 +351,7 @@
 9. [Git存储原理及部分实现](./article/tool/git/Git存储原理及部分实现.md)
 ### vite
 1. [如何做SSG、静态资源发布以及自动化部署](./article/tool/vite/如何做SSG、静态资源发布以及自动化部署.md)
+2. [Bundle-less 的思考和实践分享](./article/tool/vite/为什么大厂不能直接用%20Vite？Bundle-less%20的思考和实践分享.md)
 ## 技术方案
 1. [前端实现计时准确](./article/solution/前端实现计时准确.md)
 2. [前端内存泄漏解决方案](./article/solution/前端内存泄漏解决方案.md)
