@@ -126,6 +126,7 @@
 24. [浏览器的五种Observer](./article/js/ES2015/浏览器的五种Observer.md)
 25. [reduce常见用法](./article/js/ES2015/reduce常见用法.md)
 26. [JavaScript 编写 Shell 脚本](./article/js/JavaScript%20编写%20Shell%20脚本.md)
+27. [前端异常原理](./article/js/前端异常原理.md)
 ## WebAssembly
 1. [WebAssembly入门](./article/webAssembly/webAssembly入门.md)
 
