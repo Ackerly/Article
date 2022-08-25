@@ -50,7 +50,8 @@
 48. [今҈天҈真҈是҈热҈化҈了҈~](./article/css/今҈天҈真҈是҈热҈化҈了҈~.md)
 49. [CSS 实现动感的倒计时效果](./article/css/CSS%20实现动感的倒计时效果.md)
 50. [短视频APP的点赞动画是怎么实现的](./article/css/短视频%20APP%20的点赞动画是怎么实现的.md)
-51. [ web reflow](./article/css/web%20reflow.md)
+51. [web reflow](./article/css/web%20reflow.md)
+52. [CSS实现超长内容滚动播放](./article/css/CSS实现超长内容滚动播放.md)
 
 
 ## HTML
@@ -334,6 +335,7 @@
 13. [node_modules 是该好好治一治了](./article/tool/npm/node_modules%20是该好好治一治了.md)
 14. [对前端构建工具的一些理解](./article/tool/对前端构建工具的一些理解.md)
 15. [前端工程师都应该掌握的抓包神器工具](./article/tool/前端工程师都应该掌握的抓包神器工具.md)
+16. [冷启动4min到2s 的构建优化，怎么做到的](./article/tool/冷启动4min到2s%20的构建优化，怎么做到的.md)
 ### Webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
