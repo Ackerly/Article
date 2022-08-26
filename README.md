@@ -336,6 +336,8 @@
 14. [对前端构建工具的一些理解](./article/tool/对前端构建工具的一些理解.md)
 15. [前端工程师都应该掌握的抓包神器工具](./article/tool/前端工程师都应该掌握的抓包神器工具.md)
 16. [冷启动4min到2s 的构建优化，怎么做到的](./article/tool/冷启动4min到2s%20的构建优化，怎么做到的.md)
+17. [如何不基于构建工具优雅的实现模块导入](./article/tool/如何不基于构建工具优雅的实现模块导入.md)
+18. [企业级包管理服务cnpmcore](./article/tool/企业级包管理服务%20cnpmcore.md)
 ### Webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
@@ -430,3 +432,5 @@
 34. [远程桌面连接指南](./article/other/远程桌面连接指南.md)
 35. [把前端项目写成一座屎山](./article/other/把前端项目写成一座屎山.md)
 36. [在复杂应用中设计空状态：3条准则](./article/other/在复杂应用中设计空状态：3条准则.md)
+37. [Markdown 写 PPT 是如何实现的](./article/other/Markdown%20写%20PPT%20是如何实现的.md)
+38. [由esbuild JavaScript API 看跨语言调用](./article/other/由esbuild%20JavaScript%20API看跨语言调用.md)
