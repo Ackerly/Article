@@ -314,6 +314,9 @@
 19. [利用 JS 实现多种图片相似度算法](./article/algorithm/利用%20JS%20实现多种图片相似度算法.md)
 20. [最长公共子序列(LCS)算法在重新排序项目中的应用](./article/algorithm/最长公共子序列(LCS)算法在重新排序项目中的应用.md)
 
+### 数据结构
+1. [斐波那契数列](./article/algorithm/data%20structure/JavaScript%20数据结构之斐波那契数列.md)
+
 ### leetcode
 1. [公交路线](./article/algorithm/leetcode/公交路线.md)
 2. [找不同](./article/algorithm/leetcode/找不同.md)
