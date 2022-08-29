@@ -145,6 +145,7 @@
 7. [Svelte 带来哪些新思想](./article/frame/Svelte%20带来哪些新思想.md)
 8. [完全掌握分片渲染和虚拟列表](./article/frame/完全掌握分片渲染和虚拟列表.md)
 9. [Hooks时代，如何写出高质量的react和vue组件](./article/frame/Hooks时代，如何写出高质量的react和vue组件.md)
+10. [D3.js 可视化库之力导向图原理与实现](./article/frame/D3.js%20可视化库之力导向图原理与实现.md)
 ### React
 1. [编写弹性组件](./article/frame/react/编写弹性组件.md)
 2. [react开发34个技巧](./article/frame/react/react开发34个技巧.md)
