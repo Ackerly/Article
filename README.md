@@ -382,6 +382,7 @@
 14. [移动端数据可视化方案的挑战与设计](./article/solution/移动端数据可视化方案的挑战与设计.md)
 15. [如何设计移动端的文本输入框](./article/solution/如何设计移动端的文本输入框.md)
 16. [基于微前端qiankun的多页签缓存方案实践](./article/solution/基于微前端qiankun的多页签缓存方案实践.md)
+17. [抖音直播解决内存抖动实践](./article/solution/抖音直播解决内存抖动实践.md)
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
 2. [12道腾讯面试真题及答案](./article/interview/12道腾讯面试真题及答案.md)
