@@ -480,5 +480,5 @@ module.exports = {
 
 ```
 
-参考:  
+原文: 
 [手把手教你在 Webpack 写一个 Loader](https://mp.weixin.qq.com/s/2wDp4cRr6uWmitrsCPLOmQ)

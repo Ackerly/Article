@@ -872,5 +872,5 @@ import React, { useState } from 'react';
 export default Index;
 ```
 
-参考:  
+原文: 
 [搞懂这12个Hooks，保证让你玩转React](https://mp.weixin.qq.com/s/Q2DDI1wm22zPiMUZlpAYZw)

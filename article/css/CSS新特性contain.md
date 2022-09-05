@@ -73,5 +73,5 @@ contain: layout 的元素即是设定了布局限制，也就是说告知 User A
 - contain: strict：同时开启 layout、style、paint 以及 size 的功能，它相当于 contain: size layout paint
 - contain: content：同时开启 layout、style 以及 paint 的功能，它相当于 contain: layout paint
 
-参考:  
+原文: 
 [CSS新特性contain，控制页面的重绘与重排](https://juejin.cn/post/6958990366888607757?utm_source=gold_browser_extension)

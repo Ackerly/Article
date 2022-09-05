@@ -343,5 +343,5 @@ $mount()的思路就是， 判断 用户传入的option有没有render函数，
 - 通过render()获得Vnode
 - 把Vnode传入_update() 实现渲染
 
-参考：  
+原文:  
 [学习vue源码（4） 手写vm.$mount方法](https://juejin.cn/post/6844904181438889991)

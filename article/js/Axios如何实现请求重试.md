@@ -204,5 +204,5 @@ function requestWithRetry() {
 }
 ```
 
-参考:  
+原文: 
 [Axios 如何实现请求重试？](https://juejin.cn/post/6973812686584807432?utm_source=gold_browser_extension)

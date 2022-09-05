@@ -101,5 +101,5 @@ BEM 分别代表着：Block（块）、Element（元素/子块/组成部分）�
 ```
 
 
-参考:  
+原文: 
 [如何写出一套可维护的CSS库？](https://juejin.cn/post/6958690548009926687?utm_source=gold_browser_extension)

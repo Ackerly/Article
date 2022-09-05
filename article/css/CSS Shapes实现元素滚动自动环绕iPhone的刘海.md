@@ -63,5 +63,5 @@ box.addEventListener('scroll', function () {
 CSS Shapes的兼容性为Chrome浏览器和Safari浏览器（包括iOS）都是支持的，也就意味是可以在iPhone上使用的，完美。只是需要注意的是在iOS10.2及其之前的版本，CSS Shapes的使用还是需要加webkit私有前缀的，但据说iPhone X至少默认iOS 11，而刘海头交互效果就是针对iPhone X处理的，因此webkit私有前缀不加也没关系。
 
 
-参考:  
+原文: 
 [借助CSS Shapes实现元素滚动自动环绕iPhone X的刘海](https://juejin.cn/post/6844903496290926605?utm_source=gold_browser_extension)

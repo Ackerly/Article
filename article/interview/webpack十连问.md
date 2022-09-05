@@ -99,5 +99,5 @@ webpack在计算hash后分割chunk。产生相同随机值可能是因为这些�
     - ES6 Module引入进行静态分析，故而编译的时候正确判断到底加载了那些模块
     - 静态分析程序流，判断那些模块和变量未被使用或者引用，进而删除对应代码
 
-参考:  
+原文: 
 [webpack 十连问你能接住几题](https://juejin.cn/post/7002839760792190989?utm_source=gold_browser_extension)

@@ -38,5 +38,5 @@ node_modules里面这两个包实际上是存在的，但是他们又不是永�
 从pnpm的官网来看，其实它默认会使用copy-on-write 的方式来进行处理，也就是如果你尝试对内容进行修改的话，会复制一份文件而不会影响到源文件。  
 然后它不生效的原因似乎是因为libuv的bug：https://github.com/pnpm/pnpm/issues/2761，所以在copy-on-write不生效的情况下被回退到了hardlink  的方式去处理。  
 
-参考：  
+原文:  
 [剖析 npm、yarn 与 pnpm 依赖管理逻辑](https://mp.weixin.qq.com/s/3k4u-jw_iKsBeYyHJoSKMA)

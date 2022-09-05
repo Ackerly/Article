@@ -61,6 +61,6 @@ Set-Cookie修改已经存在的cookie值，必须匹配所有的属性值（存�
 - 持久化cookie在达到失效日期的时候会被删除
 - 浏览器的cookie达到上限，会自动清除，为新建的cookie腾出空间
 
-参考：  
+原文:  
 [菜鸟教程](https://www.runoob.com/js/js-cookies.html)  
 [前端须知的Cookie知识小结](https://juejin.cn/post/6844903841909964813)

@@ -52,5 +52,5 @@ module.exports = {
 2. Vant组件的设计稿尺寸是375px，可用通过覆盖:root下的Vant的css变量中px单位的方式，对Vant组件做适配
 3. vue模板中的px单位不会被转换，如需转换请使用postcss-style-px-to-viewport工具
 
-参考:  
+原文: 
 [为什么说移动端该放弃rem适配方案了](https://mp.weixin.qq.com/s/BPngb4QuPW8JJ6jquPp0tw)

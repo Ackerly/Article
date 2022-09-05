@@ -204,5 +204,5 @@ function createReduce(dir) {
  let reduceRight = createReduce(-1)
 ```
 
-参考:  
+原文: 
 [面试官直呼内行！如何实现一个比较完美的reduce函数？](https://mp.weixin.qq.com/s/8ozhv8F9CHjJZSktVLfUxw)

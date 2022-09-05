@@ -142,5 +142,5 @@ babel/plugin-transform-runtime就是复用 babel 注入的关联代码，
 }
 ```
 
-参考:  
+原文: 
 [99% 开发者没弄明白的 babel 知识](https://mp.weixin.qq.com/s/sJMydobsSxzxj2SECwcr_A)

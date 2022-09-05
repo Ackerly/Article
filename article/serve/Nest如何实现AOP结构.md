@@ -96,5 +96,5 @@ Middleware、Guard、Pipe、Interceptor、ExceptionFilter 都可以透明的添�
  ExceptionFilter 的调用时机很容易想到，就是在响应之前对异常做一次处理。  
 而 Middleware 是 express 中的概念，Nest.js 只是继承了下，那个是在最外层被调用。
 
-参考：  
+原文:  
 [Nest.js 是如何实现 AOP 架构的？](https://mp.weixin.qq.com/s/S-wlEkk6rjv8ID9L6RydPQ)

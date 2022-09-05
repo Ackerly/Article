@@ -59,5 +59,5 @@ class Leaf extends Component {
 ## 缺点
 组合模式是针对树状结构这个特定场景的统一抽象方案，对降低系统复杂度有很重要的意义
 
-参考:  
+原文: 
 [Composite（组合模式）](https://github.com/ascoders/weekly/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/174.%E7%B2%BE%E8%AF%BB%E3%80%8A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20-%20Composite%20%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F%E3%80%8B.md)

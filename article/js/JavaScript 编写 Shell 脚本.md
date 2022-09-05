@@ -88,5 +88,5 @@ console.log(`你的名字是：${name}`);
 - sleep()：等待一段时间，相当于 setTimeout 的封装
 - echo()：大打印文本，也可以直接用 console.log
 
-参考:  
+原文: 
 [JavaScript 编写 Shell 脚本](https://mp.weixin.qq.com/s/e__82YNQD9NlUizTqTVuyw)

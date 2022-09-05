@@ -22,5 +22,5 @@
 **缺点**  
 适合单行元素的两端对齐效果，如果列表元素有很多行，则columns布局就不太好处理，一是列表的流向优先垂直方向，二是容易出现列表垂直分列的意外场景。
 
-参考:  
+原文: 
 [CSS columns轻松实现两端对齐布局效果](https://www.zhangxinxu.com/wordpress/2020/05/css-columns-justify-content/)

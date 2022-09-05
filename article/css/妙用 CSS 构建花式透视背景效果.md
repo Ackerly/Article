@@ -30,5 +30,5 @@ div {
 ```
 这里需要注意的是，background-size 的大小控制，和不同的 backdrop-filter: blur(10px) 值，都会影响效果
 
-参考:  
+原文: 
 [妙用 CSS 构建花式透视背景效果](https://mp.weixin.qq.com/s/eHwFbX_C-NjV3XRNORspew)

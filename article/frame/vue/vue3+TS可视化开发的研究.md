@@ -117,5 +117,5 @@ setup(props, ctx) {
 vue3的按需加载是利用了webpack的code-spliting，然后其实每次我们跳转一个新页面的时候是执行了一段本身script就是远程从服务器拿到数据然后加载的。  
 
 
-参考：  
+原文:  
 [vue3+Ts可视化开发的研究，实战拖拽基础，组件动态生成，远程加载组件](https://juejin.cn/post/6860290630435012621?content_source_url=https%3A%2F%2Fgithub.com%2Fvue3%2Fvue3-News)

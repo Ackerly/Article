@@ -599,5 +599,5 @@ _函数、对象属性修改_
 执行格式化后的代码会出现递归爆炸的情况，因为匹配了换行符  
 
 
-参考:  
+原文: 
 [前端JS攻防对抗](https://mp.weixin.qq.com/s/PGghgQfJTGIyoz8Bz8MD9A)

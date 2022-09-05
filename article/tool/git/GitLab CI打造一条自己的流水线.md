@@ -131,5 +131,5 @@ Pipeline 可以包含若干Stage，而每个Stage又可以指定执行若干job�
 
 
 
-参考：
+原文:
 [GitLab CI 打造一条自己的流水线](https://mp.weixin.qq.com/s/0tZ3NwIlm3WDioBLqIlKYw)

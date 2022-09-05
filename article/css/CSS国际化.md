@@ -89,5 +89,5 @@ CSS text-decoration 模块涵盖了text-decoration-skip，该模块控制当覆�
 低级属性是通过字体功能设置访问的，您可以使用4个字母的OpenType标记来切换所需的功能（这取决于您的字体是否有这些功能，但假设有）  
 共有141个功能标签，从可选分数到对正替换，从Ruby符号形式到斜线零。这些CSS属性与字体文件本身的功能密切相关，因此外部依赖性取决于字体的选择。
 
-参考：
+原文:
 [CSS国际化](https://mp.weixin.qq.com/s/LCgdM02tXHMOFiQ7wC0H7Q)

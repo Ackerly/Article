@@ -485,5 +485,5 @@ class Mapper {
 }
 ```
 
-参考:  
+原文: 
 [【Vue3组件化源码】树形组件ElTree的内部原理](https://juejin.cn/post/6926144123669839880?content_source_url=https%3A%2F%2Fgithub.com%2Fvue3%2Fvue3-News)

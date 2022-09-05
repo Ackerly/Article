@@ -291,4 +291,4 @@ Vue.prototype.$popup = Vue.$popup = function () {
 }
 ```
 
-参考：[听说你熟练使用Vue，那这9种Vue技术你掌握了吗？](https://juejin.cn/post/6862560722531352583?content_source_url=https%3A%2F%2Fgithub.com%2Fvue3%2Fvue3-News%3Fcontent_source_url%3Dhttps%3A%2F%2Fgithub.com%2Fvue3%2Fvue3-News)
+原文:[听说你熟练使用Vue，那这9种Vue技术你掌握了吗？](https://juejin.cn/post/6862560722531352583?content_source_url=https%3A%2F%2Fgithub.com%2Fvue3%2Fvue3-News%3Fcontent_source_url%3Dhttps%3A%2F%2Fgithub.com%2Fvue3%2Fvue3-News)

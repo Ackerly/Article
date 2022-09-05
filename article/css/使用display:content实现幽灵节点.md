@@ -122,5 +122,5 @@ display: contents 并非在所有元素下的表现都一致。
 
 
 
-参考:  
+原文: 
 [冷知识！使用 display: contents 实现幽灵节点？](https://mp.weixin.qq.com/s/DhkQNO8Hv1zZP9Fu7uSw-g)

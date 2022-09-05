@@ -78,5 +78,5 @@ contain-intrinsic-size：控制由 content-visibility 指定的元素的自然�
 由于该属性属于渐进增强一类的功能，即便失效，也完全不影响页面本身的展示。  
 利用 content-visibility: auto 只能解决部分场景，在海量 DOM 的场景下的实际效果，还有待进一步的实测。  
 
-参考:  
+原文: 
 [使用 content-visibility 优化渲染性能](https://mp.weixin.qq.com/s/webv8u3M43Jy3BVCxwEQFg)

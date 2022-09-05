@@ -512,5 +512,5 @@ for (i = toBePatched - 1; i >= 0; i--) {
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
 
-参考:  
+原文: 
 [Vue3 源码解析（五）：Patch 算法](https://juejin.cn/post/6968585717924495368?content_source_url=https%3A%2F%2Fgithub.com%2Fvue3%2Fvue3-News)

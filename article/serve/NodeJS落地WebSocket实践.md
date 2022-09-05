@@ -323,5 +323,5 @@ WebSocket 的知识在 BFF 层如何应用呢？
 4. 站内消息，小圆点提示
 
 这些功能以前是在后端实现的，并且会与其他业务功能耦合。现在有了 BFF，那么 WebSocket 完全可以在这一层实现，让后端可以专注核心数据逻辑。  
-参考：  
+原文:  
 [前端架构师破局技能，NodeJS 落地 WebSocket 实践](https://mp.weixin.qq.com/s/05OlojnO11cnafn4o6qCmQ)

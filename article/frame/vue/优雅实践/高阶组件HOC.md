@@ -358,5 +358,5 @@ const router = new VueRouter({
 })
 ```
 
-参考:  
+原文: 
 [Vue 进阶必学之高阶组件 HOC](https://juejin.cn/post/6844904116603486221)

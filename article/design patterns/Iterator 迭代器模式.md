@@ -98,5 +98,5 @@ class ConcreteIterator implements Iterator {
 - 这个数组比较特殊，是 N 维数组，需要一次性遍历完，那么可以用迭代器。
 - 同时遍历数组和其他类型的聚合，则不论数组还是其他聚合，都用相同的迭代器模式遍历最好。
 
-参考:  
+原文: 
 [Iterator（迭代器模式）](https://github.com/ascoders/weekly/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/182.%E7%B2%BE%E8%AF%BB%E3%80%8A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20-%20Iterator%20%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F%E3%80%8B.md)

@@ -312,5 +312,5 @@ function Compose(...funs) {
     return funs.reduce((t, v) => (...arg) => t(v(...arg)));
 ```
 
-参考：  
+原文:  
 [25个你不得不知道的数组reduce高级用法](https://juejin.cn/post/6844904063729926152)

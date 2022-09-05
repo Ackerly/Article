@@ -121,5 +121,5 @@ Turborepo 是用于为 JavaScript/TypeScript 的 Monorepo 提供一个极快的�
 这样一来，就可以使用诸如 turbo run build test 的命令，它则会按 pipeline 的配置依次执行对应的命令。
 当然，如果你想每个命令都支持单独执行，可以直接配置为 {} 即可。此外，如果要使用 turbo run 命令，还需要在 package.json 中声明 packageManage 字段为指定的包管理工具及版本，例如 "packageManager": "pnpm@6.30.0"。
 
-参考:    
+原文:   
 [现代 Monorepo 工程技术选型，聊聊我的思考](https://mp.weixin.qq.com/s/-6OSeoJUlzI7qkkcDrYNcQ)

@@ -353,5 +353,5 @@ class GitTree extends GitObject{
 log与reflog  
 单纯的文本文件，记录一些commit对象以及时间点等
 
-参考:  
+原文: 
 [Git存储原理及部分实现](https://mp.weixin.qq.com/s/j4DBwQlVxfixgPdpfW9dQA)

@@ -87,5 +87,5 @@ login-wraper .login-form {
 
 
 
-参考：
+原文:
 [https://juejin.cn/post/7008180094208311303](vue 移动端完美适配方案，拿走不谢)

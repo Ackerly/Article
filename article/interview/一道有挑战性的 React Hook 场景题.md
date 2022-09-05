@@ -141,5 +141,5 @@ current state = base state + update1 + update2 + …
 所以每次调用 useState，返回值 list 都是不同的对象。  
 并且由于闭包的存在，每个「数字按钮」add 函数中的 list 都不同。
 
-参考:  
+原文: 
 [一道有挑战性的 React Hook 场景题，考考你的功底](https://mp.weixin.qq.com/s/nvcuZuoPmmeQ0vgDk4-3CA)

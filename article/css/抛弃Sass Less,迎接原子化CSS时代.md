@@ -302,5 +302,5 @@ import { t } from 'react-native-tailwindcss';
 ```
 就生产力的角度而言，并没有太大的不同。甚至可以用 TS 来避免错别字。
 
-参考:  
+原文: 
 [Facebook 重构：抛弃 Sass / Less ，迎接原子化 CSS 时代](https://github.com/sl1673495/blogs/issues/69)

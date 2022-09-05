@@ -69,5 +69,5 @@ sum([GDP]) / sum({ fixed [国家] : sum([GDP]) })
 ```
 看似是跨详细粒度计算，其实没有，实际计算时还是一行一行来算的，后面的 LOD 表达式只是在逻辑上按照指定的详细粒度计算，但最终会保持与当前视图详细粒度一致，因此可以参与计算。
 
-参考:  
+原文: 
 [精读《什么是 LOD 表达式》](https://github.com/ascoders/weekly/blob/master/%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF/215.%E7%B2%BE%E8%AF%BB%E3%80%8A%E4%BB%80%E4%B9%88%E6%98%AF%20LOD%20%E8%A1%A8%E8%BE%BE%E5%BC%8F%E3%80%8B.md)

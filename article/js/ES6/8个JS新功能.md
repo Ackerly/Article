@@ -154,5 +154,5 @@ class C {
     }
   }
 ```
-参考:  
+原文: 
 [这8个JS 新功能，你应该去尝试一下](https://juejin.cn/post/7054009669206933534?utm_source=gold_browser_extension)

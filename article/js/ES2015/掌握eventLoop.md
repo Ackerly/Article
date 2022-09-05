@@ -65,5 +65,5 @@ let promise_ = new Promise((resolve,reject){ resolve(undefined)})
 
 **注意：新版chrome优化了，await变得更快**
 
-参考：  
+原文:  
 [说说事件循环机制](https://juejin.cn/post/6844904079353708557)

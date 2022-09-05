@@ -153,5 +153,5 @@ sources和names是可以先确定好的
 }
 ```
 
-参考：  
+原文:  
 [来聊聊SourceMap](https://mp.weixin.qq.com/s/ELIzEaHoo8gpcICLYEj-4w)

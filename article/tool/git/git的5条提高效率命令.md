@@ -150,5 +150,5 @@ vim ~/.gitconfig
 git cp <commitHash>
 ```
 
-参考：  
+原文:  
 [Git不要只会pull和push，试试这5条提高效率的命令](https://juejin.cn/post/7071780876501123085?share_token=3d46085e-742f-44e8-9767-dc47a44e0859)

@@ -264,5 +264,5 @@ lodash.prototype.toJSON = lodash.prototype.valueOf = lodash.prototype.value = wr
 如果是惰性求值，则调用的是 LazyWrapper.prototype.value 即 lazyValue。  
 
 
-参考:  
+原文: 
 [学习 lodash 源码整体架构，打造属于自己的函数式编程类库](https://juejin.cn/post/6844903939062628360)

@@ -293,5 +293,5 @@ VS Code 中事件相关的管理的设计：
 - 通过使用同样的方式this._register()注册事件和订阅事件，将事件相关资源的处理统一挂载到dispose()方法中
 
 
-参考：  
+原文:  
 [VSCode源码解读 事件系统设计](https://godbasin.github.io/front-end-playground/front-end-basic/deep-learning/vscode-event.html#q1-vs-code-%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E4%BB%A3%E7%A0%81%E5%9C%A8%E5%93%AA)

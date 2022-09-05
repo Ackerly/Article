@@ -177,5 +177,5 @@ console.log(obj.value);
 > 可以简单的将 Reflect.get(target, key, receiver) 理解成为 target[key].call(receiver)
 
 
-参考:  
+原文: 
 [为什么Proxy一定要配合Reflect使用？](https://mp.weixin.qq.com/s/A1uRq0XwhZPRIZetrEFM0g)

@@ -330,5 +330,5 @@ uid 和 sid 都是28位的随机ID，sid 和 uid 都在初始化时生成，不�
 出错行author 的原理其实就是 Git Blame  
 
 
-参考:  
+原文: 
 [腾讯三面：说说前端监控平台/监控SDK的架构设计和难点亮点？](https://mp.weixin.qq.com/s/dUoKdzJDKdK1vDgkw4LQ_A)

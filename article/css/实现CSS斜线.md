@@ -184,5 +184,5 @@ div::after{
 }
 ```
 
-参考：  
+原文:  
 [巧妙的实现 CSS 斜线](https://www.cnblogs.com/coco1s/p/6026009.html)

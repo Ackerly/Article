@@ -213,5 +213,5 @@ export const useName = () => {
 差异点：vue3 的组件里， setup 是作为一个早于 “created” 的生命周期存在的，无论如何，在一个组件的渲染过程中只会进入一次。
 React函数组件 则完全不同，如果没有被 memorized，它们可能会被不停地触发，不停地进入并执行方法，因此需要开销的心智相比于vue其实是更多的。
 
-参考：
+原文:
 [浅谈：为啥vue和react都选择了Hooks🏂？](https://juejin.cn/post/7066951709678895141?utm_source=gold_browser_extension)

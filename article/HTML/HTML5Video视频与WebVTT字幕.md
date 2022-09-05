@@ -91,5 +91,5 @@ video::cue(.red) {
 }
 ```
 
-参考：  
+原文:  
 [HTML5 Video视频与WebVTT字幕](https://www.zhangxinxu.com/wordpress/2018/03/html5-video-webvtt-subtitle/)

@@ -39,5 +39,5 @@ revert关键字有时候会和CSS all属性一起使用，可以将某个控件�
 revert控制元素显示最适合用在公用的组件开发中，例如实现一个选项卡切换，或者手风琴切换效果，其中就有对元素的显示控制。可以告别传统的 display:block 显示，也无需判断原始的display计算值再设置，直接使用 display:revert。这样，元素显示的时候，究竟是内联、块状直接通过HTML标签区分即可。
 
 
-参考:  
+原文: 
 [使用CSS revert全局关键字还原display显示元素](https://www.zhangxinxu.com/wordpress/2021/05/css-revert-display/)

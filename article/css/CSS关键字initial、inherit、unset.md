@@ -19,5 +19,5 @@ unset是不设置，是关键字initial和inherit的组合。
 unset的一些妙用：  
 
 
-参考:  
+原文: 
 [谈谈 CSS 关键字 initial、inherit 和 unset](https://www.cnblogs.com/coco1s/p/6733022.html)

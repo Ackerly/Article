@@ -358,5 +358,5 @@ router.beforeEach((to, from, next) => {
 });
 ```
 
-参考：  
+原文:  
 [看完这篇Pinia上手指南，你还会选择Vuex吗？](https://juejin.cn/post/7068483852674531335?utm_source=gold_browser_extension)

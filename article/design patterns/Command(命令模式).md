@@ -61,5 +61,5 @@ class Invoker {
 记录操作是较为精细的管理方式，并且可以延伸出协同编辑功能。记录快照要注意尽量共享内存，防止快照过大，而且协同编辑场景因为快照无法做冲突处理，所以快照模式在协同编辑场景无法应用。  
 要识别没必要使用命令模式的场景，对于没有撤销重做的前端大部分场景来说，都无需改为命令模式。  
 
-参考:  
+原文: 
 [Command（命令模式）](https://github.com/ascoders/weekly/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/180.%E7%B2%BE%E8%AF%BB%E3%80%8A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20-%20Command%20%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F%E3%80%8B.md)

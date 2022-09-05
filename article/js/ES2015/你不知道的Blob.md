@@ -431,5 +431,5 @@ Blob URL  可以很方便使用 XMLHttpRequest 获取源数据（ xhr.responseTy
 4. 使用场景不同  
 Blob URL  只能在当前应用内使用，把 Blob URL  复制到浏览器地址栏是无法获取数据，而 Data URL 则可以在任意浏览器中使用。
 
-参考:  
+原文: 
 [《你不知道的 Blob》番外篇](https://juejin.cn/post/6844904183661854727)

@@ -87,5 +87,5 @@ object-view-box 属性就类似于 SVG 中的 viewBox 属性。它允许您使�
 
 ```
 
-参考:  
+原文: 
 [令人期待的 3 个即将推出的 CSS 特性](https://mp.weixin.qq.com/s/phOZIr8edzWzJgTJfeyE9A)

@@ -48,5 +48,5 @@ class Component implements Prototype {
 ## 缺点
 - 每个类都要实现 clone 方法，对类的实现是有一定入侵的，要修改已有类时，违背了开闭原则。
 - 当类又调用了其他对象时，如果要实现深拷贝，需要对应对象也实现 clone 方法，整体链路可能会特别长，实现起来比较麻烦。
-参考:  
+原文: 
 [Prototype（原型模式）](https://github.com/ascoders/weekly/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/170.%E7%B2%BE%E8%AF%BB%E3%80%8A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20-%20Prototype%20%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F%E3%80%8B.md)

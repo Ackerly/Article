@@ -408,5 +408,5 @@ git stash
 git stash pop
 ```
 
-参考：
+原文:
 [Git命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)

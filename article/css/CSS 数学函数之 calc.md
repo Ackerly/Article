@@ -206,5 +206,5 @@ div::before {
 }
 ```
 
-参考:  
+原文: 
 [CSS 数学函数之 calc](https://mp.weixin.qq.com/s/BB_Sk03m8e17aQZrVfv7HA)

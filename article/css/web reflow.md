@@ -116,5 +116,5 @@ ids.forEach(id => {
 fastdom 是一个可以在不分离代码的情况下，分离读写执行的库，尤其适合用在 reflow 性能优化场景。每一个 measure、mutate 都会推入执行队列，并在 window.requestAnimationFrame 时机执行。  
 
 
-参考:  
+原文: 
 [精读《web reflow》](https://mp.weixin.qq.com/s/uaNTKwdXDSVLixF4Rz1H3Q)

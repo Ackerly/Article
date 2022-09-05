@@ -51,5 +51,5 @@ function fibonacciMemoization(n) {
 ```
 这个函数使用我们非常熟悉的闭包，将计算过的值缓存在了 memo 这个数组中。这样的话只要计算过的值都会被复用，减少了多余的函数调用。
 
-参考:  
+原文: 
 [怒肝 JavaScript 数据结构 — 斐波那契数列](https://mp.weixin.qq.com/s/kQt_KudoRDgRcBqmHclmRw)

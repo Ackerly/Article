@@ -39,5 +39,5 @@ CDN 的缓存设置可以根据 header 来，也可以在控制台设置一些�
 CDN 网络的建设成本还是很大的，只有大公司会自建，一般我们都会买三方服务，而且国内和海外的 CDN 都是分开的，如果主要服务国内用户，那只买国内的 CDN 服务即可。  
 
 
-参考:  
+原文: 
 [CDN 为什么这么设计](https://mp.weixin.qq.com/s/jTIe1V9II8waWaqKSSuBZg)

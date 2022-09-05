@@ -275,5 +275,5 @@ exec(`git clone ${params.repo} /some/path`);
 - 在调用系统命令前对所有传入参数进行命令行参数转义过滤
 - 不要直接拼接命令语句，借助一些工具做拼接、转义预处理
 
-参考:   
+原文:  
 [常见六大Web安全攻防解析](https://github.com/ljianshu/Blog/issues/56)

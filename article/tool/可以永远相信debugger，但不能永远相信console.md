@@ -7,5 +7,5 @@
 浏览器在进行I/O的时候异步会提升性能，所有这就是为什么有时候写的同步代码依然会出现不一致的情况  
 
 
-参考:  
+原文: 
 [你可以永远相信debugger,但是不能永远相信console.log](https://juejin.cn/post/7032504319584780325?utm_source=gold_browser_extension)

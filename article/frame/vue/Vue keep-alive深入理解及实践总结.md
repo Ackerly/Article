@@ -174,5 +174,5 @@ export default {
 3. 当匹配条件同时在 include 与 exclude 存在时，以 exclude 优先级最高(当前vue 2.4.2 version)。比如：包含于排除同时匹配到了组件A，那组件A不会被缓存。
 4. 包含在 keep-alive 中，但符合 exclude ，不会调用 activated 和 deactivated。
 
-参考:  
+原文: 
 [Vue keep-alive深入理解及实践总结](https://juejin.cn/post/6844903919273918477)

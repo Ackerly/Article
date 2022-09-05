@@ -50,5 +50,5 @@ Window 的能力是 drawBox，那继承 Window 容易拓展 drawIcon 吗？默�
 不要过度抽象，桥接模式是为了让类的职责更单一，维护更便捷，但如果只是个小型项目，桥接模式会增加架构设计的复杂度，而且不正确的模块拆分，把本来关联的逻辑强制解耦，在未来会导致更大的问题。  
 桥接模式也有简单与复杂模式之分，只有一种实现的场景就不要用抽象工厂做过度封装了。
 
-参考：  
+原文:  
 [Bridge（桥接模式）](https://github.com/ascoders/weekly/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/173.%E7%B2%BE%E8%AF%BB%E3%80%8A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20-%20Bridge%20%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F%E3%80%8B.md)

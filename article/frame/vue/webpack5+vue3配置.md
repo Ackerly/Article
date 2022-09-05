@@ -545,5 +545,5 @@ module.exports = {
 }
 ```
 
-参考:  
+原文: 
 [webpack5都来了，还不学习配置一下webpack5+Vue3的配置嘛](https://juejin.cn/post/6922265673074737165?content_source_url=https%3A%2F%2Fgithub.com%2Fvue3%2Fvue3-News)

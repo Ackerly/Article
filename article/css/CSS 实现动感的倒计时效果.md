@@ -250,5 +250,5 @@ count-down::after{
 ```
 
 
-参考：  
+原文:  
 [动画合成小技巧！CSS 实现动感的倒计时效果](https://mp.weixin.qq.com/s/Wo0_UE_Sa-CP3UuX-y4cPA)

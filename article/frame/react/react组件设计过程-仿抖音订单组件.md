@@ -401,5 +401,5 @@ export default function Myorder() {
 - 列表中的每一个单独的小盒子添加属性：break-inside:avoid; 控制文本块分解成单独的列，以免项目列表的内容跨列，破坏整体的布局**
 - 图片的宽度设置：width:100%
 
-参考:  
+原文: 
 [超详细的React组件设计过程-仿抖音订单组件](https://mp.weixin.qq.com/s/kZfar7nbnR_qWi5jXB4LUw)

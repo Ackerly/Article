@@ -66,5 +66,5 @@ IE11浏览器单个数字的时候，字形变得宽大厚重了，这个是和�
 ## 水平排版中的应用
 需要垂直排版，然后目标应该是数字或者字符长度不超过4个词组。以布局的角度思考这个属性，可以实现任意2~4个字符按照1个字符宽度渲染排版的效果，比如'ces'现在是3字符宽度，使用text-combine-upright可以让其最多占据一个字符宽度。
 
-参考:  
+原文: 
 [使用CSS text-combine-upright实现字符的横向合并](https://www.zhangxinxu.com/wordpress/2021/02/css-text-combine-upright/)

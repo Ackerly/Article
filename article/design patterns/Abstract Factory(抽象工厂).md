@@ -51,5 +51,5 @@ productA.bind(productB) 是一种抽象表示：
 这种情况不是为已有元素新增一套实现，而是实现一些新元素，就会非常复杂，因为我们不仅要为所有 ConcreteFactory 新增每一个元素，还要修改抽象工厂，以将新元素与旧元素间建立联系，违背了开闭原则。  
 对于已有元素固定的系统，适合使用抽象工厂，反之不然。  
 
-参考:  
+原文: 
 [Abstract Factory（抽象工厂）](https://github.com/ascoders/weekly/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/167.%E7%B2%BE%E8%AF%BB%E3%80%8A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20-%20Abstract%20Factory%20%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E3%80%8B.md)

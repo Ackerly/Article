@@ -84,5 +84,5 @@ Suspended-component完全渲染之前，备用内容会被显示出来。如果�
 在使用webpack作为开发构建工具时，npm run dev都要等一会，项目越大等的时间越长。热重载页有几秒的延迟，但是如果用vite来做vue3的开发构建工具，npm run dev 秒开，热重载也很快。
 vite的原理还是用了浏览器支持import关键字了，启动项目不用webpack构建工具先构建了，浏览器直接请求路由对应的代码文件，代理服务器针对单个文件进行编译并返回。如果请求的文件里还import了其他文件，同理浏览器继续发请求，代理服务器返回。就这样实现了npm run dev时无需编译，实时请求实时编译。
 
-参考:  
+原文: 
 [Vue3.0七大亮点是什么？？](https://juejin.cn/post/6968261755063500831?content_source_url=https%3A%2F%2Fgithub.com%2Fvue3%2Fvue3-News)

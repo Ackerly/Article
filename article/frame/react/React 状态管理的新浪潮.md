@@ -131,5 +131,5 @@ hooks 既提供也提倡了将可组合部件组合在一起形成更大整体�
 | Zustand     | 半自动 - API可以帮助手动取消订阅组件          |
 | Valtio      | 半自动 - 订阅组件写在时会被垃圾回收            |
 
-参考:  
+原文: 
 [React 状态管理的新浪潮](https://mp.weixin.qq.com/s/6Er2IQEXXNc8Sb5vVJZZOQ)

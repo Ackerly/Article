@@ -337,5 +337,5 @@ Function.prototype.bind2 = function (context) {
     return fBound;
 }
 ```
-参考：  
+原文:  
 [深度解析bind原理、使用场景及模拟实现](https://github.com/yygmind/blog/issues/23)

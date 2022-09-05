@@ -82,5 +82,5 @@ export const createStore = () => {
 ```
 外部代码只能访问状态，只有导出的函数才可以修改状态。通过受保护的状态避免不必要的修改，新的解决方案相对而言更接近于Vuex。
 
-参考:  
+原文: 
 [为什么不需要在Vue3中使用Vuex](https://juejin.cn/post/6856718746694713352?content_source_url=https%3A%2F%2Fgithub.com%2Fvue3%2Fvue3-News)

@@ -93,5 +93,5 @@ conic-gradient(white, 45deg, deepskyblue);
 ## 兼容性
 锥形渐变是CSS Images Module Level 4规范中新定义的一种渐变，所以兼容性要比线性渐变和径向渐变差很多，目前Chrome和Safari浏览器均已支持，Firefox即将正式支持。
 
-参考:  
+原文: 
 [CSS conic-gradient锥形渐变简介](https://www.zhangxinxu.com/wordpress/2020/04/css-conic-gradient/)

@@ -108,5 +108,5 @@ Promise.all(document.getAnimations().map(animation =>
     // do something cool 
   })
 ```
-参考：  
+原文:  
 [什么是Web Animations API？](https://juejin.cn/post/7065093728737689614?utm_source=gold_browser_extension)

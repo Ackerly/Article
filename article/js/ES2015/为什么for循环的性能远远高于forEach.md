@@ -36,5 +36,5 @@ forEach:30.328ms
 ```
 
 
-参考：
+原文:
 [为什么普通 for 循环的性能远远高于 forEach 的性能](https://www.kancloud.cn/freya001/interview/1235136)

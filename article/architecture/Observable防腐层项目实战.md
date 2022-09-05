@@ -195,5 +195,5 @@ function getListWithStatus() {
 ]
 ```
 
-参考:  
+原文: 
 [Observable防腐层项目实战](https://mp.weixin.qq.com/s/2jkVIPjVRnCZo8vaB5oD9g)

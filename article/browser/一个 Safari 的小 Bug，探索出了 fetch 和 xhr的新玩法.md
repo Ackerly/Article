@@ -54,5 +54,5 @@ Hack 思路
 使用上述方法，虽然在 Safari 中可完美运行，但是控制台还是会打印 401 的错误  
 另外一个需要注意的点是：最好根据浏览器做一层判断，如果是 Safari，则将 redirect 设置为 manual，否则不进行处理。这样可以避免 Chrome 发起过多的无用请求（Chrome 总共会发出 5 个请求）  
 
-参考：  
+原文:  
 [一个 Safari 的小 Bug，探索出了 fetch 和 xhr的新玩法](https://mp.weixin.qq.com/s/jqRxNAI5C2NdxVX-pthFpg)

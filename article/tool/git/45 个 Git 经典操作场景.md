@@ -494,5 +494,5 @@ git reset --hard 0254ea7
 ```
 然后使用git reset就可以把main改回到之前的commit，这提供了一个在历史被意外更改情况下的安全网。  
 
-参考：  
+原文:  
 [45 个 Git 经典操作场景，专治不会合代码](https://mp.weixin.qq.com/s/yGLg3kLcqcCBhtBqOE0dyQ)

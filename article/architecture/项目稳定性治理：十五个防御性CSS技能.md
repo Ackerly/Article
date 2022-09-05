@@ -209,5 +209,5 @@ input:-moz-placeholder {
 
 
 
-参考：  
+原文:  
 [项目稳定性治理：十五个防御性CSS技能](https://juejin.cn/post/7068993477312413733?utm_source=gold_browser_extension)

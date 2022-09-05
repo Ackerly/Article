@@ -220,5 +220,5 @@ workflow 里所有以 secrets.XXXXXX 的格式均为仓库独立配置的密钥�
 1. 因为使用了 CDN，所以 scope 和 manifest.start_url 选项需要显式指定，否则资源会读取出错
 2. 基于上面提到的路径问题，从 v0.5.3 开始，配置 CDN 的同时，也需要显式指定 base 选项，避免出现 404
 
-参考:  
+原文: 
 [重构于 Vite：我如何做 SSG、静态资源发布以及自动化部署](https://mp.weixin.qq.com/s/fpc1zTvPTMJ4UiGFrpHxHw)

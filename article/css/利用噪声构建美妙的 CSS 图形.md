@@ -201,5 +201,5 @@ body {
 
 ```
 
-参考:  
+原文: 
 [利用噪声构建美妙的 CSS 图形](https://mp.weixin.qq.com/s/l80muJPaGgbLyeljZ5mK2g)

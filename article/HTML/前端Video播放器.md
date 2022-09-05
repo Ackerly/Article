@@ -498,5 +498,5 @@ processor.computeFrame = function computeFrame() {
 ```
  computeFrame() 方法负责获取一帧数据并执行色度键控效果。利用色度键控技术，还可以实现纯客户端实时蒙版弹幕
 
-参考:  
+原文: 
 [玩转前端 Video 播放器 ](https://juejin.cn/post/6850037275579121671?utm_source=gold_browser_extension)

@@ -47,5 +47,5 @@ compile.run()
 ## 缺点  
 外观模式并不适合于所有场景，当子系统足够易用时，再使用外观模式就是画蛇添足  
 当系统难以抽象出通用功能时，外观模式的设计可能也无所适从，因为设计的高层接口可能适用范围很窄，此时外观模式的意义就比较小。
-参考:  
+原文: 
 [Facade（外观模式）](https://github.com/ascoders/weekly/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/176.%E7%B2%BE%E8%AF%BB%E3%80%8A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20-%20Facade%20%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F%E3%80%8B.md)

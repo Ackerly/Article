@@ -189,5 +189,5 @@ const regexOperators =
   );
 ```
 
-参考:  
+原文: 
 [JS 代码越来越难读了 ...](https://mp.weixin.qq.com/s/Ng-38P0jvvWbsPSwAjrJdA)

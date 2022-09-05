@@ -67,6 +67,6 @@ eval(function(c,g,a,b,d,e){d=String;if(!"".replace(/^/,String)){for(;a--;)e[a]=b
 })();
 ```
 
-参考:  
+原文: 
 [如何防止他人恶意调试你的web程序](https://juejin.cn/post/7000784414858805256)
 

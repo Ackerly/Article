@@ -393,5 +393,5 @@ function Person(options) {
     p1.sayName() // 'I am pino'
 ```
 
-参考:  
+原文: 
 [为什么 Vue2 this 能够直接获取到 data 和 methods](https://mp.weixin.qq.com/s/Uq-LYSrmn1lOjRuAl4jc2A)

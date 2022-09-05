@@ -79,5 +79,5 @@ const text = "划水水摸鱼鱼";
 console.log(countChar(text)); // { '划': 1, '水': 2, '摸': 1, '鱼': 2 }
 ```
 
-参考:  
+原文: 
 [比你想象中更强大的 reduce 以及对敲码的思考](https://mp.weixin.qq.com/s/qMNRMU3yqFoCzuauTvspqw)

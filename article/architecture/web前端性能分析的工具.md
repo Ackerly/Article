@@ -63,5 +63,5 @@ Chrome DevTools协议具有与浏览器的许多不同部分（例如页面、Se
 ### 自动化性能分析
 通过使用 Chrome DevTools 协议，我们可以获取 DevTools 提供的很多数据，包括网络数据、性能数据、运行时数据。
 对于如何使用该协议，已经有很多大神针对这个协议封装出不同语言的库，包括 Node.js、Python、Java等，可以根据需要在 awesome-chrome-devtools (opens new window)这个项目中找到。
-参考：  
+原文:  
 [补齐Web前端性能分析的工具盲点](https://godbasin.github.io/front-end-playground/front-end-basic/deep-learning/front-end-performance-analyze.html#performance-%E9%9D%A2%E6%9D%BF)

@@ -139,5 +139,5 @@ for(let i=0; i<100000; i++){
 如果没有 nextTick 更新机制，那么 num 每次更新值都会触发视图更新，有了nextTick机制，只需要更新一次，所以为什么有nextTick存在，
 
 
-参考:  
+原文: 
 [从 Vue3 源码中再谈 nextTick](https://segmentfault.com/a/1190000038921474?content_source_url=https://github.com/vue3/vue3-News)

@@ -389,5 +389,5 @@ LitElement 在 Web Components 开发方面有着很多比原生的优势，它�
 - 高扩展性：lit-html 基于标记的 template，它结合了 ES6 中的模板字符串语法，使得它无需预编译、预处理，就能获得浏览器原生支持，并且扩展能力强
 - 兼容良好：对浏览器兼容性非常好，对主流浏览器都能有非常好的支持
 
-参考:  
+原文: 
 [Web Components-LitElement 实践](https://mp.weixin.qq.com/s/7lmx1ifHfhf3rpnwZEPc_g)

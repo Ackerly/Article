@@ -90,5 +90,5 @@ type MakeFunction<T> = (arg: T) => void
 ```
 父子类型关系逆转了，这就是 逆变（Contravariance）。
 
-参考：  
+原文:  
 [深入 TypeScript 中的子类型、逆变、协变，进阶 Vue3 源码前必须搞懂的](https://juejin.cn/post/6855517117778198542?content_source_url=https%3A%2F%2Fgithub.com%2Fvue3%2Fvue3-News)

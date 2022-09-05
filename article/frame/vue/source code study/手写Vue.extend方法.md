@@ -184,5 +184,5 @@ function initComputed$1 (Comp) {
   Sub.sealedOptions = extend({}, Sub.options);
 ```
 
-参考:  
+原文: 
 [学习vue源码（2） 手写Vue.extend方法](https://juejin.cn/post/6844904181401141262)

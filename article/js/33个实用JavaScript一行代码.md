@@ -207,5 +207,5 @@ const isEmpty = obj => Reflect.ownKeys(obj).length === 0 && obj.constructor === 
 
 
 
-参考：  
+原文:  
 [33个非常实用的JavaScript一行代码，建议收藏！](https://juejin.cn/post/7025771605422768159?utm_source=gold_browser_extension)

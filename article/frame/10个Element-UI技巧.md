@@ -201,5 +201,5 @@ export default {
 </el-table-column>
 ```
 
-参考：  
+原文:  
 [Element-UI 10个奇淫技巧，你知道几个？](https://juejin.cn/post/7017957779176423454?utm_source=gold_browser_extension)

@@ -190,5 +190,5 @@ animation 的属性
 - float: left：为了让后续的 margin-left，transform 符合预期需要设置 float
 - margin-left：等效于上一个方案中的 left
 
-参考:  
+原文: 
 [利用CSS实现超长内容滚动播放](https://mp.weixin.qq.com/s/BAlijJ-t5PKetbU53Ge-yg)

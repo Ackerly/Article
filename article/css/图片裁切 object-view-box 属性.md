@@ -95,5 +95,5 @@ img {
 可以使用 inset 来放大或缩小图像，过渡或动画不能与object-view-box工作  
 也可以用一个负的 inset 值来缩小
 
-参考:  
+原文: 
 [初识图片裁切 object-view-box 属性](https://mp.weixin.qq.com/s/YNEMmPyO2rKNR2euLgxF3g)

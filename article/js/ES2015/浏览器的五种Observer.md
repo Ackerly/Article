@@ -163,5 +163,5 @@ const reportingObserver = new ReportingObserver((reports, observer) => {
 reportingObserver.observe();
 ```
 
-参考：  
+原文:  
 [浏览器的 5 种 Observer，你用过几种？](https://juejin.cn/post/7064557881492209678?utm_source=gold_browser_extension)

@@ -142,5 +142,5 @@ CSS
 }
 ```
 
-参考：  
+原文:  
 [CSS实现渐变色边框（Gradient borders）的5种方法](https://juejin.cn/post/7017701121619656711)

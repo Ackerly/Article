@@ -1840,5 +1840,5 @@ const App = () => {
 ```
 在 React 中，可以直接用 lazy() 包裹，对页面的内容进行懒加载。当然，还有另外一种情况是，加载类似于首页初次加载页面 Loading 的那种效果，在 react 中可以使用 <Suspense> 来解决
 
-参考:  
+原文: 
 [探秘react，一文弄懂react的基本使用和高级特性](https://mp.weixin.qq.com/s/U_1MG7uk3GdbSfxhmZ0VZA)

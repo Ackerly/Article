@@ -27,5 +27,5 @@
 2. 保证运用了 transform: translate() 或者 transform: scale() 的元素的高宽为偶数
 3. 弃用 transform
 
-参考:  
+原文: 
 [疑难杂症：运用 transform 导致文本模糊的现象探究](https://juejin.cn/post/7066986698575446030?utm_source=gold_browser_extension)

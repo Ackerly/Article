@@ -295,5 +295,5 @@ S extends `${infer L}${infer R}`
 对字符串进行拆解  
 如果当前的字符串已拆解完，则读取存放数组T的长度。  
 如果没有拆解完，则递归调用LengthOfString<R, [...T, L]> ，并将取出的字符，放入T中。  
-参考:  
+原文: 
 [你以为学会TypeScript了？先看看这16道题能做对多少先](https://juejin.cn/post/7110232056826691591)

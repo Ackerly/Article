@@ -222,5 +222,5 @@ $expression: "😀", "🤣", "❤️", "😻", "👏", "🤘", "🤡", "🤩", "
    无法多用户联动，可能是影响能不能实际使用最为关键的因素。
 
 
-参考:  
+原文: 
 [短视频 APP 的点赞动画是怎么实现的](https://mp.weixin.qq.com/s/JJYXFcocCeguYg7egRxhYw)

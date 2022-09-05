@@ -389,5 +389,5 @@ speed-measure-webpack-plugin 和 HotModuleReplacementPlugin 不能同时使用�
 }
 ```
 
-参考：  
+原文:  
 [带你深度解锁Webpack系列(优化篇)](https://juejin.cn/post/6844904093463347208)

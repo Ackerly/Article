@@ -358,5 +358,5 @@ export function flushPostFlushCbs(seen?: CountMap) {
 }
 ```
 
-参考:  
+原文: 
 [一次弄懂 Vue2 和 Vue3 的 nextTick 实现原理](https://juejin.cn/post/7021688091513454622)

@@ -28,5 +28,5 @@ if (navigator.storage && navigator.storage.estimate) {
 2. 使用新API时应该做一些异常处理。虽然localforage有降级机制，但是在支持IndexedDB的端遇到IndexedDB报错时并不会自动降为localStorage，需要在开发过程中手动处理。
 
 
-参考:  
+原文: 
 [IndexedDB 使用引起的线上事故](https://juejin.cn/post/7033303792443473934)

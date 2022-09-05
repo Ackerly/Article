@@ -30,5 +30,5 @@ Vue 3 中，通过把大多数的全局 API 和内部的 helper 作为 ES 模块
 
 
 
-参考:  
+原文: 
 [Vue3 设计背后的思考](https://juejin.cn/post/6870627817009184776?content_source_url=https%3A%2F%2Fgithub.com%2Fvue3%2Fvue3-News)

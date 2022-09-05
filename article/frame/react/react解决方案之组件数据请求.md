@@ -842,5 +842,5 @@ const Cmpt: React.FC = (props) => {
 export default Cmpt;
 ```
 
-参考:  
+原文: 
 [React通用解决方案——组件数据请求](https://juejin.cn/post/7066722095526314021?utm_source=gold_browser_extension)

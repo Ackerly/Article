@@ -358,5 +358,5 @@ svg text {
 ```
 动画的核心就是，利用动态变化文字的 stroke-dasharray 和 stroke-dashoffset 形成视觉上的线条变换，动画的最后再给文字上色。
 
-参考：  
+原文:  
 [奇思妙想 CSS 文字动画](https://github.com/chokcoco/iCSS/issues/101)

@@ -715,5 +715,5 @@ await tick()
 // 其他操作
 ```
 
-参考:  
+原文: 
 [前端新宠 Svelte 带来哪些新思想？赶紧学起来！](https://mp.weixin.qq.com/s/5o7qiDC_BGIq6n0FWHvClw)

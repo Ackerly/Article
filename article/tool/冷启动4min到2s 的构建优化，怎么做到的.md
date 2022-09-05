@@ -422,5 +422,5 @@ module.exports = {
 1. 对项目进行微前端拆分，将相对独立的模块拆解出来，做到独立部署
 2. 基于 Jenkinks 构建时，在 Build Base 阶段优化的提升，譬如将构建流程前置，结合 CDN 做快速回滚，以及将依赖预置进 Docker 容器中，减少在容器中每次 npm install 时间的消耗等
 
-参考:  
+原文: 
 [冷启动 4min -> 2s 的构建优化，怎么做到的](https://mp.weixin.qq.com/s/biC7qsBEJYWzNEe33I3TOw)

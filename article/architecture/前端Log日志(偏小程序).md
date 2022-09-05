@@ -139,5 +139,5 @@ export default Behavior({
 })
 ```
 
-参考:  
+原文: 
 [前端架构之路：前端 Log 日志（偏小程序）](https://juejin.cn/post/7053835525785911333)

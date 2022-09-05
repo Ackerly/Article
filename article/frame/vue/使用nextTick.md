@@ -104,5 +104,5 @@ export const nextTick = (function () {
 **nextTick的意义**  
 同步任务中多次改变DOM。那么在所有同步任务执行完毕之后，就说明数据修改已经结束了，改变DOM的函数我都执行过了，已经得到了最终要渲染的DOM数据，所以这个时候可放心更新DOM了。nextTick的回调函数都是在microtask中执行的。这样就可以尽量避免重复的修改渲染某个DOM元素，另一方面也能够将DOM操作聚集，减少渲染的次数，提升DOM渲染效率。
 
-参考：  
+原文:  
 [深入了解vm.$nextTick和Vue.nextTick](https://juejin.cn/post/6844903973061656590)

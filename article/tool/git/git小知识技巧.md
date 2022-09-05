@@ -39,5 +39,5 @@ git grep <keyword>
 ag <keyword>
 ```
 
-参考：
+原文:
 [Git 几点小知识技巧](https://juejin.cn/post/7030441979645263909)

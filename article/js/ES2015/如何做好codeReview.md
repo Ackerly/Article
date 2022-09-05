@@ -32,5 +32,5 @@ Better CodeReview会注意到更本质问题，留意团队协作的必要性，
 Good CodeReview看起来虽然占用开发时间，长远看提升了开发效率  
 Better CodeReview会得到公司进一步支持，公司甚至不断研发完善CodeReview系统与流程，通过系统化方案保证上面几项CodeReview注意事项是否在团队落实，全员参与。
 
-参考：  
+原文:  
 [精读《如何做好 CodeReview》](https://github.com/ascoders/weekly/blob/master/%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF/142.%E7%B2%BE%E8%AF%BB%E3%80%8A%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%20CodeReview%E3%80%8B.md)

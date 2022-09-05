@@ -74,5 +74,5 @@ add.interpreter("2 - 1") // false
 ## 缺点
 上面的例子是比较低效场景，因为当语法复杂后，类的数目会明显增多，难以维护，此时需要用一个通用语法解析器
 
-参考:  
+原文: 
 [Interpreter（解释器模式）](https://github.com/ascoders/weekly/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/181.%E7%B2%BE%E8%AF%BB%E3%80%8A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20-%20Interpreter%20%E8%A7%A3%E9%87%8A%E5%99%A8%E6%A8%A1%E5%BC%8F%E3%80%8B.md)

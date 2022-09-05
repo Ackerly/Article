@@ -208,5 +208,5 @@ BigInt::sameValue ( x, y ) 调用 BigInt::equal ( x, y )
 而R(x)是
 > 从 Number 或 BigInt x 到数学值的转换表示为“ x 的数学值”或 R(x)。+ 0F 和-0F的数学值为0
 
-参考：
+原文:
 [NaN你都未必懂，花五分钟让你懂得不能再懂](https://juejin.cn/post/7023168824975294500)

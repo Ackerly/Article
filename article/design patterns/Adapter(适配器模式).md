@@ -87,5 +87,5 @@ class Adapter implements ITarget {
 3. 新旧 API 兼容。
 4. 统一多个类的接口。一般可以结合工厂方法使用
 
-参考:  
+原文: 
 [Adapter（适配器模式）](https://github.com/ascoders/weekly/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/172.%E7%B2%BE%E8%AF%BB%E3%80%8A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20-%20Adapter%20%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F%E3%80%8B.md)

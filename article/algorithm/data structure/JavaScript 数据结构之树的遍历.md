@@ -68,5 +68,5 @@ bin_tree.postOrderTraverse((key)=> {
 ```
 
 
-参考:  
+原文: 
 [怒肝 JavaScript 数据结构 — 树的遍历](https://mp.weixin.qq.com/s/bX7IJQgrFS6eUn5ZvgyIUQ)

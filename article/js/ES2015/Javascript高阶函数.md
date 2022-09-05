@@ -168,4 +168,4 @@ let addEventLazy = function(el, type, handler) {
  addEventLazy(el, type, handler)
 }
 ```
-参考：[JavaScript中高阶函数的魅力](https://juejin.cn/post/6844903668651819016)
+原文:[JavaScript中高阶函数的魅力](https://juejin.cn/post/6844903668651819016)

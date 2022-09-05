@@ -91,5 +91,5 @@ foo.call(obj)
 ```
 
 
-参考:  
+原文: 
 [精读《This 带来的困惑》](https://github.com/ascoders/weekly/blob/master/%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF/13.%E7%B2%BE%E8%AF%BB%E3%80%8AThis%20%E5%B8%A6%E6%9D%A5%E7%9A%84%E5%9B%B0%E6%83%91%E3%80%8B.md)

@@ -123,5 +123,5 @@ function Child(props) {
 此时再按照之前的步骤去操作，会发现弹窗展示出的值就是最新的值，与页面是保持一致的，而并非是渲染隔离的值。  
 在我们的内容后台中使用 useRef，也能确保正文内容组件中 contentList 始终保持最新，在多次触发 change 事件之后，不会有页面异常的情况出现了  
 
-参考:  
+原文: 
 [从一次富文本编辑器升级探索React元素渲染](https://mp.weixin.qq.com/s/AaweMKSxnK5lVkBMtTYwNQ)

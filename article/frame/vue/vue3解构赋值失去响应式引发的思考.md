@@ -202,5 +202,5 @@ export default {
 ```
 store.getters.double 必须用computed 包裹起来，其实道理是一样的，也是变量赋值的原因
 
-参考:  
+原文: 
 [Vue3 解构赋值失去响应式引发的思考](https://mp.weixin.qq.com/s/es2Mwk3_PHUUz869O5ivAA)

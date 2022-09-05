@@ -228,5 +228,5 @@ Polyfill 内容在所有第三方包编译完成后进行累计去重，然后�
 与此同时，插入到 HTML 中的 import map 的远程 CDN 产物被改写为本地静态资源服务的地址。  
 因此，最后项目中访问到的第三方包资源即为临时目录中的产物代码。  
 
-参考:  
+原文: 
 [为什么大厂不能直接用 Vite？Bundle-less 的思考和实践分享](https://mp.weixin.qq.com/s/wRVILf2h34_3ktxvhla_xQ)

@@ -56,5 +56,5 @@ function main(anyCreator: Creator) {
 工厂方法中，每创建一种具体的子类，就要写一个对应的 ConcreteCreate，这相对比较笨重，但有意思的是，如果将创建多个对象放到一个 ConcreteCreate 中，就变成了 简单工厂模式，新增产品要修改已有类不符合开闭模式，推荐写成这种模式  
 
 
-参考:  
+原文: 
 [Factory Method（工厂方法）](https://github.com/ascoders/weekly/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/169.%E7%B2%BE%E8%AF%BB%E3%80%8A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20-%20Factory%20Method%20%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E3%80%8B.md)

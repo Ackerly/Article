@@ -105,5 +105,5 @@ div {
 }
 ```
 
-参考：  
+原文:  
 [巧用 -webkit-box-reflect 倒影实现各类动效](https://github.com/chokcoco/iCSS/issues/100)

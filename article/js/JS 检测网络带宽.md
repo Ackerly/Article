@@ -121,5 +121,5 @@ navigator.connection.downlink 会返回以（兆比特 / 秒）为单位的有�
 navigator.connection.addEventListener('change', measureBW());
 ```
 
-参考:  
+原文: 
 [JS 检测网络带宽](https://mp.weixin.qq.com/s/XfdeRmHM-GxzSZK0VWjFmA)

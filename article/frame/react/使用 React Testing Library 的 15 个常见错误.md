@@ -269,5 +269,5 @@ waitFor 适用的情况是：在执行的操作和断言之间存在不确定的
 如果 get* API 找不到元素，它就会抛出异常，打印整个 DOM 树结构（语法高亮），在 Debug 的时候很有用。也因为这点，断言是永远不可能失败的（因为如果找不到元素，查询在断言之前抛出异常）。  
 建议：如果你想断言某个东西是否存在，那么就做显式的断言操作  
 
-参考:  
+原文: 
 [使用 React Testing Library 的 15 个常见错误](https://mp.weixin.qq.com/s/gssYOb7xgSx2HsAeRGTgxA)

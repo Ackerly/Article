@@ -293,5 +293,5 @@ div {
 }
 ```
 
-参考：
+原文:
 [奇妙的 CSS MASK](https://github.com/chokcoco/iCSS/issues/80)

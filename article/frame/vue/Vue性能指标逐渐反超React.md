@@ -31,5 +31,5 @@ SvelteKit 了，它的数据指标似乎比其它的框架高出了将近一倍�
 这些虽然看起来是 Next.js 的优点，但其实也是它的缺点，在对图片进行处理时肯定会有一些耗时，影响渲染速度  
 Next.js 应用图片下载量很小，但它的 LCP 指标仍然垫底？？？反而 Nuxt.js 的数据令人惊叹，图片下载量将近是 Next.js 的三倍，LCP 指标还远远高于它  
 
-参考:  
+原文: 
 [Vue 性能指标逐渐开始反超 React 了](https://mp.weixin.qq.com/s/DPSAJCdlfg064Dgyv6HisA)

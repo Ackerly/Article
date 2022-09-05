@@ -242,5 +242,5 @@ type Stack<T> = {
 目前已经有一些 “不安分” 的开发者开发出了判定素数的类型 IsPrime<T> 、将合集类型转换为元组的类型 UnionToTuple<T>、根据条件获取子集类型的类型 ConditionalSubset<T> 等  
 
 
-参考:  
+原文: 
 [浅谈 TypeScript 类型系统](https://mp.weixin.qq.com/s/sshcghO2eeBoeKQBe0m7RA)

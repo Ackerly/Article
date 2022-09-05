@@ -307,5 +307,5 @@ _缓存管理，防止内存泄露_
 **暂时只支持 vue 框架的实例缓存**  
 该方案也是基于 vue 现有特性支持实现的，在 react 社区中对于多页签实现并没有统一的实现方案  
 
-参考:  
+原文: 
 [基于微前端qiankun的多页签缓存方案实践](https://mp.weixin.qq.com/s/aHDcrrc3oLwaLpXakIwjEA)

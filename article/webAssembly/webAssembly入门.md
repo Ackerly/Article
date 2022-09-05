@@ -51,6 +51,6 @@ Emscripten工具能够将一段C/C++代码，编译出：
 2. Emscripten将clang+LLVM编译的结果转换为一个.wasm二进制文件。
 3. WebAssembly当前不能直接的存取DOM；它只能调用JavaScript，并且只能传入整形和浮点型的原始数据类型作为参数。为了使用任何Web API，WebAssembly需要调用到JavaScript，然后由JavaScript调用Web API。
 
-参考:  
+原文: 
 [WebAssembly概念](https://developer.mozilla.org/zh-CN/docs/WebAssembly/Concepts)
 [WebAssembly 中文网](http://webassembly.org.cn/)

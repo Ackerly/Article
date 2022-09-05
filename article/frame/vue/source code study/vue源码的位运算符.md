@@ -87,5 +87,5 @@ const a = -5; // 100...00101原 - 11...111010反 - 11...111011补
 a >>> 2 // 0011...1110 = 1073741822
 ```
 
-参考:  
+原文: 
 [Vue3 源码中的位运算，又一个面试考点](https://juejin.cn/post/6946032418520301605?content_source_url=https%3A%2F%2Fgithub.com%2Fvue3%2Fvue3-News)

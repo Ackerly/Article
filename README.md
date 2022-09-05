@@ -128,6 +128,7 @@
 25. [reduce常见用法](./article/js/ES2015/reduce常见用法.md)
 26. [JavaScript 编写 Shell 脚本](./article/js/JavaScript%20编写%20Shell%20脚本.md)
 27. [前端异常原理](./article/js/前端异常原理.md)
+28. [高级异步模式 - Promise 单例](./article/js/ES2015/高级异步模式%20-%20Promise%20单例.md)
 ## WebAssembly
 1. [WebAssembly入门](./article/webAssembly/webAssembly入门.md)
 
@@ -239,6 +240,7 @@
 3. [永久重定向(301)和临时重定向(302)](./article/http/永久重定向(301)和临时重定向(302).md)
 4. [HTTPS的加密原理](./article/http/HTTPS的加密原理.md)
 5. [QUIC和HTTP3队头阻塞的细节](./article/http/QUIC和HTTP3队头阻塞的细节.md)
+6. [如何使用 HTTPS 进行本地开发](./article/http/如何使用%20HTTPS%20进行本地开发.md)
 ## 安全
 1. [6大Web安全攻防解析](./article/security/6大Web安全攻防解析.md)
 2. [如何防止他人恶意调试你的web程序](./article/security/如何防止他人恶意调试你的web程序.md)

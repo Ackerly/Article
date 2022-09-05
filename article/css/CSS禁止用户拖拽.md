@@ -28,5 +28,5 @@ Firefox浏览器尚未支持，Chrome浏览器不支持-webkit-user-drag: elemen
 ```
 draggable属性常常和原生的drag & drop事件配合使用，可以实现任意元素的拖拽效果。  
 HTML draggable属性的兼容性是相当的好，移动端全部支持，以及IE10+浏览器也都支持，基本都可以使用的HTML属性：
-参考:  
+原文: 
 [如何使用CSS禁止元素拖拽](https://www.zhangxinxu.com/wordpress/2021/05/css-user-drag/)

@@ -77,5 +77,5 @@ escapeStr(str) {
     ```
     
     ```
-参考：  
+原文:  
 [NLP分词后的文本如何在页面高亮显示](https://juejin.cn/post/7068545836271009823?utm_source=gold_browser_extension)

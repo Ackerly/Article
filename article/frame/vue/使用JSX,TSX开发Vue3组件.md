@@ -146,5 +146,5 @@ import { createApp } from 'vue'
 <p v-text={ refText.value }></p>
 ```
 
-参考:  
+原文: 
 [使用 JSX/TSX 开发 Vue3 组件](https://juejin.cn/post/6914517242298236942?content_source_url=https%3A%2F%2Fgithub.com%2Fvue3%2Fvue3-News)

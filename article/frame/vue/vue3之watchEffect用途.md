@@ -31,5 +31,5 @@ watchEffect(() => {
 ```
 onInvalidate(fn)传入的回调会在 watchEffect 重新运行或者 watchEffect 停止的时候执行
 
-参考:  
+原文: 
 [浅谈Vue3的watchEffect用途](https://www.codenong.com/s1190000023669309/?content_source_url=https://github.com/vue3/vue3-News)

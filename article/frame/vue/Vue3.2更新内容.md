@@ -182,5 +182,5 @@ export default defineConfig({
 
 模板编译器优化
 - 创建元素 VNodes 速度提升约 200%
-参考:  
+原文: 
 [最新的 Vue3.2 都更新了些什么了解一下](https://juejin.cn/post/7000160263521435685)

@@ -131,5 +131,5 @@ css modules或者是css-in-js，让每个组件的className都唯一，做到标
 CSS属性选择器的强大功能需要良好的项目管理做支撑，或者通过技术手段，比如shadow dom做支撑，不过shadow dom支持度仍然很低，所以使用编译工具做隔离，在某种程度上模拟了CSS选择器，承当CSS选择器+shadow dom的功能。  
 一些样式都用className控制也许是shadow dom出来前的一种妥协方案。
 
-参考:  
+原文: 
 [精读<<使用CSS属性选择器>>](https://github.com/ascoders/weekly/blob/master/%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF/81.%E7%B2%BE%E8%AF%BB%E3%80%8A%E4%BD%BF%E7%94%A8%20CSS%20%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8%E3%80%8B.md)

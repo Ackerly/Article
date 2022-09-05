@@ -229,5 +229,5 @@ request('/book/comment', {
 
 
 
-参考：  
+原文:  
 [](https://juejin.cn/post/7064351631072526350?utm_source=gold_browser_extension)

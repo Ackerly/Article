@@ -242,5 +242,5 @@ const getIncompleteTaskSummaries = async function (memberName) {
 经过柯理化拆分提高函数适用性后，通过函数组合使得代码如此的流畅、简洁。通过柯理化拆分和函数组合可以使得FP发挥很大的效用，也是FP必不可少的两步操作，可以将柯理化后的函数比作加工站，函数组合比作流水线。  
 
 
-参考:  
+原文: 
 [浅谈 Function Programing 编程范式](https://mp.weixin.qq.com/s/MgIjHlAo-tDm0ic4NQwGXQ)

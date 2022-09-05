@@ -163,5 +163,5 @@ Web 3.0 要对用户科普的内容要远远超过区块链、比特币、加密
 
 
 
-参考:  
+原文: 
 [Web3.0，「激发创造」的时代](https://mp.weixin.qq.com/s/Vlg8Gut9CIDmy74hlYZiNQ)

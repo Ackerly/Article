@@ -32,5 +32,5 @@ const proxy = new Proxy(obj, {
 代理模式会增加微弱的开销，因此请不要将所有对象都变成代理，没有意义的代理只会徒增程序开销。  
 另外代理对象过多，也会导致调试困难，因为代理层的存在，往往可能忽略这一层带来的影响，导致忘记这个对象其实是一个代理。
 
-参考:  
+原文: 
 [代理模式](https://github.com/ascoders/weekly/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/178.%E7%B2%BE%E8%AF%BB%E3%80%8A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20-%20Proxy%20%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F%E3%80%8B.md)

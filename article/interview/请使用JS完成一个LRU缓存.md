@@ -68,5 +68,5 @@ class LRUCache {
 - get 方法：首先从 map 对象中拿出该条数据，然后删除该条数据，最后再重新插入该条数据，确保将该条数据移动到最前面。
 
 
-参考:  
+原文: 
 [请使用JS完成一个LRU缓存](https://mp.weixin.qq.com/s/DA5v0vhZpUBl7_FCLqZy_Q)

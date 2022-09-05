@@ -343,5 +343,5 @@ $ref的value，是该schema的定义在json中的路径，以#开头代表根节
 }
 ```
 
-参考：  
+原文:  
 [SON Schema 简介](https://www.cnblogs.com/terencezhou/p/10474617.html)

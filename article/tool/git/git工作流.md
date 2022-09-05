@@ -33,5 +33,5 @@ Fork工作流在使用开源软件的团队中很流行。
 6. 从该功能分支创建一个pull request，提交到官方代码库。
 7.官方代码库的维护者检查pull request的修改并批准将这些修改合并到官方代码库中
 
-参考:  
+原文: 
 [5 个 Git 工作流，改善你的开发流程](https://www.cnblogs.com/xueweihan/p/13524162.html)

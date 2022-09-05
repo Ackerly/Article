@@ -123,5 +123,5 @@ height: auto 要比 width: auto 简单而单纯得多，原因在于，CSS 的�
 
 使用绝对定位时，需要注意绝对定位的宽高百分比计算是相对于 padding box 的，也就是说会把 padding 大小值计算在内，但是，非绝对定位元素则是相对于 content box 计算的
 
-参考:  
+原文: 
 [《CSS 世界》读书笔记-流与宽高](https://mp.weixin.qq.com/s/0YGg7KHm3UcjkzURWyQJng)

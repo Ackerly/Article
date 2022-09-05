@@ -174,5 +174,5 @@ if(module.hot) {
 }
 ```
 
-参考: 
+原文:
 [Webpack 模块热替换（HMR） 原理解析](https://juejin.cn/post/7041150408458240014?utm_source=gold_browser_extension)

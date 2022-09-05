@@ -217,5 +217,5 @@ box1ItemEl.getAnimations()
 2. 迭代次数无限使用的是 JS的Infinity，不是字符串 "infinite"
 3. 默认动画的贝塞尔是linear，而不是css的ease
 
-参考：  
+原文:  
 [复杂web动画，不慌，选择 web Animations API](https://juejin.cn/post/7023903552946995214)

@@ -370,5 +370,5 @@ console.log(jsonStringify(BigInt(1)))
 // TypeError: Do not know how to serialize a BigInt
 ```
 
-参考：  
+原文:  
 [就因为JSON.stringify，我的年终奖差点打水漂了](https://juejin.cn/post/7017588385615200270)

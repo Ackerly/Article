@@ -466,5 +466,5 @@ callback(a);
 callback(b);
 ```
 
-参考：
+原文:
 [如何进阶TypeScript功底？一文带你理解TS中各种高级语法](https://mp.weixin.qq.com/s/VUUoUkQNt_3g6YOWJtTDDg)

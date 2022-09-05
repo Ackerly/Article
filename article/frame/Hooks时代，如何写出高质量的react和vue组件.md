@@ -179,5 +179,5 @@ onMounted(initData);
 
 而全局状态管理库中的函数，则只放置与全局状态有关的逻辑。除此之外的状态，一律交由react和vue组件本身进行管理  
 
-参考:  
+原文: 
 [Hooks时代，如何写出高质量的react和vue组件](https://mp.weixin.qq.com/s/_A3CmH9awg_2z3mCu8odQQ)

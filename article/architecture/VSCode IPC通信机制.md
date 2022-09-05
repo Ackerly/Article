@@ -173,5 +173,5 @@ export class IPCServer<TContext = string> implements IChannelServer<TContext>, I
 }
 ```
 
-参考：  
+原文:  
 [VSCode IPC通信机制](https://godbasin.github.io/front-end-playground/front-end-basic/deep-learning/vscode-ipc.html#vscode-%E5%A4%9A%E8%BF%9B%E7%A8%8B%E6%9E%B6%E6%9E%84)

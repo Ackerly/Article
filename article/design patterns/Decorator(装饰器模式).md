@@ -52,5 +52,5 @@ wrapperComponent.onClick()
 - 组合过程的复杂，要生成过多的对象。
 - 包装器层次增多，会增加调试成本，我们比较难追溯到一个 bug 是在哪一层包装导致的。
 
-参考:  
+原文: 
 [Decorator（装饰器模式）](https://github.com/ascoders/weekly/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/175.%E7%B2%BE%E8%AF%BB%E3%80%8A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20-%20Decorator%20%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F%E3%80%8B.md)
