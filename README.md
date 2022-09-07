@@ -129,6 +129,7 @@
 26. [JavaScript 编写 Shell 脚本](./article/js/JavaScript%20编写%20Shell%20脚本.md)
 27. [前端异常原理](./article/js/前端异常原理.md)
 28. [高级异步模式 - Promise 单例](./article/js/ES2015/高级异步模式%20-%20Promise%20单例.md)
+29. [高级 Promise 模式：Promise缓存](./article/js/ES2015/%E9%AB%98%E7%BA%A7%20Promise%20%E6%A8%A1%E5%BC%8F%EF%BC%9APromise%E7%BC%93%E5%AD%98.md)
 ## WebAssembly
 1. [WebAssembly入门](./article/webAssembly/webAssembly入门.md)
 
@@ -346,6 +347,7 @@
 16. [冷启动4min到2s 的构建优化，怎么做到的](./article/tool/冷启动4min到2s%20的构建优化，怎么做到的.md)
 17. [如何不基于构建工具优雅的实现模块导入](./article/tool/如何不基于构建工具优雅的实现模块导入.md)
 18. [企业级包管理服务cnpmcore](./article/tool/企业级包管理服务%20cnpmcore.md)
+19. [伊斯坦布尔测试覆盖率的实现原理](./article/tool/伊斯坦布尔测试覆盖率的实现原理.md)
 ### Webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
