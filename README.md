@@ -93,6 +93,7 @@
 15. [动态监听DOM元素高度变化](./article/js/动态监听DOM元素高度变化.md)
 16. [什么时候不能使用箭头函数](./article/js/什么时候不能使用箭头函数.md)
 17. [JS 检测网络带宽](./article/js/JS%20检测网络带宽.md)
+18. [深入了解JavaScript的 new Function](./article/js/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3JavaScript%20%E7%9A%84%20new%20Function.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
