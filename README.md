@@ -230,6 +230,7 @@
 4. [理解TS各种高级用法](./article/frame/typescript/理解TS各种高级用法.md)
 5. [16道TypeScript题目](./article/frame/typescript/16道TypeScript题目.md)
 6. [浅谈 TypeScript 类型系统](./article/frame/typescript/浅谈%20TypeScript%20类型系统.md)
+7. [TS中的增量编译](./article/frame/typescript/TS中的增量编译.md)
 ## 性能
 1. [vue长列表性能分析](./article/performance/vue长列表性能分析.md)
 2. [100万成员的数组去第一个和最后一个有性能差距吗](./article/performance/100万成员的数组去第一个和最后一个有性能差距吗.md)
