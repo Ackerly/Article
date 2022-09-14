@@ -52,6 +52,7 @@
 50. [短视频APP的点赞动画是怎么实现的](./article/css/短视频%20APP%20的点赞动画是怎么实现的.md)
 51. [web reflow](./article/css/web%20reflow.md)
 52. [CSS实现超长内容滚动播放](./article/css/CSS实现超长内容滚动播放.md)
+53. [CSS 自定义形状网格布局](./article/css/CSS%20%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BD%A2%E7%8A%B6%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80.md)
 
 
 ## HTML
@@ -449,3 +450,4 @@
 36. [在复杂应用中设计空状态：3条准则](./article/other/在复杂应用中设计空状态：3条准则.md)
 37. [Markdown 写 PPT 是如何实现的](./article/other/Markdown%20写%20PPT%20是如何实现的.md)
 38. [由esbuild JavaScript API 看跨语言调用](./article/other/由esbuild%20JavaScript%20API看跨语言调用.md)
+39. [开发模式 "Development Mode" 是如何工作的](./article/other/开发模式%20"Development%20Mode"%20是如何工作的.md)
