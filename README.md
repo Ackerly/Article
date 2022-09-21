@@ -460,3 +460,4 @@
 38. [由esbuild JavaScript API 看跨语言调用](./article/other/由esbuild%20JavaScript%20API看跨语言调用.md)
 39. [开发模式 "Development Mode" 是如何工作的](./article/other/开发模式%20"Development%20Mode"%20是如何工作的.md)
 40. [提升前端开发质量的十点经验沉淀](./article/other/提升前端开发质量的十点经验沉淀.md)
+41. [前端测试的平台化之路](./article/other/前端测试的平台化之路.md)
