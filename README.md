@@ -80,6 +80,7 @@
 3. [浏览器仅打开1个页面，为什么有4个进程](./article/browser/仅打开1个页面，为什么有4个进程.md)
 4. [点击浏览器的前进后退按钮，页面的缓存机制](./article/browser/点击浏览器的前进后退按钮，页面的缓存机制.md)
 5. [一个 Safari 的小 Bug，探索出了 fetch 和 xhr的新玩法](./article/browser/一个%20Safari%20的小%20Bug，探索出了%20fetch%20和%20xhr的新玩法.md)
+6. [V8如何执行JavaScript代码](./article/browser/V8如何执行JavaScript代码.md)
 ## JavaScript
 1. [V8编译浅谈](./article/js/V8编译浅谈.md)
 2. [Axios如何实现请求重试](./article/js/Axios如何实现请求重试.md)
