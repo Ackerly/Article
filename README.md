@@ -173,6 +173,7 @@
 12. [弄懂react的基本使用和高级特性](./article/frame/react/弄懂react的基本使用和高级特性.md)
 13. [React 状态管理的新浪潮](./article/frame/react/React%20状态管理的新浪潮.md)
 14. [React组件的受控与非受控](./article/frame/react/React组件的受控与非受控.md)
+15. [React 可组合 API 的设计原则](./article/frame/react/React%20可组合%20API%20的设计原则.md)
 ### Vue
 1. [vue组件将传值的几种方式](article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md)
 2. [vue-router实现原理](/article/frame/vue/vue-router实现原理.md)
@@ -474,3 +475,4 @@
 41. [前端测试的平台化之路](./article/other/前端测试的平台化之路.md)
 42. [Rust 将面临十大挑战](./article/other/Rust%20将面临十大挑战.md)
 43. [深入浅出音视频与 WebRTC](./article/other/深入浅出音视频与%20WebRTC.md)
+44. [Web3D入门](./article/other/Web3D入门.md)
