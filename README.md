@@ -101,6 +101,7 @@
 17. [JS 检测网络带宽](./article/js/JS%20检测网络带宽.md)
 18. [深入了解JavaScript的 new Function](./article/js/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3JavaScript%20%E7%9A%84%20new%20Function.md)
 19. [如何检测JavaScript原生函数是否被重写](./article/js/如何检测JavaScript原生函数是否被重写.md)
+20. [JS 实现语雀的划词高亮功能](./article/js/JS%20实现语雀的划词高亮功能.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
