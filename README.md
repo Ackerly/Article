@@ -414,7 +414,9 @@
 20. [网易云音乐的前端基础设施是如何优雅地走向统一](./article/other/网易云音乐的前端基础设施是如何优雅地走向统一.md)
 21. [探索组件在线预览和调试](./article/solution/探索组件在线预览和调试.md)
 22. [Lath打造页面间的无缝平滑连接体验](./article/solution/Lath打造页面间的无缝平滑连接体验.md)
-23. [](./article/solution/前端监控如何采集异常数据.md)
+23. [前端监控如何采集异常数据](./article/solution/前端监控如何采集异常数据.md)
+24. [微前端如何做样式隔离](./article/solution/微前端如何做样式隔离.md)
+
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
 2. [12道腾讯面试真题及答案](./article/interview/12道腾讯面试真题及答案.md)
