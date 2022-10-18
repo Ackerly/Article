@@ -57,6 +57,7 @@
 55. [State of CSS 2022](./article/css/state%20of%20css%202022.md)
 56. [CSS-in-JS 的库是如何工作的](./article/other/CSS-in-JS%20的库是如何工作的.md)
 57. [transform 支持单独赋值改变](./article/css/transform%20支持单独赋值改变.md)
+58. [CSS自动补全字符串](./article/css/CSS自动补全字符串.md)
 
 
 ## HTML
