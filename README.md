@@ -315,6 +315,7 @@
 25. [面向未来与浏览器规范的前端DDD架构设计](./article/architecture/面向未来与浏览器规范的前端DDD架构设计.md)
 26. [一个简洁、强大、可扩展的前端项目架构是什么样的](./article/architecture/一个简洁、强大、可扩展的前端项目架构是什么样的.md)
 27. [对前端架构的理解 - 分层与抽象](./article/architecture/对前端架构的理解%20-%20分层与抽象.md)
+28. [软件架构的23个基本原则](./article/architecture/软件架构的23个基本原则.md)
 
 ## 算法
 1. [回溯](./article/algorithm/回溯.md)
