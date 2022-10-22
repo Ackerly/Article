@@ -105,6 +105,7 @@
 19. [如何检测JavaScript原生函数是否被重写](./article/js/如何检测JavaScript原生函数是否被重写.md)
 20. [JS 实现语雀的划词高亮功能](./article/js/JS%20实现语雀的划词高亮功能.md)
 21. [谈谈JS二进制](./article/js/谈谈JS二进制.md)
+22. [JS 中的正则](./article/js/JS%20中的正则.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
