@@ -424,6 +424,7 @@
 23. [前端监控如何采集异常数据](./article/solution/前端监控如何采集异常数据.md)
 24. [微前端如何做样式隔离](./article/solution/微前端如何做样式隔离.md)
 25. [前端监控-采集用户行为](./article/solution/前端监控-采集用户行为.md)
+26. [异步分片计算在腾讯文档的实践](./article/solution/异步分片计算在腾讯文档的实践.md)
 
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
