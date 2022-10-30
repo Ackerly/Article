@@ -147,6 +147,7 @@
 27. [前端异常原理](./article/js/前端异常原理.md)
 28. [高级异步模式 - Promise 单例](./article/js/ES2015/高级异步模式%20-%20Promise%20单例.md)
 29. [高级 Promise 模式：Promise缓存](./article/js/ES2015/%E9%AB%98%E7%BA%A7%20Promise%20%E6%A8%A1%E5%BC%8F%EF%BC%9APromise%E7%BC%93%E5%AD%98.md)
+30. [switch四种写法](./article/js/ES2015/switch四种写法.md)
 ## WebAssembly
 1. [WebAssembly入门](./article/webAssembly/webAssembly入门.md)
 2. [](./article/webAssembly/使用WebAssembly%20打造定制%20JS%20Runtime.md)
