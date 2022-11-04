@@ -403,6 +403,7 @@
 2. [Bundle-less 的思考和实践分享](./article/tool/vite/为什么大厂不能直接用%20Vite？Bundle-less%20的思考和实践分享.md)
 3. [vite约定式路由的最佳实践](./article/tool/vite/vite约定式路由的最佳实践.md)
 4. [create-vite原理揭秘](./article/tool/vite/create-vite原理揭秘.md)
+5. [Turbopack真的比Vite快10倍吗](./article/tool/vite/Turbopack真的比Vite快10倍吗?.md)
 ## 技术方案
 1. [前端实现计时准确](./article/solution/前端实现计时准确.md)
 2. [前端内存泄漏解决方案](./article/solution/前端内存泄漏解决方案.md)
