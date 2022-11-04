@@ -228,6 +228,7 @@
 38. [为什么 Vue2 this 能够直接获取到 data 和 methods](./article/frame/vue/为什么%20Vue2%20this%20能够直接获取到%20data%20和%20methods.md)
 39. [Vue3解构赋值失去响应式引发的思考](./article/frame/vue/vue3解构赋值失去响应式引发的思考.md)
 40. [vue规定用普通函数定义方法，为什么react要用箭头函数](./article/frame/vue规定用普通函数定义方法，为什么react要用箭头函数.md)
+41. [vue之浅析extend与手动挂载$mount](./article/frame/vue/vue之浅析extend与手动挂载$mount.md)
 
 ##### Vue源码学习
 - [手写与事件相关的实例方法](./article/frame/vue/source%20code%20study/手写与事件相关的实例方法.md)
