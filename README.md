@@ -62,6 +62,7 @@
 60. [Clamp、Max和 Min CSS 函数的用例](./article/css/Clamp、Max和%20Min%20CSS%20函数的用例.md)
 61. [CSS Grid布局的秘密](./article/css/CSS%20Grid布局的秘密.md)
 62. [CSS 实现自适应文本的头像](./article/css/CSS%20实现自适应文本的头像.md)
+63. [CSS渐变锯齿消失术](./article/css/CSS渐变锯齿消失术.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
