@@ -511,3 +511,4 @@
 46. [从Singals看响应状态管理](./article/other/从Singals看响应状态管理.md)
 47. [不使用第三方库怎么实现前端引导页功能](./article/other/不使用第三方库怎么实现前端引导页功能.md)
 48. [浅析VSCode代码高亮实现原理](./article/other/浅析VSCode代码高亮实现原理.md)
+49. [为何弃用css-in-js](./article/other/为何弃用css-in-js.md)
