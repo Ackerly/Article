@@ -436,7 +436,8 @@
 24. [微前端如何做样式隔离](./article/solution/微前端如何做样式隔离.md)
 25. [前端监控-采集用户行为](./article/solution/前端监控-采集用户行为.md)
 26. [异步分片计算在腾讯文档的实践](./article/solution/异步分片计算在腾讯文档的实践.md)
-27. [微前端场景下的代码共享](./article/./solution/微前端场景下的代码共享.md)
+27. [微前端场景下的代码共享](./article/solution/微前端场景下的代码共享.md)
+28. [微信小程序web-view与H5 通信方式探索](./article/solution/微信小程序web-view与H5%20通信方式探索.md)
 
 
 ## 面试
@@ -512,3 +513,4 @@
 47. [不使用第三方库怎么实现前端引导页功能](./article/other/不使用第三方库怎么实现前端引导页功能.md)
 48. [浅析VSCode代码高亮实现原理](./article/other/浅析VSCode代码高亮实现原理.md)
 49. [为何弃用css-in-js](./article/other/为何弃用css-in-js.md)
+50. [前缀树在前端路由系统中的应用](./article/other/前缀树在前端路由系统中的应用.md)
