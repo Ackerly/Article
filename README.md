@@ -279,6 +279,7 @@
 3. [关于鉴权](./article/security/关于鉴权.md)
 4. [CSRF攻击原理和防护方法](./article/security/CSRF攻击原理和防护方法.md)
 5. [前端JS攻防对抗](./article/security/前端JS攻防对抗.md)
+6. [从cdnjs漏洞看前端供应链攻击与防御](./article/security/从cdnjs漏洞看前端供应链攻击与防御.md)
 
 ## 设计模式
 1. [理解MVC](./article/design%20patterns/理解MVC.md)
