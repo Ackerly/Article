@@ -280,6 +280,7 @@
 4. [CSRF攻击原理和防护方法](./article/security/CSRF攻击原理和防护方法.md)
 5. [前端JS攻防对抗](./article/security/前端JS攻防对抗.md)
 6. [从cdnjs漏洞看前端供应链攻击与防御](./article/security/从cdnjs漏洞看前端供应链攻击与防御.md)
+7. [离开后端说前端加密都是空谈](./article/security/离开后端说前端加密都是空谈.md)
 
 ## 设计模式
 1. [理解MVC](./article/design%20patterns/理解MVC.md)
@@ -515,3 +516,4 @@
 48. [浅析VSCode代码高亮实现原理](./article/other/浅析VSCode代码高亮实现原理.md)
 49. [为何弃用css-in-js](./article/other/为何弃用css-in-js.md)
 50. [前缀树在前端路由系统中的应用](./article/other/前缀树在前端路由系统中的应用.md)
+51. [维护好一个复杂项目](./article/other/维护好一个复杂项目.md)
