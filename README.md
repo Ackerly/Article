@@ -123,6 +123,7 @@
 6. [为什么Proxy一定要配合Reflect使用](./article/js/ES6/为什么Proxy一定要配合Reflect使用.md)
 7. [proposal-extractors](./article/js/ES6/proposal-extractors.md)
 8. [如何优雅地中断 Promise](./article/js/ES6/如何优雅地中断%20Promise.md)
+9. [ES6之Promise实践应用与控制反转](./article/js/ES6/ES6之Promise实践应用与控制反转.md)
 ### ES2015
 1. [bind原理、使用场景及模拟实现](article/js/ES2015/bind原理、使用场景及模拟实现.md)
 2. [掌握事件循环](./article/js/ES2015/掌握eventLoop.md)
