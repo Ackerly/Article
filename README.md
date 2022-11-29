@@ -64,6 +64,8 @@
 62. [CSS 实现自适应文本的头像](./article/css/CSS%20实现自适应文本的头像.md)
 63. [CSS渐变锯齿消失术](./article/css/CSS渐变锯齿消失术.md)
 64. [可扩展 CSS 的演变](./article/css/可扩展%20CSS%20的演变.md)
+65. [CSS防止按钮重复点击](./article/css/CSS防止按钮重复点击.md)
+66. [字体定义原理](./article/css/字体定义原理.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
@@ -114,6 +116,7 @@
 24. [迭代器,可迭代对象,生成器](./article/js/迭代器,可迭代对象,生成器.md)
 25. [浅谈 DOM Clobbering 的原理及应用](./article/js/浅谈DOM%20Clobbering的原理及应用.md)
 26. [IntersectionObserver实现虚拟列表](./article/js/IntersectionObserver实现虚拟列表.md)
+27. [减少if-else的几个小技巧](./article/js/减少if-else的几个小技巧.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
