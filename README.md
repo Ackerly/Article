@@ -66,6 +66,7 @@
 64. [可扩展 CSS 的演变](./article/css/可扩展%20CSS%20的演变.md)
 65. [CSS防止按钮重复点击](./article/css/CSS防止按钮重复点击.md)
 66. [字体定义原理](./article/css/字体定义原理.md)
+67. [磁贴布局-功能分析](./article/css/磁贴布局-功能分析.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
