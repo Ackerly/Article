@@ -396,6 +396,7 @@
 19. [伊斯坦布尔测试覆盖率的实现原理](./article/tool/伊斯坦布尔测试覆盖率的实现原理.md)
 20. [一个检测 JS 内存泄漏的神器](./article/tool/一个检测%20JS%20内存泄漏的神器.md)
 21. [配个 json，表单就出来了？FormRender 初探](./article/tool/配个%20json,表单就出来了?FormRender%20初探.md)
+22. [从Lint工具窥探前端的clean-code](./article/tool/从Lint工具窥探前端的clean-code.md)
 ### Webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
