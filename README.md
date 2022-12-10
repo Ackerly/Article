@@ -527,3 +527,4 @@
 49. [为何弃用css-in-js](./article/other/为何弃用css-in-js.md)
 50. [前缀树在前端路由系统中的应用](./article/other/前缀树在前端路由系统中的应用.md)
 51. [维护好一个复杂项目](./article/other/维护好一个复杂项目.md)
+52. [前端组件级别的抽象方向](./article/other/前端组件级别的抽象方向.md)
