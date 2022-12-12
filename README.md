@@ -368,6 +368,7 @@
 1. [斐波那契数列](./article/algorithm/data%20structure/JavaScript%20数据结构之斐波那契数列.md)
 2. [树的遍历](./article/algorithm/data%20structure/JavaScript%20数据结构之树的遍历.md)
 3. [字典](./article/algorithm/data%20structure/JavaScript%20数据结构之字典.md)
+4. [数据结构之递归](./article/algorithm/data%20structure/数据结构之递归.md)
 
 ### leetcode
 1. [公交路线](./article/algorithm/leetcode/公交路线.md)
