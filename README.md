@@ -120,6 +120,7 @@
 27. [减少if-else的几个小技巧](./article/js/减少if-else的几个小技巧.md)
 28. [使用 JavaScript 实现数字的国际化](./article/js/使用%20JavaScript%20实现数字的国际化.md)
 29. [JS 的异步机制一探](./article/js/JS%20的异步机制一探.md)
+30. [Sorting in JavaScript](./article/js/Sorting%20in%20JavaScript.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
