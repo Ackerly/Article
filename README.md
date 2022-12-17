@@ -68,6 +68,7 @@
 66. [字体定义原理](./article/css/字体定义原理.md)
 67. [磁贴布局-功能分析](./article/css/磁贴布局-功能分析.md)
 68. [Chrome 108 ：发布新的 CSS 布局单位](./article/css/Chrome%20108%20发布新的%20CSS%20布局单位.md)
+69. [除了filter还有什么置灰网站的方式?](./article/css/除了filter还有什么置灰网站的方式%3F.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
@@ -344,6 +345,7 @@
 26. [一个简洁、强大、可扩展的前端项目架构是什么样的](./article/architecture/一个简洁、强大、可扩展的前端项目架构是什么样的.md)
 27. [对前端架构的理解 - 分层与抽象](./article/architecture/对前端架构的理解%20-%20分层与抽象.md)
 28. [软件架构的23个基本原则](./article/architecture/软件架构的23个基本原则.md)
+29. [谈谈过度设计：因噎废食的陷阱](./article/architecture/谈谈过度设计%20因噎废食的陷阱.md)
 
 ## 算法
 1. [回溯](./article/algorithm/回溯.md)
@@ -533,3 +535,4 @@
 50. [前缀树在前端路由系统中的应用](./article/other/前缀树在前端路由系统中的应用.md)
 51. [维护好一个复杂项目](./article/other/维护好一个复杂项目.md)
 52. [前端组件级别的抽象方向](./article/other/前端组件级别的抽象方向.md)
+53. [前端文件下载的正确打开方式](./article/other/前端文件下载的正确打开方式.md)
