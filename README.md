@@ -424,6 +424,7 @@
 7. [用 Git Subtree 在多个 Git 项目间双向同步子项目](./article/tool/git/用%20Git%20Subtree%20在多个%20Git%20项目间双向同步子项目.md)
 8. [45 个 Git 经典操作场景](./article/tool/git/45%20个%20Git%20经典操作场景.md)
 9. [Git存储原理及部分实现](./article/tool/git/Git存储原理及部分实现.md)
+10. [git worktree 的使用](./article/tool/git/git%20worktree%20的使用.md)
 ### vite
 1. [如何做SSG、静态资源发布以及自动化部署](./article/tool/vite/如何做SSG、静态资源发布以及自动化部署.md)
 2. [Bundle-less 的思考和实践分享](./article/tool/vite/为什么大厂不能直接用%20Vite？Bundle-less%20的思考和实践分享.md)
@@ -459,6 +460,7 @@
 26. [异步分片计算在腾讯文档的实践](./article/solution/异步分片计算在腾讯文档的实践.md)
 27. [微前端场景下的代码共享](./article/solution/微前端场景下的代码共享.md)
 28. [微信小程序web-view与H5 通信方式探索](./article/solution/微信小程序web-view与H5%20通信方式探索.md)
+29. [JavaScript 最佳实践：如何写出更可靠、更高性能的代码](./article/solution/JavaScript%20最佳实践%20如何写出更可靠、更高性能的代码.md)
 
 
 ## 面试
