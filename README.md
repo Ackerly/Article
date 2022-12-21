@@ -205,6 +205,7 @@
 18. [React 18 并发机制的原理](./article/frame/react/彻底搞懂%20React%2018%20并发机制的原理.md)
 19. [React 数据获取：避免条件竞争](./article/frame/react/React%20数据获取:避免条件竞争.md)
 20. [React Streaming SSR 原理解析](./article/frame/react/React%20Streaming%20SSR%20原理解析.md)
+21. [React Server Component: 混合式渲染](./article/frame/react/React%20Server%20Component%20混合式渲染.md)
 ### Vue
 1. [vue组件将传值的几种方式](article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md)
 2. [vue-router实现原理](/article/frame/vue/vue-router实现原理.md)
