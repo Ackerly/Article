@@ -69,6 +69,7 @@
 67. [磁贴布局-功能分析](./article/css/磁贴布局-功能分析.md)
 68. [Chrome 108 ：发布新的 CSS 布局单位](./article/css/Chrome%20108%20发布新的%20CSS%20布局单位.md)
 69. [除了filter还有什么置灰网站的方式?](./article/css/除了filter还有什么置灰网站的方式%3F.md)
+70. [不规则边框解决方案](./article/css/不规则边框解决方案.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
@@ -206,6 +207,7 @@
 19. [React 数据获取：避免条件竞争](./article/frame/react/React%20数据获取:避免条件竞争.md)
 20. [React Streaming SSR 原理解析](./article/frame/react/React%20Streaming%20SSR%20原理解析.md)
 21. [React Server Component: 混合式渲染](./article/frame/react/React%20Server%20Component%20混合式渲染.md)
+22. [一文弄懂 React ref 原理](./article/frame/react/一文弄懂%20React%20ref%20原理.md)
 ### Vue
 1. [vue组件将传值的几种方式](article/frame/vue/vue传值的几种方式/组件间传值的几种方式.md)
 2. [vue-router实现原理](/article/frame/vue/vue-router实现原理.md)
