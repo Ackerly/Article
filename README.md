@@ -484,6 +484,7 @@
 13. [JavaScript手写题之异步加法asyncAdd](./article/interview/JavaScript手写题之异步加法asyncAdd.md)
 14. [两道超有意思的CSS面试题](./article/interview/两道超有意思的CSS面试题.md)
 15. [JS 事件循环（Event Loop）](./article/interview/JS%20事件循环(Event%20Loop).md)
+16. [为什么“false == []”和“false == ![]”都返回true](./article/interview/为什么“false%20==%20%5B%5D”和“false%20==%20!%5B%5D”都返回true？.md)
 
 ## 服务
 1. [NodeJS落地WebSocket实践](./article/serve/NodeJS落地WebSocket实践.md)
