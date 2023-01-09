@@ -72,6 +72,7 @@
 70. [不规则边框解决方案](./article/css/不规则边框解决方案.md)
 71. [CSS之Selectors特性](./article/css/CSS之Selectors特性.md)
 72. [如何根据背景色自动切换黑白文字](./article/css/如何根据背景色自动切换黑白文字.md)
+73. [两行CSS让页面提升了近7倍渲染性能](./article/css/两行CSS让页面提升了近7倍渲染性能.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
@@ -562,3 +563,4 @@
 58. [SpriteJS之图形库造轮子](./article/other/SpriteJS之图形库造轮子.md)
 59. [前端实现登录拼图验证](./article/other/前端实现登录拼图验证.md)
 60. [十亿人都在用的健康码，运维体系是怎么设计的](./article/other/十亿人都在用的健康码，运维体系是怎么设计的.md)
+61. [如何抽象可视化搭建](./article/other/如何抽象可视化搭建.md)
