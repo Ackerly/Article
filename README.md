@@ -362,6 +362,7 @@
 28. [软件架构的23个基本原则](./article/architecture/软件架构的23个基本原则.md)
 29. [谈谈过度设计：因噎废食的陷阱](./article/architecture/谈谈过度设计%20因噎废食的陷阱.md)
 30. [初学 ECS 架构，实现超炫的粒子碰撞动画](./article/architecture/初学%20ECS%20架构，实现超炫的粒子碰撞动画.md)
+31. [模块联邦在微前端架构中的实践](./article/architecture/模块联邦在微前端架构中的实践.md)
 
 ## 算法
 1. [回溯](./article/algorithm/回溯.md)
