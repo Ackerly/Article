@@ -573,3 +573,4 @@
 62. [主流时间库横向对比](./article/other/主流时间库横向对比.md)
 63. [Immer 实现不可变数据结构](./article/other/Immer%20实现不可变数据结构.md)
 64. [Didact 解析](./article/other/Didact%20解析.md)
+65. [组件注册与画布渲染](./article/other/组件注册与画布渲染.md)
