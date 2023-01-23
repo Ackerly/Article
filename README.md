@@ -426,6 +426,7 @@
 22. [从Lint工具窥探前端的clean-code](./article/tool/从Lint工具窥探前端的clean-code.md)
 23. [如何更新 NPM 依赖](./article/tool/npm/如何更新%20NPM%20依赖.md)
 24. [打包JavaScript库的现代化指南](./article/tool/打包JavaScript库的现代化指南.md)
+25. [终端输入npm start后都发生啥](./article/tool/npm/终端输入npm%20start后都发生啥.md)
 ### Webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
