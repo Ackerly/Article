@@ -578,3 +578,4 @@
 64. [Didact 解析](./article/other/Didact%20解析.md)
 65. [组件注册与画布渲染](./article/other/组件注册与画布渲染.md)
 66. [为iframe正名,你可能不需要微前端](./article/other/为iframe正名,你可能不需要微前端.md)
+67. [爆ant%20design的定位组件！floating-ui](./article/other/爆ant%20design的定位组件！floating-ui.md)
