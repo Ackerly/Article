@@ -14,7 +14,19 @@ SlimWeb 包含三大部分：
 
 **收益分析**
 先来看看市面上优化移动端网页的解决方案：
-- 
+- OpearMini：服务端渲染页面并压缩后返回给端上，缺点是服务器网络波动影响
+- Brave：通过建立黑名单过滤广告脚本，缺点是这种基于⿊名单的解决⽅案⽆法检测到新出的⼴告 JS 元素；
+- Flywheel 代理：Google 的移动网络数据压缩代理，缺点是通过 Flywheel 优化⻚⾯加载时间并不总是可⾏的；
+- BrowseLite：通过应⽤不同的图像压缩技术来节省数据。Apple News 和 Facebook 的 Instant Articles 用的就是它；
+- Google AMP：提供了⼀个框架来创建新的更快的⻚⾯，缺点是用户需要实现新的网站。
+- JSCleaner：通过代理服务器提供了⼀组简化的⽹⻚，其中关键和⾮关键 JS 元素由基于规则的分类器识别
+
+SlimWeb 与 JSCleaner 进⾏了⽐较:
+- ⻚⾯⼤⼩的中位数减少了 50% 以上（从 1300 KB 到 600KB），阻⽌⼴告、分析和社交这三个类别以实现最⼤的数据节省是有益的，尤其是发展中国家地区，减少⽹络请求也会会间接改善设备能耗
+- SlimWeb 与原始版本相⽐减少了 50% 以上的 PLT（Page load times），与 JSCleaner 相⽐减少了 30% 左右
+- 相较于原始版本，SlimWeb 将 SpeedIndex 降低了 60% 以上，⽹络请求减少了 40% 以上。
+- 在 3G ⽹络上的性能使⽤ SlimWeb（绿框）时 PLT 减少了约 50%，⽽ privacy-badger+AdBlock（红框）中只减少了 25%
+- 即使 privacy-badger+AdBlock+JSCleaner 组合使⽤，也达不到 SlimWeb 的效果，因为 SlimWeb 中使⽤机器学习（ML）对 JS 元素进⾏分类
 
 原文:  
 [通过 JS 分类即时加速移动网页](https://mp.weixin.qq.com/s/Drzi1Oumfnm7jppMtag_Qw)

@@ -132,6 +132,7 @@
 31. [JS 实现网络测速](./article/js/JS%20检测网络带宽.md)
 32. [JavaScript中的原型链](./article/js/JavaScript中的原型链.md)
 33. [JavaScript 关键字with](./article/js/JavaScript%20关键字with.md)
+34. [通过 JS 分类即时加速移动网页](./article/js/通过%20JS%20分类即时加速移动网页.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
@@ -300,6 +301,7 @@
 4. [边缘渲染如何提高前端性能](./article/performance/边缘渲染如何提高前端性能.md)
 5. [使用 content-visibility 优化渲染性能](./article/performance/使用%20content-visibility%20优化渲染性能.md)
 6. [拯救动画卡顿之FLIP](./article/performance/拯救动画卡顿之FLIP.md)
+7. [懒加载及异步图像解码方案](./article/performance/懒加载及异步图像解码方案.md)
 ## HTTP
 1. [get和post的区别](./article/http/get和post的区别.md)
 2. [HTTP的不同版本特性](./article/http/HTTP协议的不同版本及区别.md)
