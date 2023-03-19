@@ -199,6 +199,7 @@
 12. [你可能并不需要useEffect](./article/frame/你可能并不需要useEffect.md)
 13. [浅谈前端框架原理](./article/frame/浅谈前端框架原理.md)
 14. [了解Next.js](./article/frame/了解Next.js.md)
+15. [Taro 小程序持续集成](./article/frame/Taro%20小程序持续集成.md)
 ### React
 1. [编写弹性组件](./article/frame/react/编写弹性组件.md)
 2. [react开发34个技巧](./article/frame/react/react开发34个技巧.md)
@@ -596,3 +597,4 @@
 72. [前端组件设计](./article/other/前端组件设计.md)
 73. [一个企业级的文件上传组件应该是什么样的](./article/other/一个企业级的文件上传组件应该是什么样的.md)
 74. [Headless 组件用法与原理](./article/other/Headless%20组件用法与原理.md)
+75. [](./article/other/Taro%20小程序持续集成.md)
