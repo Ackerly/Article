@@ -135,6 +135,7 @@
 33. [JavaScript 关键字with](./article/js/JavaScript%20关键字with.md)
 34. [通过 JS 分类即时加速移动网页](./article/js/通过%20JS%20分类即时加速移动网页.md)
 35. [JS 中，为什么要在函数前面加！](./article/js/JS%20中为什么要在函数前面加！.md)
+36. [你不知道的async、await细节](./article/js/你不知道的async、await细节.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
@@ -598,4 +599,5 @@
 72. [前端组件设计](./article/other/前端组件设计.md)
 73. [一个企业级的文件上传组件应该是什么样的](./article/other/一个企业级的文件上传组件应该是什么样的.md)
 74. [Headless 组件用法与原理](./article/other/Headless%20组件用法与原理.md)
-75. [](./article/other/Taro%20小程序持续集成.md)
+75. [docker基础](./article/other/docker基础.md)
+76. [组件库单测编写](./article/other/组件库单测编写.md)
