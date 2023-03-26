@@ -499,6 +499,7 @@
 29. [JavaScript 最佳实践：如何写出更可靠、更高性能的代码](./article/solution/JavaScript%20最佳实践%20如何写出更可靠、更高性能的代码.md)
 30. [JSONQL 低代码数据模型引擎的设计与实现](./article/solution/JSONQL%20低代码数据模型引擎的设计与实现.md)
 31. [Web Worker 项目实践](./article/solution/Web%20Worker%20项目实践.md)
+32. [插件化设计模式在前端领域的应用](./article/solution/插件化设计模式在前端领域的应用.md)
 
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
@@ -602,3 +603,4 @@
 74. [Headless 组件用法与原理](./article/other/Headless%20组件用法与原理.md)
 75. [docker基础](./article/other/docker基础.md)
 76. [组件库单测编写](./article/other/组件库单测编写.md)
+77. [URL 编码](./article/other/URL%20编码.md)
