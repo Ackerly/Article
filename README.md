@@ -179,7 +179,8 @@
 30. [switch四种写法](./article/js/ES2015/switch四种写法.md)
 ## WebAssembly
 1. [WebAssembly入门](./article/webAssembly/webAssembly入门.md)
-2. [](./article/webAssembly/使用WebAssembly%20打造定制%20JS%20Runtime.md)
+2. [WebAssembly 打造定制 JS Runtime](./article/webAssembly/使用WebAssembly%20打造定制%20JS%20Runtime.md)
+3. [WebAssembly 使用场景和未来发展趋势](./article/webAssembly/WebAssembly%20使用场景和未来发展趋势.md)
 
 ## 存储
 1. [了解cookie](./article/storage/了解cookie.md)
