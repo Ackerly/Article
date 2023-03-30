@@ -501,6 +501,7 @@
 30. [JSONQL 低代码数据模型引擎的设计与实现](./article/solution/JSONQL%20低代码数据模型引擎的设计与实现.md)
 31. [Web Worker 项目实践](./article/solution/Web%20Worker%20项目实践.md)
 32. [插件化设计模式在前端领域的应用](./article/solution/插件化设计模式在前端领域的应用.md)
+33. [远程组件实践](./article/solution/远程组件实践.md)
 
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
