@@ -444,6 +444,7 @@
 24. [打包JavaScript库的现代化指南](./article/tool/打包JavaScript库的现代化指南.md)
 25. [终端输入npm start后都发生啥](./article/tool/npm/终端输入npm%20start后都发生啥.md)
 26. [如何利用 ChatGPT 提升日常编码效率](./article/tool/如何利用%20ChatGPT%20提升日常编码效率.md)
+27. [如何用 OpenAPI 在 Express 中构建更好的 API](./article/tool/如何用%20OpenAPI%20在%20Express%20中构建更好的%20API.md)
 ### Webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
