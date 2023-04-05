@@ -351,6 +351,7 @@
 18. [前端代码的三种设计模式](./article/design%20patterns/前端代码的三种设计模式.md)
 19. [代理模式](./article/design%20patterns/代理模式.md)
 20. [发布订阅模式](./article/design%20patterns/发布订阅模式.md)
+21. [在JavaScript使用设计模式](./article/design%20patterns/在JavaScript使用设计模式.md)
 ## 架构
 1. [以前端架构师的身份，从零开始搞事](./article/architecture/以前端架构师的身份，从零开始搞事.md)
 2. [字节跳动如何落地微前端](./article/architecture/字节跳动如何落地微前端.md)
