@@ -610,3 +610,4 @@
 75. [docker基础](./article/other/docker基础.md)
 76. [组件库单测编写](./article/other/组件库单测编写.md)
 77. [URL 编码](./article/other/URL%20编码.md)
+78. [2024 年的前端开发模式](./article/other/2024%20年的前端开发模式.md)
