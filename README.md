@@ -313,6 +313,7 @@
 5. [使用 content-visibility 优化渲染性能](./article/performance/使用%20content-visibility%20优化渲染性能.md)
 6. [拯救动画卡顿之FLIP](./article/performance/拯救动画卡顿之FLIP.md)
 7. [懒加载及异步图像解码方案](./article/performance/懒加载及异步图像解码方案.md)
+8. [如何构造高性能的树状结构](./article/performance/如何构造高性能的树状结构.md)
 ## HTTP
 1. [get和post的区别](./article/http/get和post的区别.md)
 2. [HTTP的不同版本特性](./article/http/HTTP协议的不同版本及区别.md)
