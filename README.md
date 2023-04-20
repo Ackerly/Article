@@ -76,6 +76,7 @@
 74. [磁贴布局 - 性能优化](./article/css/磁贴布局%20-%20性能优化.md)
 75. [原生 CSS Custom Highlight](./article/css/原生%20CSS%20Custom%20Highlight.md)
 76. [用BEM和现代CSS选择器控制级联](./article/css/用BEM和现代CSS选择器控制级联.md)
+77. [别整一坨 CSS 代码了，试试这几个实用函数](./article/css/别整一坨%20CSS%20代码了,试试这几个实用函数.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
@@ -147,6 +148,7 @@
 7. [proposal-extractors](./article/js/ES6/proposal-extractors.md)
 8. [如何优雅地中断 Promise](./article/js/ES6/如何优雅地中断%20Promise.md)
 9. [ES6之Promise实践应用与控制反转](./article/js/ES6/ES6之Promise实践应用与控制反转.md)
+10. [什么时候使用Map或胜过Object](./article/js/ES6/什么时候使用Map或胜过Object.md)
 ### ES2015
 1. [bind原理、使用场景及模拟实现](article/js/ES2015/bind原理、使用场景及模拟实现.md)
 2. [掌握事件循环](./article/js/ES2015/掌握eventLoop.md)
