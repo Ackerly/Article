@@ -452,6 +452,7 @@
 26. [如何利用 ChatGPT 提升日常编码效率](./article/tool/如何利用%20ChatGPT%20提升日常编码效率.md)
 27. [如何用 OpenAPI 在 Express 中构建更好的 API](./article/tool/如何用%20OpenAPI%20在%20Express%20中构建更好的%20API.md)
 28. [现代Monorepo工程技术选型](./article/tool/现代Monorepo工程技术选型.md)
+29. [debugger拦截](./article/tool/debugger拦截.md)
 ### Webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
