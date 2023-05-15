@@ -77,6 +77,7 @@
 75. [原生 CSS Custom Highlight](./article/css/原生%20CSS%20Custom%20Highlight.md)
 76. [用BEM和现代CSS选择器控制级联](./article/css/用BEM和现代CSS选择器控制级联.md)
 77. [别整一坨 CSS 代码了，试试这几个实用函数](./article/css/别整一坨%20CSS%20代码了,试试这几个实用函数.md)
+78. [CSS动画合成属性animation-composition](./article/css/CSS动画合成属性animation-composition.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
