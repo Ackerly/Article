@@ -140,6 +140,7 @@
 35. [JS 中，为什么要在函数前面加！](./article/js/JS%20中为什么要在函数前面加！.md)
 36. [你不知道的async、await细节](./article/js/你不知道的async、await细节.md)
 37. [BroadcastChannel API 实战运用](./article/js/BroadcastChannel%20API%20实战运用.md)
+38. [JavaScript中 4 种创建枚举方式](./article/js/JavaScript中%204%20种创建枚举方式.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
