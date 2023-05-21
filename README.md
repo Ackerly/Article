@@ -621,3 +621,5 @@
 76. [组件库单测编写](./article/other/组件库单测编写.md)
 77. [URL 编码](./article/other/URL%20编码.md)
 78. [2024 年的前端开发模式](./article/other/2024%20年的前端开发模式.md)
+79. [可视化搭建 - 容器组件设计](./article/other/可视化搭建%20-%20容器组件设计.md)
+80. [测试中如何处理 Http 请求](./article/other/测试中如何处理%20Http%20请求.md)
