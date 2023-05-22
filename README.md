@@ -141,6 +141,7 @@
 36. [你不知道的async、await细节](./article/js/你不知道的async、await细节.md)
 37. [BroadcastChannel API 实战运用](./article/js/BroadcastChannel%20API%20实战运用.md)
 38. [JavaScript中 4 种创建枚举方式](./article/js/JavaScript中%204%20种创建枚举方式.md)
+39. [设计一个支持并发的前端接口缓存](./article/js/设计一个支持并发的前端接口缓存.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
@@ -623,3 +624,5 @@
 78. [2024 年的前端开发模式](./article/other/2024%20年的前端开发模式.md)
 79. [可视化搭建 - 容器组件设计](./article/other/可视化搭建%20-%20容器组件设计.md)
 80. [测试中如何处理 Http 请求](./article/other/测试中如何处理%20Http%20请求.md)
+81. [可视化搭建 - 组件值与联动](./article/other/可视化搭建%20-%20组件值与联动.md)
+82. [可视化搭建-定义联动协议](./article/other/可视化搭建-定义联动协议.md)
