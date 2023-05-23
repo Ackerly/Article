@@ -78,6 +78,7 @@
 76. [用BEM和现代CSS选择器控制级联](./article/css/用BEM和现代CSS选择器控制级联.md)
 77. [别整一坨 CSS 代码了，试试这几个实用函数](./article/css/别整一坨%20CSS%20代码了,试试这几个实用函数.md)
 78. [CSS动画合成属性animation-composition](./article/css/CSS动画合成属性animation-composition.md)
+79. [超长溢出头部省略打点](./article/css/超长溢出头部省略打点.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
@@ -209,6 +210,7 @@
 13. [浅谈前端框架原理](./article/frame/浅谈前端框架原理.md)
 14. [了解Next.js](./article/frame/了解Next.js.md)
 15. [Taro 小程序持续集成](./article/frame/Taro%20小程序持续集成.md)
+16. [快速掌握 Tailwind](./article/frame/快速掌握%20Tailwind.md)
 ### React
 1. [编写弹性组件](./article/frame/react/编写弹性组件.md)
 2. [react开发34个技巧](./article/frame/react/react开发34个技巧.md)
