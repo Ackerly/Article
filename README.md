@@ -634,3 +634,4 @@
 84. [进度跟踪器的体验设计](./article/other/进度跟踪器的体验设计.md)
 85. [前端重新部署如何通知用户刷新网页](./article/other/前端重新部署如何通知用户刷新网页.md)
 86. [可视化搭建 - 组件值校验](./article/other/可视化搭建%20-%20组件值校验.md)
+87. [LocatorJS 源码分析](./article/other/LocatorJS%20源码分析.md)
