@@ -79,6 +79,8 @@
 77. [别整一坨 CSS 代码了，试试这几个实用函数](./article/css/别整一坨%20CSS%20代码了,试试这几个实用函数.md)
 78. [CSS动画合成属性animation-composition](./article/css/CSS动画合成属性animation-composition.md)
 79. [超长溢出头部省略打点](./article/css/超长溢出头部省略打点.md)
+80. [前端开发如何更好的避免样式冲突](./article/css/前端开发如何更好的避免样式冲突.md)
+81. [使用 CSS 渐变来实现波浪动画](./article/css/使用%20CSS%20渐变来实现波浪动画.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)
@@ -635,3 +637,4 @@
 85. [前端重新部署如何通知用户刷新网页](./article/other/前端重新部署如何通知用户刷新网页.md)
 86. [可视化搭建 - 组件值校验](./article/other/可视化搭建%20-%20组件值校验.md)
 87. [LocatorJS 源码分析](./article/other/LocatorJS%20源码分析.md)
+88. [前端获取电池信息](./article/other/前端获取电池信息.md)
