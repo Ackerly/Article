@@ -81,6 +81,7 @@
 79. [超长溢出头部省略打点](./article/css/超长溢出头部省略打点.md)
 80. [前端开发如何更好的避免样式冲突](./article/css/前端开发如何更好的避免样式冲突.md)
 81. [使用 CSS 渐变来实现波浪动画](./article/css/使用%20CSS%20渐变来实现波浪动画.md)
+82. [CSS 奇思妙想边框动画](./article/css/CSS%20奇思妙想边框动画.md)
 
 ## HTML
 1. [html语义化](./article/HTML/html语义化.md)

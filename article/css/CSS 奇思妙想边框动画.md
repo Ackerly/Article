@@ -155,9 +155,110 @@ div::after {
 ```
 不过如果是单线条，有个很明显的缺陷，就是边框的末尾是一个小三角而不是垂直的，可能有些场景不适用或者 PM 接受不了。  
 ## conic-gradient 的妙用
+上述主要用到了的是线性渐变 linear-gradient 。使用角向渐变 conic-gradient 其实完全也可以实现一模一样的效果。  
+试着使用 conic-gradient 也实现一次，这次换一种暗黑风格。核心代码如下：  
+``` 
+.conic {
+ position: relative;
+ 
+ &::before {
+  content: '';
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(transparent, rgba(168, 239, 255, 1), transparent 30%);
+  animation: rotate 4s linear infinite;
+ }
+}
+@keyframes rotate {
+ 100% {
+  transform: rotate(1turn);
+ }
+}
+```
+## clip-path 的妙用
+clip-path 本身是可以进行坐标点的动画的，从一个裁剪形状变换到另外一个裁剪形状。  
+利用这个特点，我们可以巧妙的实现这样一种 border 跟随效果。伪代码如下：  
+``` 
+div {
+    position: relative;
 
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px solid gold;
+        animation: clippath 3s infinite linear;
+    }
+}
 
+@keyframes clippath {
+    0%,
+    100% {
+        clip-path: inset(0 0 95% 0);
+    }
+    25% {
+        clip-path: inset(0 95% 0 0);
+    }
+    50% {
+        clip-path: inset(95% 0 0 0);
+    }
+    75% {
+        clip-path: inset(0 0 0 95%);
+    }
+}
 
+```
+因为会裁剪元素，借用伪元素作为背景进行裁剪并动画即可，使用 clip-path 的优点了，切割出来的边框不会产生小三角。同时，这种方法，也是支持圆角 border-radius 的。  
+## overflow 的妙用
+两个核心点：
+1. 用 overflow: hidden，把原本在容器外的一整个元素隐藏了起来
+2. 利用了 transform-origin，控制了元素的旋转中心
+
+看到的动画只是原本现象的一小部分，通过特定的裁剪、透明度的变化、遮罩等，让我们最后只看到了原本现象的一部分。  
+
+## border-image 的妙用
+以利用 border-image-slice 及 border-image-repeat 的特性，得到类似的边框图案：  
+``` 
+div {
+  width: 200px;
+  height: 120px;
+  border: 24px solid;
+  border-image: url(image-url);
+  border-image-slice: 32;
+  border-image-repeat: round;
+}
+```
+在这个基础上，可以随便改变元素的高宽，如此便能扩展到任意大小的容器边框中  
+利用 border-image 的边框动画，使用一个运动背景图，就能得到运动的边框图  
+
+## border-image 使用渐变
+可以利用 border-image + filter + clip-path 实现渐变变换的圆角边框：  
+``` 
+.border-image-clip-path {
+    width: 200px;
+    height: 100px;
+    border: 10px solid;
+    border-image: linear-gradient(45deg, gold, deeppink) 1;
+    clip-path: inset(0px round 10px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+}
+
+@keyframes huerotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+```
 
 原文:  
 [CSS 奇思妙想边框动画](https://mp.weixin.qq.com/s/NDJEexaiDcfEXeNMQrA79A)
