@@ -639,3 +639,4 @@
 86. [可视化搭建 - 组件值校验](./article/other/可视化搭建%20-%20组件值校验.md)
 87. [LocatorJS 源码分析](./article/other/LocatorJS%20源码分析.md)
 88. [前端获取电池信息](./article/other/前端获取电池信息.md)
+89. [图片加载错误的捕获及处理](./article/other/图片加载错误的捕获及处理.md)
