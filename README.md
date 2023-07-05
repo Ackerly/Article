@@ -527,6 +527,7 @@
 31. [Web Worker 项目实践](./article/solution/Web%20Worker%20项目实践.md)
 32. [插件化设计模式在前端领域的应用](./article/solution/插件化设计模式在前端领域的应用.md)
 33. [远程组件实践](./article/solution/远程组件实践.md)
+34. [搭建自动化 Web 页面性能检测系统](./article/solution/搭建自动化%20Web%20页面性能检测系统.md)
 
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
