@@ -331,6 +331,7 @@
 6. [拯救动画卡顿之FLIP](./article/performance/拯救动画卡顿之FLIP.md)
 7. [懒加载及异步图像解码方案](./article/performance/懒加载及异步图像解码方案.md)
 8. [如何构造高性能的树状结构](./article/performance/如何构造高性能的树状结构.md)
+9. [携程火车票7个优化动画性能的方法](./article/performance/%E6%90%BA%E7%A8%8B%E7%81%AB%E8%BD%A6%E7%A5%A87%E4%B8%AA%E4%BC%98%E5%8C%96%E5%8A%A8%E7%94%BB%E6%80%A7%E8%83%BD%E7%9A%84%E6%96%B9%E6%B3%95.md)
 ## HTTP
 1. [get和post的区别](./article/http/get和post的区别.md)
 2. [HTTP的不同版本特性](./article/http/HTTP协议的不同版本及区别.md)
