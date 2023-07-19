@@ -529,6 +529,7 @@
 32. [插件化设计模式在前端领域的应用](./article/solution/插件化设计模式在前端领域的应用.md)
 33. [远程组件实践](./article/solution/远程组件实践.md)
 34. [搭建自动化 Web 页面性能检测系统](./article/solution/搭建自动化%20Web%20页面性能检测系统.md)
+35. [前端加载超大图片实现秒开解决方案](./article/solution/%E5%89%8D%E7%AB%AF%E5%8A%A0%E8%BD%BD%E8%B6%85%E5%A4%A7%E5%9B%BE%E7%89%87%E5%AE%9E%E7%8E%B0%E7%A7%92%E5%BC%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
 
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
