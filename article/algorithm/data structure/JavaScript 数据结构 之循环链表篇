@@ -1,0 +1,120 @@
+# JavaScript 数据结构之循环链表篇
+双向循环链表只不过比单项多了一个 prev 的属性，其他都一样。  
+用 class extends 的方式继承双向链表：  
+```
+class CircLinkedList extends DoubLinkedList {
+  constructor(equalFn) {
+    super(equalFn)
+  }
+}
+```
+CircLinkedList 类继承后没有额外的属性，只需要修改新增和删除方法。  
+
+## 升级 insert 方法
+只需要在双向链表原有的 insert 方法加关联逻辑即可：  
+```
+insert(item, index) {
+  if(index >= 0 && index <= this.count) {
+    let node = new DoubNode(item)
+    let current = this.head;
+    if(index === 0) {
+      if(!this.head) {
+        this.head = node
+        this.tail = node
+      } else {
+        node.next = current
+        current.prev = node
+        this.head = node
+      }
+       // 1. 首位改变循环
+       this.tail.next = this.head
+       this.head.prev = this.tail
+    } else if(index === this.count) {
+      current = this.tail
+      current.next = node
+      node.prev = current
+      this.tail = node
+      // 2. 末尾改变循环
+      this.tail.next = this.head
+      this.head.prev = this.tail
+    } else {
+      let previous = this.getItemAt(index - 1)
+      current = previous.next
+      previous.next = node
+      node.prev = previous
+      node.next = current
+      current.prev = node
+    }
+    this.count++;
+    return true;
+  }
+  return false;
+}
+```
+只需要在第一位和最后一位插入时，互相设置一下引用：  
+```
+this.tail.next = this.head
+this.head.prev = this.tail
+```
+## 升级 removeAt 方法
+与上面方法的逻辑一样，在双向链表的的 removeAt 基础上实现，在删除表头和表尾的时候，重新设置引用：  
+```
+removeAt(index) {
+  if (index >= 0 && index < this.count) {
+    let current = this.head;
+    if (index === 0) {
+      if (!current) {
+        return undefined;
+      }
+      this.head = current.next;
+      // 1. 首位改变循环
+      this.tail.next = this.head
+      this.head.prev = this.tail
+    } else if (index === this.count) {
+      current = this.tail;
+      this.tail = current.prev;
+      // 2. 末尾改变循环
+      this.tail.next = this.head
+      this.head.prev = this.tail
+    } else {
+      current = this.getItemAt(index);
+      let previous = current.prev;
+      previous.next = current.next;
+      current.next.prev = previous;
+    }
+    this.count--;
+    return current.value;
+  }
+  return undefined;
+}
+```
+这里与上面 insert 方法添加的内容是一样的：  
+```
+this.tail.next = this.head
+this.head.prev = this.tail
+```
+使用双向循环链表  
+```
+var circ = new CircLinkedList();
+circ.insert("北京", 0);
+circ.insert("上海", 1);
+circ.insert("广州", 2);
+console.log(circ.toString()); // 北京,上海,广州
+```
+接着打印表头与其前后的值：  
+```
+console.log(circ.head.value); // 北京
+console.log(circ.head.prev.value); // 广州
+console.log(circ.head.next.value); // 上海
+
+```
+再看表尾与其前后的值：  
+```
+console.log(circ.tail.value); // 广州
+console.log(circ.tail.prev.value); // 上海
+console.log(circ.tail.next.value); // 北京
+```
+
+
+原文:  
+[怒肝 JavaScript 数据结构 — 循环链表篇](https://mp.weixin.qq.com/s/9Jyce8sqtC_x976WJ1pubQ)
