@@ -425,6 +425,7 @@
 18. [数据结构之循环链表](./article/algorithm/数据结构之循环链表)
 19. [利用 JS 实现多种图片相似度算法](./article/algorithm/利用%20JS%20实现多种图片相似度算法.md)
 20. [最长公共子序列(LCS)算法在重新排序项目中的应用](./article/algorithm/最长公共子序列(LCS)算法在重新排序项目中的应用.md)
+21. [JavaScript 数据结构之循环链表篇](./article/algorithm/data%20structure/JavaScript%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%20%E4%B9%8B%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8%E7%AF%87)
 
 ### 数据结构
 1. [斐波那契数列](./article/algorithm/data%20structure/JavaScript%20数据结构之斐波那契数列.md)
