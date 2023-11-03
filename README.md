@@ -649,3 +649,4 @@
 87. [LocatorJS 源码分析](./article/other/LocatorJS%20源码分析.md)
 88. [前端获取电池信息](./article/other/前端获取电池信息.md)
 89. [图片加载错误的捕获及处理](./article/other/图片加载错误的捕获及处理.md)
+90. [Web 端实时防挡脸弹幕](./article/other/Web%20%E7%AB%AF%E5%AE%9E%E6%97%B6%E9%98%B2%E6%8C%A1%E8%84%B8%E5%BC%B9%E5%B9%95.md)
