@@ -472,6 +472,7 @@
 28. [现代Monorepo工程技术选型](./article/tool/现代Monorepo工程技术选型.md)
 29. [debugger拦截](./article/tool/debugger拦截.md)
 30. [理解import.meta](./article/tool/理解import.meta.md)
+31. [前端代码重复度检测](./article/tool/前端代码重复度检测.md)
 ### Webpack
 1. [webpack打包优化](./article/tool/webpack/webpack打包慢.md)
 2. [用webpack脚手架配置vue3 + ts](./article/tool/webpack/webpack脚手架配置vue3+ts.md)
@@ -534,6 +535,7 @@
 34. [搭建自动化 Web 页面性能检测系统](./article/solution/搭建自动化%20Web%20页面性能检测系统.md)
 35. [前端加载超大图片实现秒开解决方案](./article/solution/%E5%89%8D%E7%AB%AF%E5%8A%A0%E8%BD%BD%E8%B6%85%E5%A4%A7%E5%9B%BE%E7%89%87%E5%AE%9E%E7%8E%B0%E7%A7%92%E5%BC%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
 36. [如何实现在 Web 中渲染 Word 文档](./article/solution/如何实现在%20Web%20中渲染%20Word%20文档.md)
+37. [前端埋点质量量化与优化](./article/solution/前端埋点质量量化与优化.md)
 
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
