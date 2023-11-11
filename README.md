@@ -536,6 +536,7 @@
 35. [前端加载超大图片实现秒开解决方案](./article/solution/%E5%89%8D%E7%AB%AF%E5%8A%A0%E8%BD%BD%E8%B6%85%E5%A4%A7%E5%9B%BE%E7%89%87%E5%AE%9E%E7%8E%B0%E7%A7%92%E5%BC%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
 36. [如何实现在 Web 中渲染 Word 文档](./article/solution/如何实现在%20Web%20中渲染%20Word%20文档.md)
 37. [前端埋点质量量化与优化](./article/solution/前端埋点质量量化与优化.md)
+38. [利用前端基础设施为前端应用打造稳健且高效率的开发体验](./article/solution/利用前端基础设施为前端应用打造稳健且高效率的开发体验.md)
 
 ## 面试
 1. [webpack十连问](./article/interview/webpack十连问.md)
