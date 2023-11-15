@@ -110,6 +110,7 @@
 6. [V8如何执行JavaScript代码](./article/browser/V8如何执行JavaScript代码.md)
 7. [MDN 里暂时还查不到的 Navigation API](./article/browser/MDN%20里暂时还查不到的%20Navigation%20API.md)
 8. [使用Intl segmenter API](./article/browser/使用Intl%20segmenter%20API.md)
+9. [如何优雅的控制网页请求的优先级](./article/browser/如何优雅的控制网页请求的优先级.md)
 ## JavaScript
 1. [V8编译浅谈](./article/js/V8编译浅谈.md)
 2. [Axios如何实现请求重试](./article/js/Axios如何实现请求重试.md)
