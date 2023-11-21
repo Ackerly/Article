@@ -660,3 +660,4 @@
 90. [Web 端实时防挡脸弹幕](./article/other/Web%20%E7%AB%AF%E5%AE%9E%E6%97%B6%E9%98%B2%E6%8C%A1%E8%84%B8%E5%BC%B9%E5%B9%95.md)
 91. [感知哈希-图片相似度分析](./article/other/感知哈希-图片相似度分析.md)
 92. [让你的 VitePress 文档站支持 AI 对话能力](./article/other/让你的%20VitePress%20文档站支持%20AI%20对话能力.md)
+93. [什么叫JSON-RPC](./article/other/什么叫JSON-RPC.md)
