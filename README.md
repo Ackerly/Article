@@ -153,6 +153,7 @@
 39. [设计一个支持并发的前端接口缓存](./article/js/设计一个支持并发的前端接口缓存.md)
 40. [在forEach 里跳出循环吗](./article/js/在%20forEach%20里跳出循环.md)
 41. [js支持原生数组分组](./article/js/ES6/js支持原生数组分组.md)
+42. [探索在 JS 中，为什么要在函数前面加！](./article/js/探索在%20JS%20中为什么要在函数前面加！.md)
 ### ES6
 1. [ES6的使用](./article/js/ES6/ES6的使用.md)
 2. [async await错误处理](./article/js/ES6/async%20await错误处理.md)
